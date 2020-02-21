@@ -1,0 +1,7 @@
+graph G {
+    node[width=0.15,shape=circle]
+    a -- b [label="      e1"];
+    b -- c [label="      e3"];
+    b -- d [label="e4"];
+    c -- a [label="e2  "];
+}

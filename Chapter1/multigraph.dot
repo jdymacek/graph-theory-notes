@@ -1,0 +1,6 @@
+graph G {
+    node[width=0.15,label="",shape=circle]
+    Q -- R -- S;
+    R -- T -- S;
+    S -- S;
+}
