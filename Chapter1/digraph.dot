@@ -1,0 +1,7 @@
+digraph G {
+    node[width=0.15,shape=circle]
+    Q -> R;
+    R -> {Q S};
+    S -> {T S};
+    T -> R;
+}
