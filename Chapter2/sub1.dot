@@ -1,0 +1,9 @@
+graph {
+    node[width=0.15,shape=circle]
+    a [pos="0,0"];
+    b [pos="1,0"]; b -- c [label="e2"];
+    c [pos="0,1"]; c -- d [label="e3
+    "];
+    d [pos="1,1"]; d -- a [label="e4"];
+    b -- d [label="e5"];
+}

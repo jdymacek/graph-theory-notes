@@ -1,0 +1,8 @@
+graph G {
+node[label="",width=0.25,shape=circle]
+	a -- b
+	b -- c
+	c -- d
+    d -- {a e}
+	e -- f
+}

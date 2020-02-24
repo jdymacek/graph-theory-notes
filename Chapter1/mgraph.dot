@@ -2,4 +2,5 @@ graph G {
     node[width=0.15,shape=circle]
     Q -- R -- S;
     R -- T -- S;
+    R -- R;
 }
