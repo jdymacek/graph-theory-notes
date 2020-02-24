@@ -3,20 +3,27 @@
 \usepackage{Typocaps,lettrine}
 \usepackage{graphicx}
 \usepackage{subfig}
-\usepackage{mathtools}
+\usepackage{amsmath, amsthm, amsfonts, amssymb, mathtools}
+% \usepackage{subfigure}
+% \usepackage{subcaption}
 \renewcommand\LettrineFontHook{\Typocapsfamily}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \DeclarePairedDelimiter\norm{\lVert}{\rVert}%
 
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
 
 \title{The little book of graph notes}
 
 \begin{document}
 \maketitle
+\tableofcontents
 
-\input{intro.tex}
-
-\input{trees.tex}
+% \input{intro.tex}
+\input{Chapter1/graphs.tex}
+% \input{trees.tex}
+\input{Chapter2/trees.tex}
 
 \end{document}
