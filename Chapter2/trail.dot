@@ -1,0 +1,17 @@
+graph g {
+	node[width=0.25,rotate=90,shape=circle]
+	A -- B [color=red,penwidth=3.0];
+	A -- G;
+	B -- H [color=red,penwidth=3.0];
+	B -- C [color=red,penwidth=3.0];
+	C -- D;
+	C -- F;
+	D -- E;
+	E -- F;
+	F -- I;
+	G -- H;
+	G -- D;
+	G -- F;
+	H -- C [color=red,penwidth=3.0];
+	H -- I;
+}

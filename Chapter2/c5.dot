@@ -1,4 +1,9 @@
 graph {
-    node[width=0.15,label="",shape=circle]
-    A -- B -- C -- D -- E -- A
+    node[width=0.15,shape=circle]
+    A [pos="0,0!"]; 
+    B [pos="2,0.7!"];
+    C [pos="3.2,-1!"]; 
+    D [pos="2,-2.7!"];
+    E [pos="0,-2!"];
+    A -- E -- D -- C -- B -- A;
 }
