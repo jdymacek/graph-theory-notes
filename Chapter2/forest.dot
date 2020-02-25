@@ -1,0 +1,9 @@
+graph g {
+	node[width=0.25,label="",shape=circle]
+    A -- {B C F}
+    C -- {D E}
+
+    X -- {Y Z R}
+    Y -- {W T}
+    Z -- {P Q}
+}
