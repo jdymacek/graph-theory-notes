@@ -102,11 +102,77 @@ A \textbf{weight} is a numerical value assigned to an edge. This number is repre
 
 Again, the MST for a graph $G$ is a spanning tree with minimal weight. How do we find the minimum spanning tree for a graph? There are three popular algorithms which solve this problem: Prim's Algorithm, Kruskal's Algorithm, and Bor\r{u}vka's Algorithm.
 \subsection{Prim's Algorithm}
-Prim's Algorithm was originally developed by Czech mathematician Vojt\v{e}ch Jarn\'{i}k in 1930, but was later published by Robert Prim and Edsger Dijkstra in 1959\footnote{https://en.wikipedia.org/wiki/Prim's\_algorithm}. Prim's algorithm focuses on the vertices of a graph, and considers edges incident to the vertices in the MST as it grows. 
+Prim's Algorithm was originally developed by Czech mathematician Vojt\v{e}ch Jarn\'{i}k in 1930, but was later published by Robert Prim and Edsger Dijkstra in 1959\footnote{https://en.wikipedia.org/wiki/Prim's\_algorithm}. Prim's algorithm focuses on the vertices of a graph, and considers edges incident to the vertices in the MST as it grows. Below is a quick pseudocode representation of this algorithm\footnote{Inspired by Cormen and Rivest's \emph{Introduction to Algorithms}}.
 
-First, grab a vertex $v$ at random from a graph $G$, and initialize a tree $T$ as empty, and a set $P$ with $v$. $P$ will be our set of visited vertices, and $T$ will be the collection of edges which make the MST. Then, find the minimum weighted edge connecting a vertex in $P$ to a vertex not in $P$, and add this edge to $T$ and the vertex to $P$. Repeat until $P = V(G)$.
+\begin{algorithm}
+    \DontPrintSemicolon
+    \caption{Prim's Algorithm}
 
-This algorithm is greedy - at each decision point, we follow the smallest available edge available. This results in the minimum total weight of the spanning tree, and thus gives us the MST. If we use a min-heap to store the weights of the edges of vertices in the tree, then this algorithm achieves a complexity of $O(E~log(E))$. 
+    \KwData{Weighted graph $G$, root vertex $v_0$}
+    \KwResult{Minimum spanning tree $T$}
+    \SetKwFunction{setw}{Weight}
+    \SetKwFunction{setp}{Parent}
+    \SetKwFunction{exmin}{GetMinVertex}
+    \SetKwFunction{edge}{EdgeWeight}
+    \SetKwFunction{adj}{AdjacentTo}
+
+    \For{$v \in V(G)$}{
+        \setw{v} $\gets \infty$\;
+        \setp{v} $\gets$ null\;
+    }
+    \setw{$v_0$} $\gets 0$\;
+    $Q \gets V(G)$\;
+    \While{$Q \neq \emptyset$}{
+        $u \gets$ \exmin{$Q$}\;
+        \ForEach{$v \in$ \adj$(u)$}{
+            \If{$v \in Q$ and \edge{$u, v$} $<$ \setw{$v$}}{
+                \setp{$v$} $\gets u$\;
+                \setw{$v$} $\gets$ \edge{$u, v$}
+            }
+        }
+    }
+\end{algorithm}
+
+Given a root node $v_0$ to begin the construction of the MST, the objective for the algorithm is to construct a tree based on weights from nodes already examined. The preliminaries of this algorithm look very much like Dijkstra's algorithm (discussed later), where we initialize the weights of all vertices to infinity, and the root node to zero. Additionally, we want to keep track of the edge through which we reach the vertex, so we initialize the parent to null. 
+
+We use $Q$ as a minimum heap structure to grab the smallest weighted vertex, calling it $u$. The idea is to examine all adjacent vertices to $u$, and update their current weight if following the edge from $u$ to said vertex is better than what was found previously. If so, we set the parent of that vertex to $u$, and update the weight. 
+
+Once $Q$ is exhausted, we will have determined the minimal edges connecting each vertex in the graph, resulting in the MST. This formalization of the algorithm is a bit dense, so the simplified version of what was discussed in class is as follows:
+
+First, grab a vertex $v$ at random from a graph $G$, and initialize a tree $T$ as empty, and a set $P$ with $v$. $P$ will be our set of visited vertices, and $T$ will be the collection of edges which make the MST. Find the minimum weighted edge connecting a vertex in $P$ to a vertex not in $P$, and add this edge to $T$ and the vertex to $P$. Repeat until $P = V(G)$. The collection of edges $T$ will be the MST.
+
+This algorithm is greedy - at each decision point, we follow the smallest available edge available. This results in the minimum total weight of the spanning tree, and thus gives us the MST. If we use a min-heap to store the weights of the edges of vertices in the tree, then this algorithm achieves a complexity of $O(E~log(V))$. 
+
 \subsection{Kruskal's Algorithm}
-Kruskal's Algorithm was devised the mathematician and computer scientist Joseph Kruskal in 1956\footnote{https://en.wikipedia.org/wiki/Kruskal's\_algorithm}. Unlike Prim's algorithm, which focused on the vertices of a graph, this algorithm focuses on aggregating edges in a graph until we achieve an MST. 
+Kruskal's Algorithm was devised the mathematician and computer scientist Joseph Kruskal in 1956\footnote{https://en.wikipedia.org/wiki/Kruskal's\_algorithm}. Unlike Prim's algorithm, which focused on the vertices of a graph, this algorithm focuses on aggregating edges in a graph until we achieve a MST. Below is the pseudocode for Kruskal's.
+
+\begin{algorithm}
+    \DontPrintSemicolon
+    \caption{Kruskal's Algorithm}
+
+    \KwData{Weighted graph $G$}
+    \KwResult{Minimum spanning tree $T$}
+    \SetKwFunction{join}{JoinSets}
+    \SetKwFunction{intree}{TreeWith}
+    \SetKwFunction{exmin}{GetMinEdge}
+
+    $A \gets \emptyset$\;
+    \For{$v \in V(G)$} {
+        $A \gets A \cup \{v\}$\;
+    }
+    $Q \gets E(G)$\;
+    \While{$Q \neq \emptyset$} {
+        $e(u, v) \gets$ \exmin{$Q$}\;
+        \uIf{\intree{u} $\neq$ \intree{v}} {
+            \join{$u, v$}\;
+            $A \gets A \cup e$\;
+        }
+    }
+\end{algorithm}
+Like Prim's Algorithm, Kruskal's is greedy, examining the lowest weighted edges sequentially. The objective of this algorithm is to combine subtrees in the graph until one tree spans the totality of the graph, and through its construction, is minimally weighted. 
+
+Initially, we initialize all vertices to be their own subtrees. Additionally, we store the edges in a min-heap so that we can examine the lowest weighted edge. As we exhaust the list of edges, we want to examine each one and, if the edge joins two separate and disjoint subtrees, union them and store the edge in the MST. Otherwise, if the vertices incident to the edge are from the same tree, we discard that edge. At the termination of the algorithm, we will have joined all subtrees together using the smallest weighted edges possible to do so, thus resulting in a MST.
+
+The run time for this algorithm depends on the implementation of how we store the subtrees of the graph. Ideally, this will be some form of disjoint-set data structure, with good management for finding and taking the union of sets. A good implementation will result in a worst case runtime of $O(E~log(V))$.
+
 \subsection{Bor\r{u}vka's Algorithm}
