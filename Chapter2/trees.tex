@@ -163,7 +163,7 @@ Kruskal's Algorithm was devised the mathematician and computer scientist Joseph 
     $Q \gets E(G)$\;
     \While{$Q \neq \emptyset$} {
         $e(u, v) \gets$ \exmin{$Q$}\;
-        \uIf{\intree{u} $\neq$ \intree{v}} {
+        \If{\intree{u} $\neq$ \intree{v}} {
             \join{$u, v$}\;
             $A \gets A \cup e$\;
         }
@@ -171,8 +171,37 @@ Kruskal's Algorithm was devised the mathematician and computer scientist Joseph 
 \end{algorithm}
 Like Prim's Algorithm, Kruskal's is greedy, examining the lowest weighted edges sequentially. The objective of this algorithm is to combine subtrees in the graph until one tree spans the totality of the graph, and through its construction, is minimally weighted. 
 
-Initially, we initialize all vertices to be their own subtrees. Additionally, we store the edges in a min-heap so that we can examine the lowest weighted edge. As we exhaust the list of edges, we want to examine each one and, if the edge joins two separate and disjoint subtrees, union them and store the edge in the MST. Otherwise, if the vertices incident to the edge are from the same tree, we discard that edge. At the termination of the algorithm, we will have joined all subtrees together using the smallest weighted edges possible to do so, thus resulting in a MST.
+Initially, we initialize all vertices to be their own subtrees. Additionally, we store the edges in a min-heap $Q$ so that we can examine the lowest weighted edge. As we exhaust the list of edges, we want to examine each one and, if the edge joins two separate and disjoint subtrees, union them and store the edge in the MST $A$. Otherwise, if the vertices incident to the edge are from the same tree, we discard that edge. At the termination of the algorithm, we will have joined all subtrees together using the smallest weighted edges possible to do so, thus resulting in a MST.
 
 The run time for this algorithm depends on the implementation of how we store the subtrees of the graph. Ideally, this will be some form of disjoint-set data structure, with good management for finding and taking the union of sets. A good implementation will result in a worst case runtime of $O(E~log(V))$.
 
 \subsection{Bor\r{u}vka's Algorithm}
+Bor\r{u}vka's Algorithm was perhaps the first MST algorithm, first published by Otakar Bor\r{u}vka in 1926 for finding more efficient power line routes\footnote{https://en.wikipedia.org/wiki/Borůvka's\_algorithm}. This algorithm looks very much like Kruskal's algorithm, focusing on edges joining different subtrees which are initially solely vertices. However, Kruskal's algorithm works very well in a parallel computing environment. The pseudocode is shown below.
+\begin{algorithm}
+    \DontPrintSemicolon
+    \caption{Bor\r{u}vka's Algorithm}
+
+    \KwData{Weighted graph $G$}
+    \KwResult{Minimum spanning tree $T$}
+    \SetKwFunction{join}{JoinSets}
+    \SetKwFunction{intree}{TreeWith}
+    \SetKwFunction{exmin}{GetMinEdge}
+    \SetKwFunction{size}{SizeOf}
+
+    $A \gets \emptyset$\;
+    \For{$v \in V(G)$} {
+        $A \gets A \cup \{v\}$\;
+    }
+    $Q \gets E(G)$\;
+    \While{\size{A} $> 1$} {
+        \ForEach{$e(u, v) \in E(G)$} {
+            \If{\intree{u} $\neq$ \intree{v}} {
+                \join{$u, v$}\;
+                $A \gets A \cup e$\;
+            }
+        }
+
+    }
+\end{algorithm}
+
+The idea here is to repeatedly join subtrees until the MST remains. To accomplish this, the algorithm calls for repeatedly finding minimally weighted edges while more than one tree remains, in much the same way that Kruskal's algorithm did. However, in a parallel environment, we can delegate the task of joining multiple trees to different systems, so that the time of each iteration can be reduced. In a non-parallel environment, this algorithm is shown to have the same complexity as Kruskal's, $O(E~log(V))$.
