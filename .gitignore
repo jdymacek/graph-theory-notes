@@ -2,5 +2,6 @@
 *.fdb*
 *.fls
 *.log
+*.dvi
 *.synctex.gz
 */*.pdf
