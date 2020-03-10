@@ -1,3 +1,4 @@
+\contentsline {section}{\numberline {0.1}Preface}{3}% 
 \contentsline {chapter}{\numberline {1}On Graphs}{5}% 
 \contentsline {section}{\numberline {1.1}What is a Graph?}{5}% 
 \contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}% 
@@ -17,3 +18,4 @@
 \contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{17}% 
 \contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{18}% 
 \contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{19}% 
+\contentsline {section}{\numberline {2.5}Many Branching Theorems}{20}% 

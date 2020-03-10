@@ -102,7 +102,7 @@ A \textbf{weight} is a numerical value assigned to an edge. This number is repre
 
 Again, the MST for a graph $G$ is a spanning tree with minimal weight. How do we find the minimum spanning tree for a graph? There are three popular algorithms which solve this problem: Prim's Algorithm, Kruskal's Algorithm, and Bor\r{u}vka's Algorithm.
 \subsection{Prim's Algorithm}
-Prim's Algorithm was originally developed by Czech mathematician Vojt\v{e}ch Jarn\'{i}k in 1930, but was later published by Robert Prim and Edsger Dijkstra in 1959\footnote{https://en.wikipedia.org/wiki/Prim's\_algorithm}. Prim's algorithm focuses on the vertices of a graph, and considers edges incident to the vertices in the MST as it grows. Below is a quick pseudocode representation of this algorithm\footnote{Inspired by Cormen and Rivest's \emph{Introduction to Algorithms}}.
+Prim's Algorithm was originally developed by Czech mathematician Vojt\v{e}ch Jarn\'{i}k in 1930, but was later published by Robert Prim and Edsger Dijkstra in 1959\cite{PrimsAlgo}. Prim's algorithm focuses on the vertices of a graph, and considers edges incident to the vertices in the MST as it grows. Below is a quick pseudocode representation of this algorithm\cite{IntroToAlgo}.
 
 \begin{algorithm}
     \DontPrintSemicolon
@@ -144,7 +144,7 @@ First, grab a vertex $v$ at random from a graph $G$, and initialize a tree $T$ a
 This algorithm is greedy - at each decision point, we follow the smallest available edge available. This results in the minimum total weight of the spanning tree, and thus gives us the MST. If we use a min-heap to store the weights of the edges of vertices in the tree, then this algorithm achieves a complexity of $O(E~log(V))$. 
 
 \subsection{Kruskal's Algorithm}
-Kruskal's Algorithm was devised the mathematician and computer scientist Joseph Kruskal in 1956\footnote{https://en.wikipedia.org/wiki/Kruskal's\_algorithm}. Unlike Prim's algorithm, which focused on the vertices of a graph, this algorithm focuses on aggregating edges in a graph until we achieve a MST. Below is the pseudocode for Kruskal's.
+Kruskal's Algorithm was devised the mathematician and computer scientist Joseph Kruskal in 1956\cite{KruskalsAlgo}. Unlike Prim's algorithm, which focused on the vertices of a graph, this algorithm focuses on aggregating edges in a graph until we achieve a MST. Below is the pseudocode for Kruskal's.
 
 \begin{algorithm}
     \DontPrintSemicolon
@@ -176,7 +176,7 @@ Initially, we initialize all vertices to be their own subtrees. Additionally, we
 The run time for this algorithm depends on the implementation of how we store the subtrees of the graph. Ideally, this will be some form of disjoint-set data structure, with good management for finding and taking the union of sets. A good implementation will result in a worst case runtime of $O(E~log(V))$.
 
 \subsection{Bor\r{u}vka's Algorithm}
-Bor\r{u}vka's Algorithm was perhaps the first MST algorithm, first published by Otakar Bor\r{u}vka in 1926 for finding more efficient power line routes\footnote{https://en.wikipedia.org/wiki/Borůvka's\_algorithm}. This algorithm looks very much like Kruskal's algorithm, focusing on edges joining different subtrees which are initially solely vertices. However, Kruskal's algorithm works very well in a parallel computing environment. The pseudocode is shown below.
+Bor\r{u}vka's Algorithm was perhaps the first MST algorithm, first published by Otakar Bor\r{u}vka in 1926 for finding more efficient power line routes\cite{BoruvkasAlgo}. This algorithm looks very much like Kruskal's algorithm, focusing on edges joining different subtrees which are initially solely vertices. However, Kruskal's algorithm works very well in a parallel computing environment. The pseudocode is shown below.
 \begin{algorithm}
     \DontPrintSemicolon
     \caption{Bor\r{u}vka's Algorithm}
@@ -245,3 +245,6 @@ Having proved this theorem, we are in a position to begin proving another, rathe
 	\end{equation*}
 	which satisfies the second statement.
 \end{proof}
+
+\bibliographystyle{plain}
+\bibliography{Chapter2/bibliography}
