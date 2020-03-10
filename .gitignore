@@ -2,6 +2,7 @@
 *.fdb*
 *.fls
 *.log
+*.dvi
 *.synctex.gz
 *.toc
 *.bbl

@@ -206,5 +206,45 @@ Bor\r{u}vka's Algorithm was perhaps the first MST algorithm, first published by 
 
 The idea here is to repeatedly join subtrees until the MST remains. To accomplish this, the algorithm calls for repeatedly finding minimally weighted edges while more than one tree remains, in much the same way that Kruskal's algorithm did. However, in a parallel environment, we can delegate the task of joining multiple trees to different systems, so that the time of each iteration can be reduced. In a non-parallel environment, this algorithm is shown to have the same complexity as Kruskal's, $O(E~log(V))$.
 
+\section{Many Branching Theorems}
+For a more theoretical approach to trees, we can start to approach the idea of equivalent criteria in which a graph is actually a tree. First, let's define what a bridge is. A \textbf{bridge} is an edge from a graph which, when removed, increases the number of components in a graph. Consider the following example graph, where removing the edge $e$ makes this a disconnected graph
+
+%\includegraphics[]{Chapter2/bridge.pdf} % To be done later
+
+An important and useful theorem arises from introducing the idea of a bridge.
+
+\begin{theorem}[Graph Bridge Theorem]
+Let $G$ be a graph, and $e \in E(G)$. Then $e$ is an edge of a circuit if and only if $e$ is not a bridge.
+\end{theorem}
+\begin{proof}
+Let $G$ be a graph and $e \in E(G)$. \\
+$(\rightarrow)$ Assume that $e$ is an edge in a circuit. We aim to show that $e$ is not a bridge. If $e$ is an edge between vertices $u$ and $v$, then by definition of a path, $e$ is a final edge in the circuit which closes the path from $u$ to $v$. Then following the removal of $e$, there will still be a path from $u$ to $v$. Thus the removal of $e$ does not increase the count of components, and $e$ can't be a bridge. \\
+$(\rightarrow)$ Assume that $e$ is not a bridge. Let $u$ and $v$ be the vertices incident to $e$. If $e$ is not a bridge, then its removal will not increase the number of components in $G$. Then by definition of connectivity, there must still exist a path between $u$ and $v$. Therefore, $e$ must have been an edge in a circuit from $u$ to $v$. This completes the proof.
+\end{proof}
+
+Having proved this theorem, we are in a position to begin proving another, rather large, theorem about the equivalent conditions for a graph to be a tree.
+
+\begin{theorem}
+	Let $T$ be a graph with $n$ vertices. Then the following are equivalent:
+	\begin{enumerate}
+		\item $T$ is a tree.
+		\item $T$ has no circuits, but has $n-1$ edges.
+		\item $T$ is connected and has $n-1$ edges.
+		\item $T$ is connected, and every edge is a bridge.
+		\item Any given pair of vertices of $T$ is connected by exactly one path.
+		\item $T$ has no circuits, but introducing any one new edge joining two vertices of $G$ creates exactly one new circuit.
+	\end{enumerate}
+\end{theorem}
+\begin{proof}
+	For proving a theorem of this form, the goal is to sequentially assume one statement, and use that assumption to prove the following. Let's begin: \\
+	$(1 \rightarrow 2)$ Assume that $T$ is a tree. Then by definition, $T$ is connected and has no circuits. We must now show that $T$ has $n-1$ edges, and we will do this via induction. The goal will be to show that, by removal of one edge, we will create two components which satisfy the hypothesis, which will show that the original graph must have also satisfied the hypothesis. \\
+	For our base case, assume that $T$ has two vertices, $u$ and $v$, with one edge connecting them. If we remove this edge, then we have two components, each with 1 vertex, and $n-1=0$ edges and thus no circuits. This satisfies $(2)$. \\
+	Let's assume that this holds for a graph of up to $n-1$ vertices. We must now show it for a graph with $n$ vertices. If $T$ has no cycles, then by the Graph Bridge Theorem, any edge $e$ is a bridge. If we remove one of these edges, we create two components with $p$ and $q$ vertices, and $p-1$ and $q-1$ edges respectively (via our inductive hypothesis). Then the summation of edges in each component and the bridge is:
+	\begin{equation*}
+		E(T) = (p-1)+(q-1)+1 = (p+q)-1 = n-1
+	\end{equation*}
+	which satisfies the second statement.
+\end{proof}
+
 \bibliographystyle{plain}
 \bibliography{Chapter2/bibliography}
