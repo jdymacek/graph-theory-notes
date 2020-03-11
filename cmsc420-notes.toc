@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {0.1}Preface}{3}%
+\contentsline {section}{\numberline {0.1}Preface}{4}%
 \contentsline {chapter}{\numberline {1}On Graphs}{5}%
 \contentsline {section}{\numberline {1.1}What is a Graph?}{5}%
 \contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}%
@@ -19,8 +19,9 @@
 \contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{21}%
 \contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{22}%
 \contentsline {section}{\numberline {2.5}Many Branching Theorems}{22}%
-\contentsline {chapter}{\numberline {3}NP Completeness}{27}%
-\contentsline {section}{\numberline {3.1}P Problems}{27}%
+\contentsline {chapter}{\numberline {3}NP-Completeness}{27}%
+\contentsline {section}{\numberline {3.1}What are NP-Complete Problems?}{27}%
 \contentsline {section}{\numberline {3.2}NP Problems}{27}%
-\contentsline {section}{\numberline {3.3}NP Hard Problems}{27}%
-\contentsline {section}{\numberline {3.4}NP Complete Problems}{27}%
+\contentsline {section}{\numberline {3.3}P Problems}{27}%
+\contentsline {section}{\numberline {3.4}NP Hard Problems}{27}%
+\contentsline {section}{\numberline {3.5}NP Complete Problems}{27}%
