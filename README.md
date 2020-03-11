@@ -26,7 +26,7 @@ For the sake of simplicity, please try to follow the structure of the project - 
 
 When adding a citation, please add the resource to the particular chapter's `bibliography.bib` file (if there isn't one, go ahead and create one)! There is a link in the resources to a website that generates a BibTeX citation. 
 
-Alternatively, if citing a Wikipedia article, a convenient way to find a BibTeX citation is to click "Cite this Article" along the left pane in the Tools section, and scroll down until you see the BibTex entry. Add this to the `bibliography.tex` file.
+Alternatively, if citing a Wikipedia article, a convenient way to find a BibTeX citation is to click "Cite this Article" along the left pane in the Tools section, and scroll down until you see the BibTex entry. Add this to the `bibliography.bib` file.
 
 ## Resources
 
