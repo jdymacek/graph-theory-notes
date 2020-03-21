@@ -22,6 +22,11 @@ do
                 file="${file#"c-"}.pdf"
                 echo "Compiling (circo): $dot - $file"
                 circo -Tpdf $dot -o $file
+			elif [[ $dot == t-* ]]
+            then
+                file="${file#"t-"}.pdf"
+                echo "Compiling (twopi): $dot - $file"
+                twopi -Tpdf $dot -o $file
             else
                 echo "Error compiling $dot: unrecognized DOT file prefix (use n- or c-)"
             fi
