@@ -31,4 +31,5 @@
 \contentsline {section}{\numberline {4.2}Don't cross me}{23}% 
 \contentsline {section}{\numberline {4.3}Jordan Curves}{23}% 
 \contentsline {section}{\numberline {4.4}Faces}{23}% 
-\contentsline {subsection}{\numberline {4.4.1}Euler's Formula}{23}% 
+\contentsline {subsection}{\numberline {4.4.1}Euler's formula}{23}% 
+\contentsline {section}{\numberline {4.5}We're just Platonic}{23}% 
