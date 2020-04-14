@@ -1,0 +1,4 @@
+graph np{
+    np  [pos="0,0!" label="NP" shape=circle fixedsize=true width=4]
+    p   [pos="0,-1.5!" label="P" shape=ellipse fixedsize=true width=2.1 height=1]
+}

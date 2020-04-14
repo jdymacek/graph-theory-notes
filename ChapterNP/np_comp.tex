@@ -1,11 +1,25 @@
 \chapter{NP-Completeness}
-\section{What are NP-Complete Problems?}
-\lettrine[lines=4]{N}{P-Complete} is a way of classifying the complexity of a problem in terms of how "long" it takes to run. The set of problems that are NP-Complete is the intersection of the set of problems that are NP and the set of problems that are NP-Hard, as shown below.
-
-\section{NP Problems}
-
-\section{P Problems}
-
-\section{NP Hard Problems}
-
-\section{NP Complete Problems}
+%\section{What are NP-Complete Problems?}
+\lettrine[lines=4]{N}{P-Complete} is a way of classifying the complexity of a problem in terms of how "long" it takes to run. For a problem to be classified as NP-Complete, outputs must be verifiable in polynomial time. WIP\\
+\vspace {2cm}\\
+The set of problems that are NP-Complete is the intersection of the set of problems that are NP and the set of problems that are NP-Hard, as shown below. 
+\section{Definitions}
+\begin{description}
+    \item[Deterministic:] An algorithm is \textbf{deterministic} if it follows a single path from input to outcome.
+    \item[Nondeterministic:]  An algorithm is \textbf{nondeterministic} if it can follow a branching path that can go from one input to multiple outcomes. All of these paths are potentially traversed simultaneously.
+    \item[Polynomial Time:] An algorithm is said to be a \textbf{polynomial time} algorithm if its execution time scales by a polynomial. An example of this is a linear search algorithm, which can be run in O($n$) time. \textbf{Polynomial time} algorithms could also be bounded above by a polynomial, meaning that an algorithm which runs in O($\log(n)$) time is also a polynomial time algorithm, as it is better than O($n$). Examples of non-polynomial times include O($2^n$), O($n!$), or O($n^n$)
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.25\textwidth]{ChapterNP/p.pdf} 
+    \end{figure}
+    \item[P:] A problem is classified as \textbf{P} if it can be solved by a deterministic turing machine in polynomial time
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{ChapterNP/np.pdf}
+    \end{center} 
+    \item[NP:]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{ChapterNP/complexity.pdf}
+    \end{center}
+    \item[NP-Hard:]
+    \item[NP-Complete:]   
+\end{description}
