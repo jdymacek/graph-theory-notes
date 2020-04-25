@@ -1,0 +1,75 @@
+digraph g{
+    viewport="800,1100,1,0,-50"
+    node[shape=circle label="" fixedsize=true]
+
+
+    pointer [shape=none pos="0,3!"]
+    root [pos="0,2!"]
+    l1 [pos="-3,0!" label="T" fontsize="20!"]
+    l2 [pos="-2,0!" label="1" fontsize="16!"]
+    l3 [pos="-1,0!" label="2" fontsize="16!"]
+    r1 [pos="3,0!" label="F" fontsize="20!"]
+    r2 [pos="2,0!" label="2k" fontsize="16!"]
+    r3 [pos="1,0!" label="2k-1" fontsize="16!"]
+    root2 [pos="0,-2!"]
+    e1 [shape=point pos="-0.4,0!"]
+    e2 [shape=point pos="0,0!"]
+    e3 [shape=point pos="0.4,0!"]
+
+    x0 [label="x_1" shape=plaintext pos="3.5,-1!" fontsize="25!"]
+
+    l12 [pos="-3,-4!" label="T" fontsize="20!"]
+    l22 [pos="-2,-4!" label="1" fontsize="16!"]
+    l32 [pos="-1,-4!" label="2" fontsize="16!"]
+    r12 [pos="3,-4!" label="F" fontsize="20!"]
+    r22 [pos="2,-4!" label="2k" fontsize="16!"]
+    r32 [pos="1,-4!" label="2k-1" fontsize="16!"]
+    e12 [shape=point pos="-0.4,-4!"]
+    e22 [shape=point pos="0,-4!"]
+    e32 [shape=point pos="0.4,-4!"]
+
+    x1 [label="x_2" shape=plaintext pos="3.5,-5!" fontsize="25!"]
+
+    c1 [label="c_1" width="0.75" pos="-5,2!" fontsize="25!"]
+    c2 [label="c_2" width="0.75" pos="-5,1!" fontsize="25!"] 
+    d1 [shape=point pos="-5,0.4!"]
+    d2 [shape=point pos="-5,0!"]
+    d3 [shape=point pos="-5,-0.4!"]
+    ck [label="c_k" width="0.75" pos="-5,-1!" fontsize="25!"]
+    exit [pos="0,-6!"]
+
+    d12 [shape=point pos="0,-6.6!"]
+    d22 [shape=point pos="0,-7!"]
+    d32 [shape=point pos="0,-7.4!"]
+
+    root3 [pos="0,-8!"]
+    l13 [pos="-3,-10!" label="T" fontsize="20!"]
+    l23 [pos="-2,-10!" label="1" fontsize="16!"]
+    l33 [pos="-1,-10!" label="2" fontsize="16!"]
+    r13 [pos="3,-10!" label="F" fontsize="20!"]
+    r23 [pos="2,-10!" label="2k" fontsize="16!"]
+    r33 [pos="1,-10!" label="2k-1" fontsize="16!"]
+    e13 [shape=point pos="-0.4,-10!"]
+    e23 [shape=point pos="0,-10!"]
+    e33 [shape=point pos="0.4,-10!"]
+    exit2 [pos="0,-12!"]
+
+    x2 [label="x_L" shape=plaintext pos="3.5,-9!" fontsize="25!"]
+
+    pointer -> root
+    root -> l1 -> l2 -> l3 -> l2 -> l1 -> root2
+    root -> r1 -> r2 -> r3 -> r2 -> r1 -> root2
+    root2 -> l12 -> l22 -> l32 -> l22 -> l12 -> exit
+    root2 -> r12 -> r22 -> r32 -> r22 -> r12 -> exit
+    root3 -> l13 -> l23 -> l33 -> l23 -> l13 -> exit2
+    root3 -> r13 -> r23 -> r33 -> r23 -> r13 -> exit2
+
+    loop1 [shape=none pos="5,-10!" width="0"]
+    loop2 [shape=none pos="5,0!" width="0"]
+    //loop2
+    //loop3
+
+    exit2:e -> loop1:w [arrowhead=none]
+    loop1:w -> loop2:w [arrowhead=none]
+    loop2:w -> root:e
+}

@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {0.1}Preface}{3}%
+\contentsline {section}{\numberline {0.1}Preface}{4}%
 \contentsline {chapter}{\numberline {1}On Graphs}{5}%
 \contentsline {section}{\numberline {1.1}What is a Graph?}{5}%
 \contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}%
@@ -21,3 +21,14 @@
 \contentsline {section}{\numberline {2.5}Many Branching Theorems}{22}%
 \contentsline {chapter}{\numberline {3}NP-Completeness}{27}%
 \contentsline {section}{\numberline {3.1}Definitions}{27}%
+\contentsline {section}{\numberline {3.2}Founding Papers}{28}%
+\contentsline {subsection}{\numberline {3.2.1}Cook-Levin Theorem}{28}%
+\contentsline {subsection}{\numberline {3.2.2}Karp's 21 Problems}{29}%
+\contentsline {section}{\numberline {3.3}Problems}{29}%
+\contentsline {subsection}{\numberline {3.3.1}Satisfiability}{29}%
+\contentsline {subsection}{\numberline {3.3.2}3-Satisfiability}{30}%
+\contentsline {subsubsection}{Is it in NP?}{30}%
+\contentsline {subsubsection}{Is it in NP-Hard?}{30}%
+\contentsline {subsection}{\numberline {3.3.3}Directed Hamiltonian Cycle}{30}%
+\contentsline {subsubsection}{Is it in NP?}{31}%
+\contentsline {subsubsection}{Is it in NP-Hard?}{31}%

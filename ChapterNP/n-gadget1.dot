@@ -1,0 +1,23 @@
+digraph g{
+    viewport="500,400,1,0,0"
+    node[shape=circle label="" fixedsize=true]
+
+
+    pointer [shape=none pos="0,3!"]
+    root [pos="0,2!"]
+    l1 [pos="-3,0!" label="T" fontsize="20!"]
+    l2 [pos="-2,0!"]
+    l3 [pos="-1,0!"]
+    r1 [pos="3,0!" label="F" fontsize="20!"]
+    r2 [pos="2,0!"]
+    r3 [pos="1,0!"]
+    exit [pos="0,-2!"]
+    e1 [shape=point pos="-0.4,0!"]
+    e2 [shape=point pos="0,0!"]
+    e3 [shape=point pos="0.4,0!"]
+    lab [label="2k" shape="plaintext" pos="0,.40!" fontsize="30!"]
+
+    pointer -> root
+    root -> l1 -> l2 -> l3 -> l2 -> l1 -> exit
+    root -> r1 -> r2 -> r3 -> r2 -> r1 -> exit
+}

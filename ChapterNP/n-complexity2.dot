@@ -1,8 +1,7 @@
 graph comp{
-    viewport="350,475,1,0,0"
+    viewport="350,475,1,0,-50"
     node[fontsize="22"]
-    np  [pos="0,0!" label="NP" shape=circle fixedsize=true width=4]
-    p   [pos="0,-1.5!" label="P" shape=ellipse fixedsize=true width=2.1 height=1]
+    np  [pos="0,0!" label="P ?= NP" shape=circle fixedsize=true width=4]
     nph [pos="0,4!" label="\n\n\n\n\n\n\nNP-Hard" shape=ellipse fixedsize=true width=4 height=6]
     npc [pos="0,1.5!" shape=plaintext label="NP-Complete"]
 }

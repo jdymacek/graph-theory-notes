@@ -1,25 +1,128 @@
 \chapter{NP-Completeness}
-%\section{What are NP-Complete Problems?}
-\lettrine[lines=4]{N}{P-Complete} is a way of classifying the complexity of a problem in terms of how "long" it takes to run. For a problem to be classified as NP-Complete, outputs must be verifiable in polynomial time. WIP\\
-\vspace {2cm}\\
-The set of problems that are NP-Complete is the intersection of the set of problems that are NP and the set of problems that are NP-Hard, as shown below. 
+\lettrine[lines=4]{N}{P-Complete} is a way of classifying the complexity of a problem in terms of how difficult the problem is, or how `long' it takes to run. For our purposes, the problems will be limited to decision problems, where the solution is given as either a `yes' or `no'. Before we can discuss NP-Complete problems, we should first go over some definitions.\\
+
 \section{Definitions}
 \begin{description}
     \item[Deterministic:] An algorithm is \textbf{deterministic} if it follows a single path from input to outcome.
     \item[Nondeterministic:]  An algorithm is \textbf{nondeterministic} if it can follow a branching path that can go from one input to multiple outcomes. All of these paths are potentially traversed simultaneously.
-    \item[Polynomial Time:] An algorithm is said to be a \textbf{polynomial time} algorithm if its execution time scales by a polynomial. An example of this is a linear search algorithm, which can be run in O($n$) time. \textbf{Polynomial time} algorithms could also be bounded above by a polynomial, meaning that an algorithm which runs in O($\log(n)$) time is also a polynomial time algorithm, as it is better than O($n$). Examples of non-polynomial times include O($2^n$), O($n!$), or O($n^n$)
+    \item[Polynomial Time:] An algorithm is said to be a \textbf{polynomial time} algorithm if its execution time scales by a polynomial. An example of this is a linear search algorithm, which can be run in O($n$) time. \textbf{Polynomial time} algorithms could also be bounded above by a polynomial, meaning that an algorithm which runs in O($\log(n)$) time is also a polynomial time algorithm, as it is better than O($n$). Examples of non-polynomial times include O($2^n$), O($n!$), or O($n^n$).
+    \item[P:] A problem is classified as \textbf{P} if it can be solved by a deterministic turing machine in polynomial time.
+    \item[NP:] A problem is classified as \textbf{NP} if a potential solution can be verified by a deterministic turing machine in polynomial time. As each solution is verifiable in polynomial time, if we were to build a non-deterministic turing machine we could try every possible solution at the same time, verifying each of them. This is what it means to say that \textbf{NP} problems are decidable in non-deterministic polynomial time. The set of problems \textbf{NP} contains the set of problems \textbf{P}. There is also a very famous question to whether or not the entirety of \textbf{NP} lies in \textbf{P}.
+    \item[NP-Hard:] A problem is classified as \textbf{NP-Hard} if it can be reduced to any other \textbf{NP-Hard} problem in polynomial time.
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.25\textwidth]{ChapterNP/p.pdf} 
+        \includegraphics[width=0.4\textwidth,valign=t]{ChapterNP/complexity.pdf}
+        \includegraphics[width=0.4\textwidth,valign=t]{ChapterNP/complexity2.pdf}
     \end{figure}
-    \item[P:] A problem is classified as \textbf{P} if it can be solved by a deterministic turing machine in polynomial time
-    \begin{center}
-        \includegraphics[width=0.5\textwidth]{ChapterNP/np.pdf}
-    \end{center} 
-    \item[NP:]
-    \begin{center}
-        \includegraphics[width=0.7\textwidth]{ChapterNP/complexity.pdf}
-    \end{center}
-    \item[NP-Hard:]
-    \item[NP-Complete:]   
+    \item[NP-Complete:] A problem is classified as \textbf{NP-Complete} if it is both \textbf{NP-Hard} and \textbf{NP}.
+    \item[Reduction:] A \textbf{reduction} is a method for using problems of known difficulty to show that another problem is at least as difficult. If one can perform a reduction in polynomial time from a known NP-Complete problem to some new problem, this new problem must be at least as complex as that NP-Complete problem.
+    \item[Gadget:] A \textbf{gadget} is a mapping from the input of one problem to the input of another problem. \textbf{Gadgets} are used in construction reductions.
 \end{description}
+
+\section{Founding Papers}
+\subsection{Cook-Levin Theorem}
+    The first problem that was known to be NP-Complete is called the Boolean Satisfiability problem, or SAT. The theorem that declares SAT as NP-Complete is called the Cook-Levin Theorem, named after Steven Cook and Leonid Levin. The two worked in parallel writing their own papers, with Cook in the United States and Levin in the Soviet Union.  
+\subsection{Karp's 21 Problems}
+    In 1972, Richard Karp used the Cook-Levin theorem that SAT is NP-Complete to put together a list of 21 other problems that are also NP-Complete. He showed these problems as NP-Complete by performing polynomial time reductions from SAT to each of the 21 problems. Karp's 21 problems are as follows, with nesting indicating which reductions he used.
+
+
+    %\newlist{longitemize}{itemize}{9}
+    \setlistdepth{9}
+    \setlist[itemize,1]{label=\textbullet}
+    \setlist[itemize,2]{label=\textbullet}
+    \setlist[itemize,3]{label=\textbullet}
+    \setlist[itemize,4]{label=\textbullet}
+    \setlist[itemize,5]{label=\textbullet}
+    \setlist[itemize,6]{label=\textbullet}
+    \setlist[itemize,7]{label=\textbullet}
+    \setlist[itemize,8]{label=\textbullet}
+    \setlist[itemize,9]{label=\textbullet}
+    \renewlist{itemize}{itemize}{9}
+
+    \begin{itemize}
+        \item SAT
+        \begin{itemize}
+            \item 0-1 Integer Programming
+            \item Clique
+            \begin{itemize}
+                \item Set Packing
+                \item Vertex Cover
+                \begin{itemize}
+                    \item Set Covering
+                    \item Feedback Node Set
+                    \item Feedback Arc Set
+                    \item Directed Hamiltonian Circuit     
+                    \begin{itemize}
+                        \item Undirected Hamiltonian Circuit  
+                    \end{itemize}
+                \end{itemize}
+            \end{itemize}
+            \item 3-SAT
+            \begin{itemize}
+                \item Chromatic Number  
+                \begin{itemize}
+                    \item Clique Cover
+                    \item Exact Cover
+                    \begin{itemize}
+                        \item Hitting Set
+                        \item Steiner Tree
+                        \item 3-Dimensional Matching
+                        \item Knapsack Problem
+                        \begin{itemize}
+                            \item Job Sequencing
+                            \item Partition
+                            \begin{itemize}
+                                \item Max Cut
+                            \end{itemize}
+                        \end{itemize}
+                    \end{itemize}
+                \end{itemize}
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+
+\section{Problems}
+\subsection{Satisfiability}
+    The \textbf{Boolean Satisfiability} decision problem (\textbf{SAT}) is to determine if there is a set of values for which a given boolean formula evaluates to true. These formulae can contain the operations \textbf{and} ($x_0 \land x_1$), \textbf{or} ($x_0 \lor x_1$), or \textbf{not} ($\overline{x_0}$). An example of one such formula can be seen below. We will take the Cook-Levin theorem as our proof that \textbf{SAT} is \textbf{NP-Complete}. 
+    \begin{align*}
+        (x_0 \lor x_1) \land (\overline{x_0}) \land (\overline{x_1} \lor x_2 \lor x_0)
+    \end{align*}
+\subsection{3-Satisfiability}
+    The \textbf{3-Satisfiability} decision problem (\textbf{3-SAT}) is similar to the \textbf{SAT} problem, but with the added restriction that the boolean formula must be in the form 3-conjunctive normal form (\textbf{3-CNF}). \textbf{CNF} states that clauses are sets of \textbf{or} operations separated by \textbf{and} operations. There is no limit on the number of clauses which the \textbf{and} operations operate on. \textbf{3-CNF} requires that each clause has two \textbf{or} operations performed on three variables. An example of a formula in \textbf{3-CNF} can be seen below.
+    \begin{align*}
+        (x_0 \lor x_1 \lor x_2) \land (\overline{x_0} \lor x_1 \lor \overline{x_2}) \land (x_0 \lor \overline{x_1} \lor x_2)
+    \end{align*}
+    \subsubsection{Is it in NP?}
+        To show that \textbf{3-SAT} is in \textbf{NP}, we must show that if given a potential solution to the problem we can verify the solution in polynomial time. A potential solution can be represented with a value for each of the variables in the formula. Plugging values into and verifying the formula is a polynomial time operation, so the \textbf{3-SAT} problem is in \textbf{NP}.
+    \subsubsection{Is it in NP-Hard?}
+        A boolean formula can be quickly converted to \textbf{3-CNF}. Clauses of fewer than three variables can be grown to contain three variables by simply adding a second copy of a variable already in the clause.
+        \begin{align*}
+            (x_0 \lor x_1) = &(x_0 \lor x_0 \lor x_1) = (x_0 \lor x_1 \lor x_1)\\
+            (\overline{x_0}) = &(\overline{x_0} \lor \overline{x_0} \lor \overline{x_0})
+        \end{align*}
+        Clauses of greater than three variables can be broken down into smaller clauses by introducing addition variables. The purpose of these new variables is to spread the one clause out without changing its meaning. An existing clause of $n$ variables can be reduced to a collection of $n-2$ clauses in \textbf{3-CNF} with $n-3$ variables.
+        \begin{align*}
+            &(x_0 \lor x_1 \lor ... \lor x_{n-2} \lor x_{n-1}) = \\ &(x_0 \lor x_1 \lor z_0) \land (\overline{z_0} \lor x_2 \lor z_1) \land ... \land (\overline{z_{n-5}} \lor x_{n-3} \lor z_{n-4}) \land (\overline{z_{n-4}} \lor x_{n-2} \lor x_{n-1})
+            %(x_0 \lor x_1 \lor x_2 \lor x_3 \lor x_4) = (x_0 \lor x_1 \lor z_0) \land (\overline{z_0} \lor x_2 \lor z_1) \land (\overline{z_1} \lor x_3 \lor x_4)
+        \end{align*}
+        This conversion to \textbf{3-CNF} can be done in polynomial time, meaning \textbf{SAT} is reducible to \textbf{3-SAT} in polynomial time. This means that \textbf{3-SAT} is in \textbf{NP-Hard}.
+
+\subsection{Directed Hamiltonian Cycle}
+    The \textbf{Directed Hamiltonian Cycle} decision problem is to determine if there is a Hamiltonian cycle in a given directed graph. That is to say, does there exist a cycle that passes through every vertex of the graph exactly once. We will now prove that the \textbf{Directed Hamiltonian Cycle} problem is an \textbf{NP-Complete} problem. To do this, we will first show that it is in \textbf{NP}. Then we will show that the problem is in \textbf{NP-Hard}.
+    \subsubsection{Is it in NP?}
+        To show that the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP}, we must show that if given a potential solution to the problem we can verify the solution in polynomial time. We will represent the solution with a list of vertices, representing the vertices of the cycle in the order that they occur. We first check that each vertex of the graph is in the list exactly once. Then we will ensure that each pair of vertices adjacent in the list are also adjacent in the graph. Both of these operations can be done in polynomial time. As we can verify a solution in polynomial time, the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP}.
+    \subsubsection{Is it in NP-Hard?}
+        To show that the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP-Hard}, we must show that we can reduce a known \textbf{NP-Hard} problem to the \textbf{Directed Hamiltonian Cycle} problem in polynomial time. We will be using \textbf{3-SAT} for this proof. Let the clauses be represented by $c_1, c_2, ..., c_k$ and the variables be represented by $x_1, x_2, ..., x_\ell$. For our gadget, we will build a directed graph based on the given clauses and variables. We will build $\ell$ of the below structures, with $2*k$ vertices in each of the crossbar. 
+        \begin{center}
+            \includegraphics[width=0.6\textwidth]{ChapterNP/gadget1.pdf}
+        \end{center}
+        Each of the structures will represent one variable, attaching the bottom of one to the top of another. Each clause will be given a single vertex away from the main structure.
+        \begin{center}
+            \includegraphics[width=0.9\textwidth]{ChapterNP/gadget2.pdf}
+        \end{center}
+
+
+
+
+
+
