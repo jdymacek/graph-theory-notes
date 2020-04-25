@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {0.1}Preface}{3}%
+\contentsline {section}{\numberline {0.1}Preface}{4}%
 \contentsline {chapter}{\numberline {1}On Graphs}{5}%
 \contentsline {section}{\numberline {1.1}What is a Graph?}{5}%
 \contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}%
@@ -21,29 +21,29 @@
 \contentsline {section}{\numberline {2.5}Many Branching Theorems}{22}%
 \contentsline {chapter}{\numberline {3}Eulerian and Hamiltonian}{25}%
 \contentsline {section}{\numberline {3.1}7 Bridges o of K\"{o}nigsberg}{25}%
-\contentsline {section}{\numberline {3.2}Eulerian}{26}%
-\contentsline {subsection}{\numberline {3.2.1}Hierholzer's Algorithm}{26}%
+\contentsline {section}{\numberline {3.2}Eulerian}{25}%
+\contentsline {subsection}{\numberline {3.2.1}Hierholzer's Algorithm}{25}%
 \contentsline {subsection}{\numberline {3.2.2}Fleury's Algorithm}{26}%
 \contentsline {section}{\numberline {3.3}Hamiltonian}{26}%
-\contentsline {subsection}{\numberline {3.3.1}Examples}{27}%
+\contentsline {subsection}{\numberline {3.3.1}Examples}{26}%
 \contentsline {section}{\numberline {3.4}Theorems}{28}%
 \contentsline {subsection}{\numberline {3.4.1}Ore's Theorem (1960)}{28}%
-\contentsline {subsection}{\numberline {3.4.2}Las Vergnas (1971)}{29}%
-\contentsline {subsection}{\numberline {3.4.3}Chv\'{a}tal(1970)}{29}%
-\contentsline {subsection}{\numberline {3.4.4}Bandy(1969)}{29}%
-\contentsline {subsection}{\numberline {3.4.5}P\u {o}sa (1962)}{29}%
+\contentsline {subsection}{\numberline {3.4.2}Las Vergnas (1971)}{28}%
+\contentsline {subsection}{\numberline {3.4.3}Chv\'{a}tal(1970)}{28}%
+\contentsline {subsection}{\numberline {3.4.4}Bandy(1969)}{28}%
+\contentsline {subsection}{\numberline {3.4.5}P\u {o}sa (1962)}{28}%
 \contentsline {subsection}{\numberline {3.4.6}Dirac (1962)}{29}%
-\contentsline {subsection}{\numberline {3.4.7}Bandy and Chv\'{a}tal(1976)}{30}%
-\contentsline {chapter}{\numberline {4}NP-Completeness}{31}%
-\contentsline {section}{\numberline {4.1}Definitions}{31}%
-\contentsline {section}{\numberline {4.2}Founding Papers}{32}%
-\contentsline {subsection}{\numberline {4.2.1}Cook-Levin Theorem}{32}%
-\contentsline {subsection}{\numberline {4.2.2}Karp's 21 Problems}{33}%
-\contentsline {section}{\numberline {4.3}Problems}{33}%
-\contentsline {subsection}{\numberline {4.3.1}Satisfiability}{33}%
-\contentsline {subsection}{\numberline {4.3.2}3-Satisfiability}{34}%
-\contentsline {subsubsection}{Is it in NP?}{34}%
-\contentsline {subsubsection}{Is it in NP-Hard?}{34}%
-\contentsline {subsection}{\numberline {4.3.3}Directed Hamiltonian Cycle}{34}%
-\contentsline {subsubsection}{Is it in NP?}{35}%
-\contentsline {subsubsection}{Is it in NP-Hard?}{35}%
+\contentsline {subsection}{\numberline {3.4.7}Bandy and Chv\'{a}tal(1976)}{29}%
+\contentsline {chapter}{\numberline {4}NP-Completeness}{33}%
+\contentsline {section}{\numberline {4.1}Definitions}{33}%
+\contentsline {section}{\numberline {4.2}Founding Papers}{34}%
+\contentsline {subsection}{\numberline {4.2.1}Cook-Levin Theorem}{34}%
+\contentsline {subsection}{\numberline {4.2.2}Karp's 21 Problems}{35}%
+\contentsline {section}{\numberline {4.3}Problems}{35}%
+\contentsline {subsection}{\numberline {4.3.1}Satisfiability}{35}%
+\contentsline {subsection}{\numberline {4.3.2}3-Satisfiability}{36}%
+\contentsline {subsubsection}{Is it in NP?}{36}%
+\contentsline {subsubsection}{Is it in NP-Hard?}{36}%
+\contentsline {subsection}{\numberline {4.3.3}Directed Hamiltonian Cycle}{36}%
+\contentsline {subsubsection}{Is it in NP?}{37}%
+\contentsline {subsubsection}{Is it in NP-Hard?}{37}%
