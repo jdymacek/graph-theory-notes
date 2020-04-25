@@ -1,0 +1,8 @@
+graph g {
+  node[width=0.25,rotate=90,shape=circle]
+    A--B;
+  B--C;
+  C--D;
+  D--A;
+  B--D;
+}
