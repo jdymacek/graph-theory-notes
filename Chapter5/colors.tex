@@ -31,24 +31,44 @@ Take some time to devise some graphs and color them with your favorite colors. Y
 
 \begin{definition}[K-Chromatic]
     Given a graph $G$, we say that $G$ is \textit{k-chromatic} if $G$ is \textit{k-colorable}, but not \textit{(k-1)-colorable}. We say that $k$ is the \textit{chromatic number} of $G$, and is denoted:
-    \[\Chi(G) = k\]
+    \[\chi(G) = k\]
 \end{definition}
 
 \begin{definition}[K-Edge-Chromatic]
     Given a graph $G$, we say that $G$ is \textit{k-edge-chromatic} if $G$ is \textit{k-edge-colorable}, but not \textit{(k-1)-edge-colorable}. We say that $k$ is the \textit{edge-chromatic number} of $G$, and is denoted:
-    \[ \Chi\prime(G) = k \]
+    \[ \chi\prime(G) = k \]
 \end{definition}
 
 Here we show a graph which we have annotated with both the chromatic number and the edge-chromatic number:
 
-% XXX include graphics here
+\begin{center}
+    \begin{tabular}{c c}
+        \includegraphics[width=0.3\textwidth]{Chapter5/vertex-colored.pdf} &
+        \includegraphics[width=0.3\textwidth]{Chapter5/edge-colored.pdf} \\
+        $\chi(G) = 4$ & $\chi\prime(G) = 4$
+    \end{tabular}
+\end{center}
 
 An example of a class of graphs which we know to be two-chromatic is the set of bipartite graphs. You might imagine coloring all vertices in any one set the same color. As these vertices share no edges within the sets, this satisfies the rules for colorability. Here is an example of a two-coloring for a bipartite graph:
 
 % XXX include graphics here
+\begin{center}
+    \includegraphics[width=0.3\textwidth]{Chapter5/bipartite.pdf}
+\end{center}
 
 Recall the definitions of the maximal degree $\Delta(G)$ and the minimal degree $\delta(G)$ for a given graph $G$ from Chapter 1. The maximal degree is relevant in this chapter! Here is a simple theorem:
 
 \begin{theorem}
-    Let $G$ be a graph. Then $\Chi(G) \leq \Delta(G) + 1$
+    Let $G$ be a graph. Then $\chi(G) \leq \Delta(G) + 1$
+\end{theorem}
+\begin{proof}
+    We will proceed with induction on the number of vertices. Our base case would be a graph with 1 vertex, whose maximal degree is 0. Then\[\chi(G) = 1 \leq \Delta(G),\] so this is satisfied. Let's assume this applies for any graph with up to $n$ vertices, and suppose that $G$ has $n$ vertices. Let's consider the graph $G-v$ for some vertex $v$ in $G$. Then $G-v$ has $n-1$ vertices, and
+    \[ \Delta(G-v) \leq \Delta(G) \].
+    Therefore we have that $G-v$ is $\Delta(G) + 1$ colorable.
+\end{proof}
+
+Now, we've seen planar graphs before. We have some interesting coloring theorems which apply to planar graphs, so let's visit some of them. We've seen that every planar graph contains a vertex whose degree is at most 5.
+
+\begin{theorem}
+    Every planar graph is 6-colorable
 \end{theorem}

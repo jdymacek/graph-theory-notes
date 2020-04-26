@@ -1,0 +1,17 @@
+graph g {
+  node[width=0.25,label="",style=filled,rotate=90,shape=circle]
+    A [pos="0, 0!", color="plum1"]
+    B [pos="0, 1!", color="plum1"]
+    C [pos="0, 2!", color="plum1"]
+    D [pos="0, 3!", color="plum1"]
+
+    E [pos="3, 0!", color="powderblue"]
+    F [pos="3, 1!", color="powderblue"]
+    G [pos="3, 2!", color="powderblue"]
+    H [pos="3, 3!", color="powderblue"]
+
+    A -- {E G}
+    B -- {E F G}
+    C -- {E H}
+    D -- {F H}
+}

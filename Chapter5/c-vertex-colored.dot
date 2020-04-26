@@ -1,0 +1,13 @@
+graph g {
+  node[width=0.25,label="",style=filled,rotate=90,shape=circle]
+    A [fillcolor="plum1"]
+    B [fillcolor="powderblue"]
+    C [fillcolor="purple"]
+    D [fillcolor="royalblue"]
+    E [fillcolor="plum1"]
+    F [fillcolor="powderblue"]
+    A -- {B C D}
+    B -- {C D}
+    D -- {E F}
+    E -- {C F}
+}

@@ -1,43 +1,43 @@
 \contentsline {chapter}{\numberline {1}On Graphs}{5}% 
 \contentsline {section}{\numberline {1.1}What is a Graph?}{5}% 
-\contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{6}% 
+\contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}% 
 \contentsline {section}{\numberline {1.3}On Different Types of Graphs}{6}% 
 \contentsline {subsection}{\numberline {1.3.1}Multigraphs}{6}% 
 \contentsline {subsection}{\numberline {1.3.2}Digraphs}{6}% 
 \contentsline {section}{\numberline {1.4}On Vertices and Edges}{7}% 
-\contentsline {section}{\numberline {1.5}On Isomorphisms}{8}% 
+\contentsline {section}{\numberline {1.5}On Isomorphisms}{7}% 
 \contentsline {subsection}{\numberline {1.5.1}The Handshaking Lemma}{8}% 
 \contentsline {section}{\numberline {1.6}On Special Kinds of Graphs}{9}% 
-\contentsline {section}{\numberline {1.7}On the Storage of Graphs}{10}% 
-\contentsline {chapter}{\numberline {2}Forest for the Trees}{13}% 
-\contentsline {section}{\numberline {2.1}Definitions}{13}% 
-\contentsline {section}{\numberline {2.2}Trailblazing}{15}% 
-\contentsline {section}{\numberline {2.3}The Lorax}{18}% 
-\contentsline {section}{\numberline {2.4}(Minimum) Spanning Trees}{19}% 
-\contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{19}% 
-\contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{21}% 
-\contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{22}% 
-\contentsline {section}{\numberline {2.5}Many Branching Theorems}{22}% 
-\contentsline {chapter}{\numberline {3}Eulerian and Hamiltonian}{25}% 
-\contentsline {section}{\numberline {3.1}7 Bridges o of K\"{o}nigsberg}{25}% 
-\contentsline {section}{\numberline {3.2}Eulerian}{25}% 
-\contentsline {subsection}{\numberline {3.2.1}Hierholzer's Algorithm}{25}% 
-\contentsline {subsection}{\numberline {3.2.2}Fleury's Algorithm}{26}% 
-\contentsline {section}{\numberline {3.3}Hamiltonian}{26}% 
-\contentsline {subsection}{\numberline {3.3.1}Examples}{26}% 
-\contentsline {section}{\numberline {3.4}Theorems}{28}% 
-\contentsline {subsection}{\numberline {3.4.1}Ore's Theorem (1960)}{28}% 
-\contentsline {subsection}{\numberline {3.4.2}Las Vergnas (1971)}{28}% 
-\contentsline {subsection}{\numberline {3.4.3}Chv\'{a}tal(1970)}{28}% 
-\contentsline {subsection}{\numberline {3.4.4}Bandy(1969)}{28}% 
-\contentsline {subsection}{\numberline {3.4.5}P\u {o}sa (1962)}{28}% 
-\contentsline {subsection}{\numberline {3.4.6}Dirac (1962)}{29}% 
-\contentsline {subsection}{\numberline {3.4.7}Bandy and Chv\'{a}tal(1976)}{29}% 
+\contentsline {section}{\numberline {1.7}On the Storage of Graphs}{9}% 
+\contentsline {chapter}{\numberline {2}Forest for the Trees}{11}% 
+\contentsline {section}{\numberline {2.1}Definitions}{11}% 
+\contentsline {section}{\numberline {2.2}Trailblazing}{13}% 
+\contentsline {section}{\numberline {2.3}The Lorax}{15}% 
+\contentsline {section}{\numberline {2.4}(Minimum) Spanning Trees}{16}% 
+\contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{17}% 
+\contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{18}% 
+\contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{19}% 
+\contentsline {section}{\numberline {2.5}Many Branching Theorems}{20}% 
+\contentsline {chapter}{\numberline {3}Eulerian and Hamiltonian}{23}% 
+\contentsline {section}{\numberline {3.1}7 Bridges o of K\"{o}nigsberg}{23}% 
+\contentsline {section}{\numberline {3.2}Eulerian}{23}% 
+\contentsline {subsection}{\numberline {3.2.1}Hierholzer's Algorithm}{23}% 
+\contentsline {subsection}{\numberline {3.2.2}Fleury's Algorithm}{24}% 
+\contentsline {section}{\numberline {3.3}Hamiltonian}{24}% 
+\contentsline {subsection}{\numberline {3.3.1}Examples}{24}% 
+\contentsline {section}{\numberline {3.4}Theorems}{26}% 
+\contentsline {subsection}{\numberline {3.4.1}Ore's Theorem (1960)}{26}% 
+\contentsline {subsection}{\numberline {3.4.2}Las Vergnas (1971)}{26}% 
+\contentsline {subsection}{\numberline {3.4.3}Chv\'{a}tal(1970)}{26}% 
+\contentsline {subsection}{\numberline {3.4.4}Bandy(1969)}{26}% 
+\contentsline {subsection}{\numberline {3.4.5}P\u {o}sa (1962)}{26}% 
+\contentsline {subsection}{\numberline {3.4.6}Dirac (1962)}{27}% 
+\contentsline {subsection}{\numberline {3.4.7}Bandy and Chv\'{a}tal(1976)}{27}% 
 \contentsline {chapter}{\numberline {4}NP-Completeness}{31}% 
 \contentsline {section}{\numberline {4.1}Definitions}{31}% 
 \contentsline {section}{\numberline {4.2}Founding Papers}{32}% 
 \contentsline {subsection}{\numberline {4.2.1}Cook-Levin Theorem}{32}% 
-\contentsline {subsection}{\numberline {4.2.2}Karp's 21 Problems}{32}% 
+\contentsline {subsection}{\numberline {4.2.2}Karp's 21 Problems}{33}% 
 \contentsline {section}{\numberline {4.3}Problems}{33}% 
 \contentsline {subsection}{\numberline {4.3.1}Satisfiability}{33}% 
 \contentsline {subsection}{\numberline {4.3.2}3-Satisfiability}{34}% 
