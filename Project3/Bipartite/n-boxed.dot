@@ -1,0 +1,16 @@
+graph g{
+    x1 [pos="2.5, 0!", label="Dymacek"]
+    x2 [pos="4.5, 0!", label="Marmorstein"]
+    x3 [pos="6.5, 0!", label="Blaheta"]
+    
+    y1 [pos="0,2!", label="CMSC 201"]
+    y2 [pos="2,2!", label="CMSC 208"]
+    y3 [pos="4,2!", label="CMSC 210"]
+    y4 [pos="6,2!", label="CMSC 242"]
+    y5 [pos="8,2!", label="CMSC 262"]
+    y6 [pos="10,2!", label="CMSC 280"]
+
+    x1 -- {y1 y4}
+    x2 -- {y2 y3 y5}
+    x3 -- {y6}
+}
