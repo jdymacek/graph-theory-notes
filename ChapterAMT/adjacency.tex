@@ -1,0 +1,24 @@
+\chapter{Adjancency Matrix Thereom}
+\section{Overview}
+An adjacency matrix is a way to represent a graph in a matrix form. The Adjancency Matrix Thereom can be used to see the walks of a given length from vertices $i$ to $j$. The basic definition is as follows:
+
+\begin{definition}[Adjancency Matrix Thereom]
+	Let $A$ be an adjacency matrix for a graph $G$ with $n$ vertices. If $A^k = [n_{ij}]$ then $n_ij$ is the number of walks of length $k$ from $v_i$ to $v_j$.
+\end{definition} 
+
+\section{Proof}
+\begin{proof}
+	If $k$ = 1, then $n_{ij}$ = 1 if $v_iv_j$ is an edge, and 0 if $v_iv_j$ is not an edge. \\
+	Assume this is true for $k$ and so: \\
+	\begin{gather*}
+		$A^k = [n_{ij}] and let A^{k+1}[t_{ij}]$ \\
+		$if k = 1: A' = [a_{ij}]$ \\
+		$A^k * A = A^{k+1}$
+		$[n_{ij}][a_{ij}] = [t_{ij}]$
+		$\sum\limits_{$l$} n_{il}*a_{lj} = [t_{ij}]$
+	\end{gather*}
+
+	Every walk of length $k+1$ from $v_i$ to $v_j$ is a walk of length $l$ from $v_i$ to some vertex $v_x$ and then a walk of length $k$ from $v_x$ to $v_j$. There are $n_{ij}$ number of walks of length $k$.\\
+	So, $a_{il} * n_{lj}$ is the number of walks of length $k+1$, starting at $v_i$ \rightarrow $v_x$ \rightarrow $v_j$. All waslks of length $k+1$ are of this form. \\
+	Therefore, $t_{ij}$ is the number of such walks. 
+\end{proof}
