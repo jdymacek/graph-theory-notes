@@ -52,3 +52,5 @@
 \contentsline {chapter}{\numberline {5}Pigment of your Imagination}{41}% 
 \contentsline {section}{\numberline {5.1}Coloring your Graphs}{41}% 
 \contentsline {section}{\numberline {5.2}On the Rules of Coloring}{41}% 
+\contentsline {chapter}{\numberline {6}Chordal Graphs}{45}% 
+\contentsline {section}{\numberline {6.1}idk}{45}% 
