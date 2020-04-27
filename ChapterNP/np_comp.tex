@@ -135,11 +135,44 @@
     \subsubsection{Is it in NP?}
         If given a subgraph of $G$, first determine if there are $k$ vertices. If there are $k$ vertices, then determine if they all share edges. This can be done in $O(k^2)$ time, which means this problem is polynomial verifiable.
     \subsubsection{Is it in NP-Hard?}
-        To show that the \textbf{Clique} problem is NP-Hard, we will use a gadget to show that we can reduce \textbf{3-SAT} to \textbf{Clique} in polynomial time. We will denote each clause as a cluster of 3 vertices. For every pair of vertices, create an edge if the vertices are not in the same cluster and if the vertices are not complements of each other (ie. $X$ and $\overline{X}$). For a boolean statement of $k$ clauses, if the resulting graph contains a clique of size $k$, then the original 3-SAT problem is satisfiable. As an example, take the following 3-SAT problem.
+        To show that the \textbf{Clique} problem is \textbf{NP-Hard}, we will use a gadget to show that we can reduce \textbf{3-SAT} to \textbf{Clique} in polynomial time. We will denote each clause as a cluster of 3 vertices. For every pair of vertices, create an edge if the vertices are not in the same cluster and if the vertices are not complements of each other (ie. $X$ and $\overline{X}$). For a boolean statement of $k$ clauses, if the resulting graph contains a clique of size $k$, then the original 3-SAT problem is satisfiable. As an example, take the following 3-SAT problem.
         \begin{align*}
             (x_1 \lor x_2 \lor x_3) \land (\overline{x_1} \lor x_2 \lor \overline{x_3}) \land (\overline{x_1} \lor \overline{x_2} \lor x_3)
         \end{align*}
         In the graph we will be using the \textbf{!} symbol as our \textbf{not}. As this boolean statement contains three clauses, we are looking for a 3-clique from the resulting graph. As you can see below, there exists a clique of size three in the graph, so the original 3-SAT problem is satisfiable. By examining the graph we can see one set of values for which it is satisfiable. The connected vertices are $x_1$, $x_2$,and $x_3$; this means if we set those three values to true, it would satisfy the 3-SAT problem.
         \begin{center}
-            \includegraphics[width=0.8\textwidth]{ChapterNP/clique.pdf}
+            \includegraphics[width=0.6\textwidth]{ChapterNP/clique.pdf}
+        \end{center}
+    
+\subsection{Vertex Cover}
+    The \textbf{Vertex Cover} decision problem is to determine if there exists in a graph $G$ a vertex cover of size $\leq k$. A vertex cover of an undirected graph is a subset of vertices $S$ such that every edge in $G$ is adjacent to at least one vertex in $S$.
+    \subsubsection{Is it in NP?}
+        If given a graph $G$, a max size $k$, and a potential vertex cover $S$, we can first check that $|S| \leq k$. This is likely a constant time operation. Next we can use the following algorithm: 
+        \begin{itemize}[noitemsep]
+            \setlength{\itemindent}{1.25in}
+            \item For each edge $(u,v) \in G$
+            \begin{itemize}
+                \setlength{\itemindent}{1.25in}
+                \item If $u \notin S$ and $v \notin S$
+                \begin{itemize}
+                    \setlength{\itemindent}{1.25in}
+                    \item Return $false$
+                \end{itemize}
+            \end{itemize}
+            \item If not returned $false$, return $true$
+        \end{itemize}
+        This algorithm runs in $O(m)$ where $m$ is the number of edges in $G$, meaning that the vertex cover is polynomial time verifiable.
+    \subsubsection{Is it in NP-Hard?}
+        %https://www.geeksforgeeks.org/proof-that-vertex-cover-is-np-complete/
+        To show that the \textbf{Vertex Cover} problem is in \textbf{NP-Hard}, we will perform a reduction from the \textbf{Clique} problem. We can begin by looking at $G'$, the complement of $G$. It turns out, the clique decision problem of size $k$ in $G$ is the same as the vertex cover of size $n-k$ in $G'$. This can be shown by assuming there is a clique of size $k$ in $G$. We will call the set of vertices in the overall graph $V$ and the set of vertices in the clique $V'$.  \par
+        We will pick any edge $(u,v)$ from the complement graph $G'$. Either $u$ or $v$ is a member of $V'$, but not both. We can prove this by contradiction. Assume that both $u$ and $v$ are members of $V'$, then there would be an edge between them in the clique. This would mean that there would not be an edge between them in $G'$. This is a contradiction. As our starting assumption was that $u$ and $v$ were both in $V'$, at least one of the vertices must be outside of $V'$. This means that at least one of $u$ or $v$ must fall inside the set of vertices $V - V'$. \par
+        Now we will assume there is a vertex cover $V''$ of size $|V|-|V'|$, or $|V|-k$, in $G'$. If we pick any edge $(u,v)$ from $G'$, both $u$ and $v$ cannot be outside of $V''$. Thus, all edges $(u,v)$ such that $u$ and $v$ are both outside of $V''$ are in G. These edges create a clique of size $k$. \par
+        This means that there is a clique of size $k$ in graph $G$ if and only if there is a vertex cover of size $n-k$ in $G'$. A graph can be converted to its complement in polynomial time, thus the \textbf{Clique} problem can be reduced to the \textbf{Vertex Cover} problem in polynomial time. \par
+        As an example, there is a clique of size four in the below graph.
+        \begin{center}
+            \includegraphics[width=1\textwidth]{ChapterNP/vertex_cover_1.pdf}
+        \end{center}
+        As there is a clique of size 4 in the graph above, there will be a vertex cover of size $n-4$, or 2, in the complement below. As you can see, there is a vertex cover of size 2.
+        \begin{center}
+            \includegraphics[width=1\textwidth]{ChapterNP/vertex_cover_2.pdf}
         \end{center}
