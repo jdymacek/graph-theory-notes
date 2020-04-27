@@ -1,0 +1,21 @@
+\section{Bipartite Graphs}
+We've mentioned bipartite graphs several times in different chapters of this book. However, we've only explored this class of graph at a surface level. In this section, we'll take a deeper look into bipartite graph - what are the conditions for being bipartite, how do bipartite graphs allow us to more easily answer certain questions, and how are they relevant in our own real scenarios?
+
+\subsection{Definition}
+Let's give a formal definition for what it means for a graph to be bipartite. First, let's define what an independent vertex set is:
+
+\begin{definition}[Independent Vertex Set]
+    An independent vertex set is a set of vertices in a graph $G$, none of which are adjacent.
+\end{definition}
+
+Using this, we can give a good definition for bipartite graphs:
+
+\begin{definition}
+    A graph $G$ is bipartite if its vertex set can be partitioned into two independent sets.
+\end{definition}
+
+This is no different than how we've defined them before. Here are some examples of bipartite graphs:
+
+% include graphics here
+
+Having defined bipartite, we can derive several other related classes of graphs, including complete bipartite, or tripartite. There are other classes as well which are equivalent to or are subsets of the set of bipartite graphs. For example, all trees are bipartite (this is easy to imagine, and there are some different proof strategies for this). Cycles of even length are bipartite as well, though cycles of odd length are not. 
