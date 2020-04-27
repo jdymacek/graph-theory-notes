@@ -1,5 +1,5 @@
 graph comp{
-    viewport="350,475,1,0,-50"
+    viewport="350,475,1,125,200"
     node[fontsize="22"]
     np  [pos="0,0!" label="P ?= NP" shape=circle fixedsize=true width=4]
     nph [pos="0,4!" label="\n\n\n\n\n\n\nNP-Hard" shape=ellipse fixedsize=true width=4 height=6]
