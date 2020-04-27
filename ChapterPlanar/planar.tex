@@ -1,4 +1,8 @@
 \chapter{Planarity and more}
+\section{Embedding}
+a \textbf{Jordan Curve} is a continuous curve with no intersections.\\
+a Graph G can be \textbf{embedded} in a space T if it is isomorphic to a graph drawn in T with points representing vertices and jordan curves representing edges such that there are no crossings.\\
+% Thanks to Daniel Millson for sending me his handwritten notes on Jordan Curves because my notes were missing them
 \section{The Plane}
 \lettrine[lines=4]{T}{he Plane}, is simply two-dimensional space. You may also see it refered to as $\mathbb{R}^2$ or the Euclidean Plane.\newline
 \subsection{Plane and Simple}
@@ -15,8 +19,8 @@ The \textbf{Crossing Number} of a graph G, denoted "cr(G)", is the smallest numb
 All planar graphs have a crossing number of 0. In the figure below, you can see that both $K_5$ and $K_{3,3}$ have crossing numbers of 1. (there isn't a figure yet get \textit{allll} the way off my back about it)
 %put a figure here
 
-\section{Jordan Curves}
 \section{Faces}
+Let \textbf{G} be a planar graph
 \subsection{Euler's formula}
 Let \textbf{G} be a connected plane graph and let $n$, $m$, and $f$ be the number of vertices, edges, and faces of \textbf{G} (respectively).
 \begin{equation*}
@@ -27,3 +31,11 @@ The \textbf{Platonic Solids} are the five 3-dimensional solids whose faces consi
 These solids are (in order of face count increasing): the Tetrahedron, the Cube, the Octahedron, the Dodecahedron, and the Icosahedron.\newline %And the Utah Teapot
 %image of the solids goes here
 The \textbf{Platonic Graphs} are the graphs of the platonic solids. They are all planar.
+%image of the platonic graphs goes here
+\section{A Page out of my Book}
+All graphs can be embedded in $\mathbb{R}^3$ (3-dimensional space).
+\begin{proof}
+Look at a book.\\
+Place every vertex of any graph along the spine of the book.\\
+Then each edge can be drawn on a separate page in the book.
+\end{proof}

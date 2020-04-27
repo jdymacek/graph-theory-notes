@@ -26,10 +26,11 @@
 \contentsline {section}{\numberline {3.4}NP Hard Problems}{21}% 
 \contentsline {section}{\numberline {3.5}NP Complete Problems}{21}% 
 \contentsline {chapter}{\numberline {4}Planarity and more}{22}% 
-\contentsline {section}{\numberline {4.1}The Plane}{22}% 
-\contentsline {subsection}{\numberline {4.1.1}Plane and Simple}{22}% 
-\contentsline {section}{\numberline {4.2}Don't cross me}{23}% 
-\contentsline {section}{\numberline {4.3}Jordan Curves}{23}% 
+\contentsline {section}{\numberline {4.1}Embedding}{22}% 
+\contentsline {section}{\numberline {4.2}The Plane}{22}% 
+\contentsline {subsection}{\numberline {4.2.1}Plane and Simple}{22}% 
+\contentsline {section}{\numberline {4.3}Don't cross me}{22}% 
 \contentsline {section}{\numberline {4.4}Faces}{23}% 
 \contentsline {subsection}{\numberline {4.4.1}Euler's formula}{23}% 
 \contentsline {section}{\numberline {4.5}We're just Platonic}{23}% 
+\contentsline {section}{\numberline {4.6}A Page out of my Book}{23}% 
