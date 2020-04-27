@@ -1,5 +1,4 @@
 digraph g{
-    viewport="500,400,1,0,0"
     node[shape=circle label="" fixedsize=true]
 
 
