@@ -20,9 +20,9 @@
 \end{description}
 
 \section{Founding Papers}
-\subsection{Cook-Levin Theorem}
-    The first problem that was known to be NP-Complete is called the Boolean Satisfiability problem, or SAT. The theorem that declares SAT as NP-Complete is called the Cook-Levin Theorem, named after Steven Cook and Leonid Levin. The two worked in parallel writing their own papers, with Cook in the United States and Levin in the Soviet Union.  
-\subsection{Karp's 21 Problems}
+\subsection{Cook-Levin Theorem (1971)}
+    The first problem that was known to be NP-Complete is called the Boolean Satisfiability problem, or SAT. The theorem that declares SAT as NP-Complete is called the Cook-Levin Theorem, named after Steven Cook and Leonid Levin. The two worked in parallel writing their own papers, with Cook in the United States and Levin in the Soviet Union. 
+\subsection{Karp's 21 Problems (1972)}
     In 1972, Richard Karp used the Cook-Levin theorem that SAT is NP-Complete to put together a list of 21 other problems that are also NP-Complete. He showed these problems as NP-Complete by performing polynomial time reductions from SAT to each of the 21 problems. Karp's 21 problems are as follows, with nesting indicating which reductions he used.
 
 
@@ -82,27 +82,28 @@
     \end{itemize}
 
 \section{Problems}
-\subsection{Satisfiability}
-    The \textbf{Boolean Satisfiability} decision problem (\textbf{SAT}) is to determine if there is a set of values for which a given boolean formula evaluates to true. These formulae can contain the operations \textbf{and} ($x_0 \land x_1$), \textbf{or} ($x_0 \lor x_1$), or \textbf{not} ($\overline{x_0}$). An example of one such formula can be seen below. We will take the Cook-Levin theorem as our proof that \textbf{SAT} is \textbf{NP-Complete}. 
+\subsection{Boolean Satisfiability}
+    The \textbf{Boolean Satisfiability} decision problem (\textbf{SAT}) is to determine if there is a set of values for which a given boolean formula evaluates to true. These formulae can contain the operations \textbf{and} ($x_1 \land x_2$), \textbf{or} ($x_1 \lor x_2$), or \textbf{not} ($\overline{x_1}$). An example of one such formula can be seen below. We will take the Cook-Levin theorem as our proof that \textbf{SAT} is \textbf{NP-Complete}. 
     \begin{align*}
-        (x_0 \lor x_1) \land (\overline{x_0}) \land (\overline{x_1} \lor x_2 \lor x_0)
+        (x_1 \lor x_2) \land (\overline{x_1}) \land (\overline{x_2} \lor x_3 \lor x_1)
     \end{align*}
+
 \subsection{3-Satisfiability}
     The \textbf{3-Satisfiability} decision problem (\textbf{3-SAT}) is similar to the \textbf{SAT} problem, but with the added restriction that the boolean formula must be in the form 3-conjunctive normal form (\textbf{3-CNF}). \textbf{CNF} states that clauses are sets of \textbf{or} operations separated by \textbf{and} operations. There is no limit on the number of clauses which the \textbf{and} operations operate on. \textbf{3-CNF} requires that each clause has two \textbf{or} operations performed on three variables. An example of a formula in \textbf{3-CNF} can be seen below.
     \begin{align*}
-        (x_0 \lor x_1 \lor x_2) \land (\overline{x_0} \lor x_1 \lor \overline{x_2}) \land (x_0 \lor \overline{x_1} \lor x_2)
+        (x_1 \lor x_2 \lor x_3) \land (\overline{x_1} \lor x_2 \lor \overline{x_3}) \land (x_1 \lor \overline{x_2} \lor x_3)
     \end{align*}
     \subsubsection{Is it in NP?}
         To show that \textbf{3-SAT} is in \textbf{NP}, we must show that if given a potential solution to the problem we can verify the solution in polynomial time. A potential solution can be represented with a value for each of the variables in the formula. Plugging values into and verifying the formula is a polynomial time operation, so the \textbf{3-SAT} problem is in \textbf{NP}.
     \subsubsection{Is it in NP-Hard?}
         A boolean formula can be quickly converted to \textbf{3-CNF}. Clauses of fewer than three variables can be grown to contain three variables by simply adding a second copy of a variable already in the clause.
         \begin{align*}
-            (x_0 \lor x_1) = &(x_0 \lor x_0 \lor x_1) = (x_0 \lor x_1 \lor x_1)\\
-            (\overline{x_0}) = &(\overline{x_0} \lor \overline{x_0} \lor \overline{x_0})
+            (\overline{x_1}) = &(\overline{x_1} \lor \overline{x_1} \lor \overline{x_1}) \\
+            (x_1 \lor x_2) = &(x_1 \lor x_1 \lor x_2) = (x_1 \lor x_2 \lor x_2)
         \end{align*}
-        Clauses of greater than three variables can be broken down into smaller clauses by introducing addition variables. The purpose of these new variables is to spread the one clause out without changing its meaning. An existing clause of $n$ variables can be reduced to a collection of $n-2$ clauses in \textbf{3-CNF} with $n-3$ variables.
+        Clauses of greater than three variables can be broken down into smaller clauses by introducing addition variables. The purpose of these new variables is to spread the one clause out without changing its meaning. An existing clause of $n$ variables can be reduced to a collection of $n-2$ clauses in \textbf{3-CNF} with $n-3$ additional variables.
         \begin{align*}
-            &(x_0 \lor x_1 \lor ... \lor x_{n-2} \lor x_{n-1}) = \\ &(x_0 \lor x_1 \lor z_0) \land (\overline{z_0} \lor x_2 \lor z_1) \land ... \land (\overline{z_{n-5}} \lor x_{n-3} \lor z_{n-4}) \land (\overline{z_{n-4}} \lor x_{n-2} \lor x_{n-1})
+            &(x_1 \lor x_2 \lor ... \lor x_{n-1} \lor x_{n}) = \\ &(x_1 \lor x_2 \lor z_1) \land (\overline{z_1} \lor x_3 \lor z_2) \land ... \land (\overline{z_{n-4}} \lor x_{n-2} \lor z_{n-3}) \land (\overline{z_{n-3}} \lor x_{n-1} \lor x_{n})
             %(x_0 \lor x_1 \lor x_2 \lor x_3 \lor x_4) = (x_0 \lor x_1 \lor z_0) \land (\overline{z_0} \lor x_2 \lor z_1) \land (\overline{z_1} \lor x_3 \lor x_4)
         \end{align*}
         This conversion to \textbf{3-CNF} can be done in polynomial time, meaning \textbf{SAT} is reducible to \textbf{3-SAT} in polynomial time. This means that \textbf{3-SAT} is in \textbf{NP-Hard}.
@@ -112,7 +113,7 @@
     \subsubsection{Is it in NP?}
         To show that the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP}, we must show that if given a potential solution to the problem we can verify the solution in polynomial time. We will represent the solution with a list of vertices, representing the vertices of the cycle in the order that they occur. We first check that each vertex of the graph is in the list exactly once. Then we will ensure that each pair of vertices adjacent in the list are also adjacent in the graph. Both of these operations can be done in polynomial time. As we can verify a solution in polynomial time, the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP}.
     \subsubsection{Is it in NP-Hard?}
-        To show that the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP-Hard}, we must show that we can reduce a known \textbf{NP-Hard} problem to the \textbf{Directed Hamiltonian Cycle} problem in polynomial time. We will be using \textbf{3-SAT} for this proof. Let the clauses be represented by $c_1, c_2, ..., c_k$ and the variables be represented by $x_1, x_2, ..., x_\ell$. For our gadget, we will build a directed graph based on the given clauses and variables. We will build $\ell$ of the below structures, with $2*k$ vertices in each of the crossbar. 
+        To show that the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP-Hard}, we must show that we can reduce a known \textbf{NP-Hard} problem to the \textbf{Directed Hamiltonian Cycle} problem in polynomial time. We will be using \textbf{3-SAT} for this proof. Let the clauses be represented by $c_1, c_2, ..., c_k$ and the variables be represented by $x_1, x_2, ..., x_L$. For our gadget, we will build a directed graph based on the given clauses and variables. We will build $L$ of the below structures, with $2*k$ vertices in each of the crossbar. 
         \begin{center}
             \includegraphics[width=0.6\textwidth]{ChapterNP/gadget1.pdf}
         \end{center}
@@ -120,9 +121,25 @@
         \begin{center}
             \includegraphics[width=0.9\textwidth]{ChapterNP/gadget2.pdf}
         \end{center}
+        The final step is to connect each of the variables to a clause if and only if the variable occurs in the clause. We connect a variable to a clause by drawing edges from one of the variable's crossbar vertices to the clause vertex, then back to a vertex adjacent to the crossbar vertex. If the variable has a \textbf{not} operation performed on it in the clause, then the adjacenct vertex should be to the left of the initial. Otherwise, it should be to the right. Once all of the required edges have been connected from variables to clauses, we can perform our check. If there exists a Hamiltonian path on this graph, then the 3-SAT problem is also satisfiable. Take the 3-SAT problem below for example.
+        \begin{align*}
+            (x_1 \lor x_2 \lor x_3) \land (\overline{x_1} \lor x_2 \lor \overline{x_3})
+        \end{align*}
+        This 3-SAT problem can be turned into the below graph. The red edges show the path of the Hamiltonian cycle. As there exists a Hamiltonian cycle, the 3-SAT problem is known to be satisfiable, and we can read which values satisfy the 3-SAT problem by examining the graph. As the edges in $x_1$'s crossbar point from left to right, we will take $x_1$'s value as true. We can repeat this, finding a value of true for $x_2$ and false for $x_3$. With this set of values, we now know a set of values for which the above 3-SAT problem is satisfiable.
+        \begin{center}
+            \includegraphics[width=1\textwidth]{ChapterNP/gadget-example.pdf}
+        \end{center}
 
-
-
-
-
-
+\subsection{Clique}
+    The \textbf{Clique} decision problem is to determine if there exists in a graph $G$ a complete subgraph of size $k$.
+    \subsubsection{Is it in NP?}
+        If given a subgraph of $G$, first determine if there are $k$ vertices. If there are $k$ vertices, then determine if they all share edges. This can be done in $O(k^2)$ time, which means this problem is polynomial verifiable.
+    \subsubsection{Is it in NP-Hard?}
+        To show that the \textbf{Clique} problem is NP-Hard, we will use a gadget to show that we can reduce \textbf{3-SAT} to \textbf{Clique} in polynomial time. We will denote each clause as a cluster of 3 vertices. For every pair of vertices, create an edge if the vertices are not in the same cluster and if the vertices are not complements of each other (ie. $X$ and $\overline{X}$). For a boolean statement of $k$ clauses, if the resulting graph contains a clique of size $k$, then the original 3-SAT problem is satisfiable. As an example, take the following 3-SAT problem.
+        \begin{align*}
+            (x_1 \lor x_2 \lor x_3) \land (\overline{x_1} \lor x_2 \lor \overline{x_3}) \land (\overline{x_1} \lor \overline{x_2} \lor x_3)
+        \end{align*}
+        In the graph we will be using the \textbf{!} symbol as our \textbf{not}. As this boolean statement contains three clauses, we are looking for a 3-clique from the resulting graph. As you can see below, there exists a clique of size three in the graph, so the original 3-SAT problem is satisfiable. By examining the graph we can see one set of values for which it is satisfiable. The connected vertices are $x_1$, $x_2$,and $x_3$; this means if we set those three values to true, it would satisfy the 3-SAT problem.
+        \begin{center}
+            \includegraphics[width=0.8\textwidth]{ChapterNP/clique.pdf}
+        \end{center}
