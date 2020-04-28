@@ -1,0 +1,20 @@
+graph G {
+    node[shape=circle, width=0.5]
+    A [pos="1,2!", label="Start", color="green"]
+    B [pos="5,2!", label="6", color="blue"]
+    C [pos="0,0!", label="3", color="green"]
+    D [pos="3,0!", label="1", color="green"]
+    E [pos="7,0!", label="3", color="red"]
+    F [pos="2,-2!", label="5"]
+    
+    A -- B [label="7"]
+    A -- C [label="3"]
+    A -- D [label="1"]
+    
+    B -- E [label="3"]
+    
+    D -- E [label="2"]
+    D -- F [label="4"]
+    
+    E -- F [label="5"]
+}
