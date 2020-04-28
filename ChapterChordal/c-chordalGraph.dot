@@ -1,0 +1,10 @@
+graph G {
+    node [shape=circle, label=""]
+    0 -- 1
+    0 -- 3 [color = green]
+    1 -- 2
+    2 -- 3
+    2 -- 4 [color = green]
+    3 -- 4
+    4 -- 0
+}
