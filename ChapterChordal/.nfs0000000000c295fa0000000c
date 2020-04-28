@@ -4,7 +4,7 @@ A \textbf{Chord} is an edge in a graph that connects two non-adjacent vertices t
 A graph G is \textbf{Chordal} if every cycle above size four has at least one chord.\\
 
 \section{What Do Chordal Graphs Look Like?}
-\includegraphics[width=0.25\textwidth]{./ChapterChordal/chordalGraph.pdf}
+\includegraphics[width=0.25\textwidth]{chordalGraph.pdf}
 
 \section{How Do They Be Used Doe?}
 The cyclical and proximity-based nature of chordal graphs allows them to be used in a variety of ways. They are often used to organize
