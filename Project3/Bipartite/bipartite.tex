@@ -47,3 +47,8 @@ As you might imagine, bipartite graphs might be useful when we want to take info
 A classical example of this problem is something we've covered before - the Knight's Tour. On a chessboard, the movement pattern of a knight allows us to separate the spaces on a chessboard into sets of light and dark spaces. When the knight moves, the space it lands on alternates color. Drawing edges between a particular space and all other spaces to which the knight can move, we construct a bipartite graph!
 
 \subsection{How Does This Help Us?}
+Given a bipartite graph, it becomes much easier to determine asnwers to certain historically difficult problems. For example, if $G$ is bipartite with an odd number of vertices, then we know for certain that $G$ is non-hamiltonian. This was proven in previous exercises, and can easily be found online. 
+
+Regarding cliques, we know that if $G$ is bipartite, then its clique number is 2. If $G$ has a clique number $c > 2$, then we could find a complete subgraph of size $c$, which would contain a triangle. However, to be bipartite, we cannot have a triangle, and thus $G$ would not be bipartite. 
+
+Finally, regarding graph coloring, if $G$ is a bipartite graph, then we know that the chromatic number of $G$ is 2. We can achieve this by coloring each independent set one color (since no vertices in either set are adjacent to each other). Thus we have two colors covering all vertices, so $\chi(G) = 2$.
