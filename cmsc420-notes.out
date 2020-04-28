@@ -1,0 +1,52 @@
+\BOOKMARK [0][-]{chapter.1}{On Graphs}{}% 1
+\BOOKMARK [1][-]{section.1.1}{What is a Graph?}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Why do we care about Graphs?}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{On Different Types of Graphs}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Multigraphs}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Digraphs}{section.1.3}% 6
+\BOOKMARK [1][-]{section.1.4}{On Vertices and Edges}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{On Isomorphisms}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.5.1}{The Handshaking Lemma}{section.1.5}% 9
+\BOOKMARK [1][-]{section.1.6}{On Special Kinds of Graphs}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.7}{On the Storage of Graphs}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Forest for the Trees}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Definitions}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Trailblazing}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{The Lorax}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{\(Minimum\) Spanning Trees}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Prim's Algorithm}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{Kruskal's Algorithm}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.3}{Boruvka's Algorithm}{section.2.4}% 19
+\BOOKMARK [1][-]{section.2.5}{Many Branching Theorems}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{Eulerian and Hamiltonian}{}% 21
+\BOOKMARK [1][-]{section.3.1}{7 Bridges o of K\366nigsberg}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Eulerian}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Hierholzer's Algorithm}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.2}{Fleury's Algorithm}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Hamiltonian}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{Examples}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Theorems}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.4.1}{Ore's Theorem \(1960\)}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.2}{Las Vergnas \(1971\)}{section.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.4.3}{Chv\341tal\(1970\)}{section.3.4}% 31
+\BOOKMARK [2][-]{subsection.3.4.4}{Bandy\(1969\)}{section.3.4}% 32
+\BOOKMARK [2][-]{subsection.3.4.5}{Posa \(1962\)}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.6}{Dirac \(1962\)}{section.3.4}% 34
+\BOOKMARK [2][-]{subsection.3.4.7}{Bandy and Chv\341tal\(1976\)}{section.3.4}% 35
+\BOOKMARK [0][-]{chapter.4}{NP-Completeness}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Definitions}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{Founding Papers}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Cook-Levin Theorem \(1971\)}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{Karp's 21 Problems \(1972\)}{section.4.2}% 40
+\BOOKMARK [1][-]{section.4.3}{Problems}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{Boolean Satisfiability}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.2}{3-Satisfiability}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.3}{Directed Hamiltonian Cycle}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.4}{Clique}{section.4.3}% 45
+\BOOKMARK [0][-]{chapter.5}{Pigment of your Imagination}{}% 46
+\BOOKMARK [1][-]{section.5.1}{Coloring your Graphs}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.2}{On the Rules of Coloring}{chapter.5}% 48
+\BOOKMARK [0][-]{chapter.6}{Chordal Graphs}{}% 49
+\BOOKMARK [1][-]{section.6.1}{What Do Chordal Graphs Be?}{chapter.6}% 50
+\BOOKMARK [1][-]{section.6.2}{How Do They Be Used Doe?}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.3}{Power Chords}{chapter.6}% 52

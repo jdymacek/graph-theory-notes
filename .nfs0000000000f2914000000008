@@ -10,7 +10,6 @@
 \usepackage[ruled]{algorithm2e}
 \usepackage{caption}
 \usepackage{float}
-\usepackage{hyperref}
 \newcommand{\N}{\mathbb{N}}
 \renewcommand{\qedsymbol}{$\blacksquare$}
 \renewcommand\LettrineFontHook{\Typocapsfamily}

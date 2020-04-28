@@ -1,9 +1,9 @@
 \chapter{Chordal Graphs}
 \section{What Do Chordal Graphs Be?}
 A \textbf{Chord} is an edge in a graph that connects two non-adjacent vertices that are apart of the same cycle.\\
-A graph G is \textbf{Chordal} if every cycle above size four has at least one chord.
 
-%\section{What Do Chordal Graphs Look Like?}
+
+\section{What Do Chordal Graphs Look Like?}
 
 \section{How Do They Be Used Doe?}
 The cyclical and proximity-based nature of chordal graphs allows them to be used in a variety of ways. They are often used to organize
@@ -11,16 +11,17 @@ tasks efficiently, or to highlight relations inside data clusters. A common plac
 massive graphs representing the phylogenetic trees of evolutionary species. This has been a topic of study in computational biology; generated chordal
 graphs allow scientists to create a constructive heuristic based on the degree of relation between species on the general evolutionary tree. (sean) This
 application has also been expanded into analyzing perfect phylogeny relations and molecular biology. (ncbi) Researchers can easily add constraints to
-chordal graphs, making them a good choice for sorting complex data sets with custom parameters.\par
-Another modern application of chordal graphs is in the area of computer optimization. Like most graphs, chordals are also applied to the study of
+chordal graphs, making them a good choice for sorting complex data sets with custom parameters.\\
+
+	Another modern application of chordal graphs is in the area of computer optimization. Like most graphs, chordals are also applied to the study of
 register allocation. Variables stored in registers can be tracked better and allocated in relation to other variables using a chordal graph alongside
 static single assignment to lump declarations together, allowing for a more optimized system of register allocation. (hack) Interestingly, chordal graphs
 can be colored to produce similar efficiency-based algorithms. There have been studies into how these two components of graph theory can work together to
-form powerful and competent register allocation patterns. (ucla)\\
+form powerful and competent register allocation patterns. (ucla) \\
 
-\url{http://digbib.ubka.uni-karlsruhe.de/volltexte/documents/6532}\\
-\url{http://webdocs.cs.ualberta.ca/~hayward/theses/sean.pdf}\\
-\url{https://www.ncbi.nlm.nih.gov/CBBresearch/Przytycka/download/talks/IWBRA_May_2006.pdf}\\
-\url{http://web.cs.ucla.edu/~palsberg/paper/aplas05.pdf}\\
+http://digbib.ubka.uni-karlsruhe.de/volltexte/documents/6532
+http://webdocs.cs.ualberta.ca/~hayward/theses/sean.pdf
+https://www.ncbi.nlm.nih.gov/CBBresearch/Przytycka/download/talks/IWBRA_May_2006.pdf
+http://web.cs.ucla.edu/~palsberg/paper/aplas05.pdf
 
 \section{Power Chords}

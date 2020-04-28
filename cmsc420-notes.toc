@@ -1,56 +1,58 @@
-\contentsline {chapter}{\numberline {1}On Graphs}{5}% 
-\contentsline {section}{\numberline {1.1}What is a Graph?}{5}% 
-\contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}% 
-\contentsline {section}{\numberline {1.3}On Different Types of Graphs}{6}% 
-\contentsline {subsection}{\numberline {1.3.1}Multigraphs}{6}% 
-\contentsline {subsection}{\numberline {1.3.2}Digraphs}{6}% 
-\contentsline {section}{\numberline {1.4}On Vertices and Edges}{7}% 
-\contentsline {section}{\numberline {1.5}On Isomorphisms}{7}% 
-\contentsline {subsection}{\numberline {1.5.1}The Handshaking Lemma}{8}% 
-\contentsline {section}{\numberline {1.6}On Special Kinds of Graphs}{9}% 
-\contentsline {section}{\numberline {1.7}On the Storage of Graphs}{9}% 
-\contentsline {chapter}{\numberline {2}Forest for the Trees}{11}% 
-\contentsline {section}{\numberline {2.1}Definitions}{11}% 
-\contentsline {section}{\numberline {2.2}Trailblazing}{13}% 
-\contentsline {section}{\numberline {2.3}The Lorax}{15}% 
-\contentsline {section}{\numberline {2.4}(Minimum) Spanning Trees}{16}% 
-\contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{17}% 
-\contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{18}% 
-\contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{19}% 
-\contentsline {section}{\numberline {2.5}Many Branching Theorems}{20}% 
-\contentsline {chapter}{\numberline {3}Eulerian and Hamiltonian}{23}% 
-\contentsline {section}{\numberline {3.1}7 Bridges o of K\"{o}nigsberg}{23}% 
-\contentsline {section}{\numberline {3.2}Eulerian}{23}% 
-\contentsline {subsection}{\numberline {3.2.1}Hierholzer's Algorithm}{23}% 
-\contentsline {subsection}{\numberline {3.2.2}Fleury's Algorithm}{24}% 
-\contentsline {section}{\numberline {3.3}Hamiltonian}{24}% 
-\contentsline {subsection}{\numberline {3.3.1}Examples}{24}% 
-\contentsline {section}{\numberline {3.4}Theorems}{26}% 
-\contentsline {subsection}{\numberline {3.4.1}Ore's Theorem (1960)}{26}% 
-\contentsline {subsection}{\numberline {3.4.2}Las Vergnas (1971)}{26}% 
-\contentsline {subsection}{\numberline {3.4.3}Chv\'{a}tal(1970)}{26}% 
-\contentsline {subsection}{\numberline {3.4.4}Bandy(1969)}{26}% 
-\contentsline {subsection}{\numberline {3.4.5}P\u {o}sa (1962)}{26}% 
-\contentsline {subsection}{\numberline {3.4.6}Dirac (1962)}{27}% 
-\contentsline {subsection}{\numberline {3.4.7}Bandy and Chv\'{a}tal(1976)}{27}% 
-\contentsline {chapter}{\numberline {4}NP-Completeness}{31}% 
-\contentsline {section}{\numberline {4.1}Definitions}{31}% 
-\contentsline {section}{\numberline {4.2}Founding Papers}{32}% 
-\contentsline {subsection}{\numberline {4.2.1}Cook-Levin Theorem (1971)}{32}% 
-\contentsline {subsection}{\numberline {4.2.2}Karp's 21 Problems (1972)}{33}% 
-\contentsline {section}{\numberline {4.3}Problems}{33}% 
-\contentsline {subsection}{\numberline {4.3.1}Boolean Satisfiability}{33}% 
-\contentsline {subsection}{\numberline {4.3.2}3-Satisfiability}{34}% 
-\contentsline {subsubsection}{Is it in NP?}{34}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{34}% 
-\contentsline {subsection}{\numberline {4.3.3}Directed Hamiltonian Cycle}{34}% 
-\contentsline {subsubsection}{Is it in NP?}{35}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{35}% 
-\contentsline {subsection}{\numberline {4.3.4}Clique}{38}% 
-\contentsline {subsubsection}{Is it in NP?}{38}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{38}% 
-\contentsline {chapter}{\numberline {5}Pigment of your Imagination}{41}% 
-\contentsline {section}{\numberline {5.1}Coloring your Graphs}{41}% 
-\contentsline {section}{\numberline {5.2}On the Rules of Coloring}{41}% 
-\contentsline {chapter}{\numberline {6}Chordal Graphs}{45}% 
-\contentsline {section}{\numberline {6.1}idk}{45}% 
+\contentsline {chapter}{\numberline {1}On Graphs}{5}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}What is a Graph?}{5}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}On Different Types of Graphs}{6}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Multigraphs}{6}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Digraphs}{6}{subsection.1.3.2}% 
+\contentsline {section}{\numberline {1.4}On Vertices and Edges}{7}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}On Isomorphisms}{7}{section.1.5}% 
+\contentsline {subsection}{\numberline {1.5.1}The Handshaking Lemma}{8}{subsection.1.5.1}% 
+\contentsline {section}{\numberline {1.6}On Special Kinds of Graphs}{9}{section.1.6}% 
+\contentsline {section}{\numberline {1.7}On the Storage of Graphs}{9}{section.1.7}% 
+\contentsline {chapter}{\numberline {2}Forest for the Trees}{11}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Definitions}{11}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Trailblazing}{13}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}The Lorax}{15}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}(Minimum) Spanning Trees}{16}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{17}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{18}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{19}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}Many Branching Theorems}{20}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Eulerian and Hamiltonian}{23}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}7 Bridges o of K\"{o}nigsberg}{23}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Eulerian}{23}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Hierholzer's Algorithm}{23}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Fleury's Algorithm}{24}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Hamiltonian}{24}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Examples}{24}{subsection.3.3.1}% 
+\contentsline {section}{\numberline {3.4}Theorems}{26}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Ore's Theorem (1960)}{26}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Las Vergnas (1971)}{26}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.3}Chv\'{a}tal(1970)}{26}{subsection.3.4.3}% 
+\contentsline {subsection}{\numberline {3.4.4}Bandy(1969)}{26}{subsection.3.4.4}% 
+\contentsline {subsection}{\numberline {3.4.5}P\u {o}sa (1962)}{26}{subsection.3.4.5}% 
+\contentsline {subsection}{\numberline {3.4.6}Dirac (1962)}{27}{subsection.3.4.6}% 
+\contentsline {subsection}{\numberline {3.4.7}Bandy and Chv\'{a}tal(1976)}{27}{subsection.3.4.7}% 
+\contentsline {chapter}{\numberline {4}NP-Completeness}{31}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Definitions}{31}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Founding Papers}{32}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Cook-Levin Theorem (1971)}{32}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Karp's 21 Problems (1972)}{33}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Problems}{33}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Boolean Satisfiability}{33}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}3-Satisfiability}{34}{subsection.4.3.2}% 
+\contentsline {subsubsection}{Is it in NP?}{34}{section*.13}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{34}{section*.14}% 
+\contentsline {subsection}{\numberline {4.3.3}Directed Hamiltonian Cycle}{34}{subsection.4.3.3}% 
+\contentsline {subsubsection}{Is it in NP?}{35}{section*.15}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{35}{section*.16}% 
+\contentsline {subsection}{\numberline {4.3.4}Clique}{38}{subsection.4.3.4}% 
+\contentsline {subsubsection}{Is it in NP?}{38}{section*.17}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{38}{section*.18}% 
+\contentsline {chapter}{\numberline {5}Pigment of your Imagination}{41}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Coloring your Graphs}{41}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}On the Rules of Coloring}{41}{section.5.2}% 
+\contentsline {chapter}{\numberline {6}Chordal Graphs}{45}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}What Do Chordal Graphs Be?}{45}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}How Do They Be Used Doe?}{45}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Power Chords}{46}{section.6.3}% 

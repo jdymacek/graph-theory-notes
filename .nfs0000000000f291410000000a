@@ -10,7 +10,6 @@
 \usepackage[ruled]{algorithm2e}
 \usepackage{caption}
 \usepackage{float}
-\usepackage{hyperref}
 \newcommand{\N}{\mathbb{N}}
 \renewcommand{\qedsymbol}{$\blacksquare$}
 \renewcommand\LettrineFontHook{\Typocapsfamily}
@@ -41,7 +40,7 @@ This compilation of notes exists as a project for students in the CMSC 420 Graph
 \input{Chapter2/trees.tex}
 \input{Chapter3/graphs3.tex}
 \input{ChapterNP/np_comp.tex}
-\input{Chapter5/colors.tex}
+% \input{Chapter5/colors.tex}
 \input{ChapterChordal/chordal.tex}
 
 \end{document}
