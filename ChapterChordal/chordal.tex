@@ -4,7 +4,13 @@ A \textbf{Chord} is an edge in a graph that connects two non-adjacent vertices t
 A graph G is \textbf{Chordal} if every cycle above size greater than four has at least one chord.\\
 
 \section{What Do Chordal Graphs Look Like?}
-\includegraphics[width=0.25\textwidth]{./ChapterChordal/chordalGraph.pdf}
+What do \textbf{Chords} look like? The following two graphs are examples of chordal graphs, one with # vertices, and anothe with # vertices. The chordal lines are visible in green.
+\includegraphics[width=0.5\textwidth]{./ChapterChordal/chordalGraph.pdf}
+\includegraphics[width=0.5\textwidth]{./ChapterChordal/chodralGraph2.pdf}
+
+However, as described earlier, not all graphs with cycles are \textbf{Chordal}. For example, while this graph does have greater than four vertices, the cycle condition is not met.
+\includegraphics[width=0.5\textwidth\{./ChapterChordal/nonchordalGraph.pdf}
+
 
 \section{How are they Used?}
 The cyclical and proximity-based nature of chordal graphs allows them to be used in a variety of ways. They are often used to organize
@@ -16,7 +22,7 @@ Another modern application of chordal graphs is in the area of computer optimiza
 register allocation. Variables stored in registers can be tracked better and allocated in relation to other variables using a chordal graph alongside
 static single assignment to lump declarations together, allowing for a more optimized system of register allocation. ~\cite{hack_2007} Interestingly, chordal graphs
 can be colored to produce similar efficiency-based algorithms. There have been studies into how these two components of graph theory can work together to
-form powerful and competent register allocation patterns. ~\cite{pereira_palsberg}\\
+form powerful and competent register allocation patterns. \cite{pereira_palsberg}\\
 
 \section{What problems do chordal graphs help with?}
 
