@@ -34,3 +34,7 @@ pdflatex cmsc420-notes.tex
 bibtex ./cmsc420-notes.aux
 pdflatex cmsc420-notes.tex
 pdflatex cmsc420-notes.tex
+pdflatex cmsc420-notes.tex
+makeidx cmsc420-notes.idx
+makeindex cmsc420-notes.idx
+pdflatex cmsc420-notes.tex
