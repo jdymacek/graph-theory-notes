@@ -1,8 +1,8 @@
 \begin{theindex}
 
-  \item 3-Satisfiability, 34
-  \item 6-Colorable, 43
-  \item 7 Bridges of K\"{o}nigsberg, 23
+  \item 3-Satisfiability, 44
+  \item 6-Colorable, 53
+  \item 7 Bridges of K\"{o}nigsberg, 33
 
   \indexspace
 
@@ -11,57 +11,57 @@
 
   \indexspace
 
-  \item Bandy, 26
+  \item Bandy, 36
   \item Bipartite Graph, 9
-  \item Boolean Satisfiability, 33
+  \item Boolean Satisfiability, 43
   \item Bor\r{u}vka's Algorithm, 19
   \item Bridge, 20
 
   \indexspace
 
-  \item Chv\'{a}tal, 26
-  \item Clique, 38
+  \item Chv\'{a}tal, 36
+  \item Clique, 48
   \item Complement, 12
   \item Complete Graph, 9
   \item Component, 12
   \item Connected, 11
-  \item Cook-Levin Theorem, 32
+  \item Cook-Levin Theorem, 42
   \item Cycle, 12, 15
 
   \indexspace
 
   \item Degree, 7
-  \item Deterministic, 31
-  \item Diagonals, 45
+  \item Deterministic, 41
+  \item Diagonals, 55
   \item Digraph, 6
-  \item Dirac, 27
-  \item Directed Hamiltonian Cycle, 34
+  \item Dirac, 37
+  \item Directed Hamiltonian Cycle, 44
   \item Disconnected, 11
 
   \indexspace
 
   \item Edges, 5
-  \item Euler's Formula, 47
-  \item Eulerian, 23
+  \item Euler's Formula, 57
+  \item Eulerian, 33
 
   \indexspace
 
-  \item Fleury, 24
+  \item Fleury, 34
   \item Forest, 15
 
   \indexspace
 
-  \item Gadget, 32
+  \item Gadget, 42
   \item Graph Bridge Theorem, 20
-  \item Graph Coloring, 41
+  \item Graph Coloring, 51
   \item Graphs, 5
-  \item Grinberg's Theorm, 45
+  \item Grinberg's Theorm, 55
 
   \indexspace
 
-  \item Hamiltonian, 24
-  \item Herschel Graph, 46
-  \item Hierholzer, 23
+  \item Hamiltonian, 34
+  \item Herschel Graph, 56
+  \item Hierholzer, 33
 
   \indexspace
 
@@ -76,52 +76,52 @@
 
   \indexspace
 
-  \item K-Chromatic, 42
-  \item K-Colorable, 41
-  \item K-Edge-Chromatic, 42
-  \item K-Edge-Colorable, 42
-  \item Karp's 21 Problems, 33
+  \item K-Chromatic, 52
+  \item K-Colorable, 51
+  \item K-Edge-Chromatic, 52
+  \item K-Edge-Colorable, 52
+  \item Karp's 21 Problems, 43
   \item Kruskal's Algorithm, 18
-  \item Kuratowski's Theorm, 47
+  \item Kuratowski's Theorm, 57
 
   \indexspace
 
-  \item Las Vergnas, 26
+  \item Las Vergnas, 36
   \item Lines, 5
   \item Links, 5
 
   \indexspace
 
   \item Minimum Spanning Trees(MST), 17
-  \item Minors, 48
+  \item Minors, 58
   \item Multigraph, 6
 
   \indexspace
 
   \item Nodes, 5
-  \item Nondeterministic, 31
-  \item NP, 31
-  \item NP-Complete, 32
-  \item NP-Hard, 32
+  \item Nondeterministic, 41
+  \item NP, 41
+  \item NP-Complete, 42
+  \item NP-Hard, 42
   \item Null Graph, 9
 
   \indexspace
 
-  \item Ore, 26
+  \item Ore, 36
 
   \indexspace
 
-  \item P, 31
-  \item P\u{o}sa, 26
+  \item P, 41
+  \item P\u{o}sa, 36
   \item Path, 14
   \item Pendant, 7
   \item Points, 5
-  \item Polynomial Time, 31
+  \item Polynomial Time, 41
   \item Prim's Algorithm, 17
 
   \indexspace
 
-  \item Reduction, 32
+  \item Reduction, 42
   \item Reflexive, 8
   \item Regular Graph, 9
 
@@ -146,12 +146,12 @@
 
   \indexspace
 
-  \item Vertex Cover, 39
+  \item Vertex Cover, 49
   \item Vertices, 5
 
   \indexspace
 
-  \item Wagner's Theorm, 47
+  \item Wagner's Theorm, 57
   \item Walk, 13
   \item Weight, 17
 

@@ -47,43 +47,43 @@
 \indexentry{Bor\r{u}vka's Algorithm}{19}
 \indexentry{Bridge}{20}
 \indexentry{Graph Bridge Theorem}{20}
-\indexentry{7 Bridges of K\"{o}nigsberg}{23}
-\indexentry{Eulerian}{23}
-\indexentry{Hierholzer}{23}
-\indexentry{Fleury}{24}
-\indexentry{Hamiltonian}{24}
-\indexentry{Ore}{26}
-\indexentry{Las Vergnas}{26}
-\indexentry{Chv\'{a}tal}{26}
-\indexentry{Bandy}{26}
-\indexentry{P\u{o}sa}{26}
-\indexentry{Dirac}{27}
-\indexentry{Deterministic}{31}
-\indexentry{Nondeterministic}{31}
-\indexentry{Polynomial Time}{31}
-\indexentry{P}{31}
-\indexentry{NP}{31}
-\indexentry{NP-Hard}{32}
-\indexentry{NP-Complete}{32}
-\indexentry{Reduction}{32}
-\indexentry{Gadget}{32}
-\indexentry{Cook-Levin Theorem}{32}
-\indexentry{Karp's 21 Problems}{33}
-\indexentry{Boolean Satisfiability}{33}
-\indexentry{3-Satisfiability}{34}
-\indexentry{Directed Hamiltonian Cycle}{34}
-\indexentry{Clique}{38}
-\indexentry{Vertex Cover}{39}
-\indexentry{Graph Coloring}{41}
-\indexentry{K-Colorable}{41}
-\indexentry{K-Edge-Colorable}{42}
-\indexentry{K-Chromatic}{42}
-\indexentry{K-Edge-Chromatic}{42}
-\indexentry{6-Colorable}{43}
-\indexentry{Grinberg's Theorm}{45}
-\indexentry{Diagonals}{45}
-\indexentry{Herschel Graph}{46}
-\indexentry{Euler's Formula}{47}
-\indexentry{Kuratowski's Theorm}{47}
-\indexentry{Wagner's Theorm}{47}
-\indexentry{Minors}{48}
+\indexentry{7 Bridges of K\"{o}nigsberg}{33}
+\indexentry{Eulerian}{33}
+\indexentry{Hierholzer}{33}
+\indexentry{Fleury}{34}
+\indexentry{Hamiltonian}{34}
+\indexentry{Ore}{36}
+\indexentry{Las Vergnas}{36}
+\indexentry{Chv\'{a}tal}{36}
+\indexentry{Bandy}{36}
+\indexentry{P\u{o}sa}{36}
+\indexentry{Dirac}{37}
+\indexentry{Deterministic}{41}
+\indexentry{Nondeterministic}{41}
+\indexentry{Polynomial Time}{41}
+\indexentry{P}{41}
+\indexentry{NP}{41}
+\indexentry{NP-Hard}{42}
+\indexentry{NP-Complete}{42}
+\indexentry{Reduction}{42}
+\indexentry{Gadget}{42}
+\indexentry{Cook-Levin Theorem}{42}
+\indexentry{Karp's 21 Problems}{43}
+\indexentry{Boolean Satisfiability}{43}
+\indexentry{3-Satisfiability}{44}
+\indexentry{Directed Hamiltonian Cycle}{44}
+\indexentry{Clique}{48}
+\indexentry{Vertex Cover}{49}
+\indexentry{Graph Coloring}{51}
+\indexentry{K-Colorable}{51}
+\indexentry{K-Edge-Colorable}{52}
+\indexentry{K-Chromatic}{52}
+\indexentry{K-Edge-Chromatic}{52}
+\indexentry{6-Colorable}{53}
+\indexentry{Grinberg's Theorm}{55}
+\indexentry{Diagonals}{55}
+\indexentry{Herschel Graph}{56}
+\indexentry{Euler's Formula}{57}
+\indexentry{Kuratowski's Theorm}{57}
+\indexentry{Wagner's Theorm}{57}
+\indexentry{Minors}{58}
