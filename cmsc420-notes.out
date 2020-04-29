@@ -1,0 +1,67 @@
+\BOOKMARK [0][-]{chapter.1}{On Graphs}{}% 1
+\BOOKMARK [1][-]{section.1.1}{What is a Graph?}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Why do we care about Graphs?}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{On Different Types of Graphs}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Multigraphs}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Digraphs}{section.1.3}% 6
+\BOOKMARK [1][-]{section.1.4}{On Vertices and Edges}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{On Isomorphisms}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.5.1}{The Handshaking Lemma}{section.1.5}% 9
+\BOOKMARK [1][-]{section.1.6}{On Special Kinds of Graphs}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.7}{On the Storage of Graphs}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Forest for the Trees}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Definitions}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Trailblazing}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{The Lorax}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{\(Minimum\) Spanning Trees}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{Prim's Algorithm}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.2}{Kruskal's Algorithm}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.3}{Boruvka's Algorithm}{section.2.4}% 19
+\BOOKMARK [1][-]{section.2.5}{Many Branching Theorems}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{Single Source Shortest Path}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Dijkstra}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Bellman-Ford}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Eulerian and Hamiltonian}{}% 24
+\BOOKMARK [1][-]{section.4.1}{7 Bridges o of K\366nigsberg}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Eulerian}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.2.1}{Hierholzer's Algorithm}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.2}{Fleury's Algorithm}{section.4.2}% 28
+\BOOKMARK [1][-]{section.4.3}{Hamiltonian}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.3.1}{Examples}{section.4.3}% 30
+\BOOKMARK [1][-]{section.4.4}{Theorems}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.1}{Ore's Theorem \(1960\)}{section.4.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.2}{Las Vergnas \(1971\)}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.3}{Chv\341tal\(1970\)}{section.4.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.4}{Bandy\(1969\)}{section.4.4}% 35
+\BOOKMARK [2][-]{subsection.4.4.5}{Posa \(1962\)}{section.4.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.6}{Dirac \(1962\)}{section.4.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.7}{Bandy and Chv\341tal\(1976\)}{section.4.4}% 38
+\BOOKMARK [0][-]{chapter.5}{NP-Completeness}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Definitions}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.2}{Founding Papers}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.2.1}{Cook-Levin Theorem \(1971\)}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.2}{Karp's 21 Problems \(1972\)}{section.5.2}% 43
+\BOOKMARK [1][-]{section.5.3}{Problems}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.3.1}{Boolean Satisfiability}{section.5.3}% 45
+\BOOKMARK [2][-]{subsection.5.3.2}{3-Satisfiability}{section.5.3}% 46
+\BOOKMARK [2][-]{subsection.5.3.3}{Directed Hamiltonian Cycle}{section.5.3}% 47
+\BOOKMARK [2][-]{subsection.5.3.4}{Clique}{section.5.3}% 48
+\BOOKMARK [2][-]{subsection.5.3.5}{Vertex Cover}{section.5.3}% 49
+\BOOKMARK [0][-]{chapter.6}{Pigment of your Imagination}{}% 50
+\BOOKMARK [1][-]{section.6.1}{Coloring your Graphs}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.2}{On the Rules of Coloring}{chapter.6}% 52
+\BOOKMARK [0][-]{chapter.7}{Grin and Berg it}{}% 53
+\BOOKMARK [1][-]{section.7.1}{Grinberg's Theorm\(1976\)}{chapter.7}% 54
+\BOOKMARK [1][-]{section.7.2}{Diagonals}{chapter.7}% 55
+\BOOKMARK [1][-]{section.7.3}{Herschel Graph}{chapter.7}% 56
+\BOOKMARK [0][-]{chapter.8}{Plane and Simple}{}% 57
+\BOOKMARK [1][-]{section.8.1}{Euler's Formula \(1750\)}{chapter.8}% 58
+\BOOKMARK [1][-]{section.8.2}{Lemma}{chapter.8}% 59
+\BOOKMARK [1][-]{section.8.3}{Kuratowski's Theorm \(1930\)}{chapter.8}% 60
+\BOOKMARK [1][-]{section.8.4}{Wagner's Theorm\(1937\)}{chapter.8}% 61
+\BOOKMARK [1][-]{section.8.5}{Minors}{chapter.8}% 62
+\BOOKMARK [0][-]{chapter.9}{Graph Classes}{}% 63
+\BOOKMARK [1][-]{section.9.1}{Bipartite Graphs}{chapter.9}% 64
+\BOOKMARK [2][-]{subsection.9.1.1}{Definitions}{section.9.1}% 65
+\BOOKMARK [2][-]{subsection.9.1.2}{When Can We Use These?}{section.9.1}% 66
+\BOOKMARK [2][-]{subsection.9.1.3}{How Does This Help Us?}{section.9.1}% 67
