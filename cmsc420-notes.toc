@@ -58,3 +58,13 @@
 \contentsline {chapter}{\numberline {6}Pigment of your Imagination}{51}% 
 \contentsline {section}{\numberline {6.1}Coloring your Graphs}{51}% 
 \contentsline {section}{\numberline {6.2}On the Rules of Coloring}{51}% 
+\contentsline {chapter}{\numberline {7}Grin and Berg it}{55}% 
+\contentsline {section}{\numberline {7.1}Grinberg's Theorm(1976)}{55}% 
+\contentsline {section}{\numberline {7.2}Diagonals}{55}% 
+\contentsline {section}{\numberline {7.3}Herschel Graph}{56}% 
+\contentsline {chapter}{\numberline {8}Plane and Simple}{57}% 
+\contentsline {section}{\numberline {8.1}Euler's Formula (1750)}{57}% 
+\contentsline {section}{\numberline {8.2}Lemma}{57}% 
+\contentsline {section}{\numberline {8.3}Kuratowski's Theorm (1930)}{57}% 
+\contentsline {section}{\numberline {8.4}Wagner's Theorm(1937)}{57}% 
+\contentsline {section}{\numberline {8.5}Minors}{58}% 

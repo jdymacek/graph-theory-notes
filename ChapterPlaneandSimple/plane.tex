@@ -1,0 +1,40 @@
+\chapter{Plane and Simple}
+\section{Euler's Formula (1750)}
+
+Let $G$ be a connected plane graph and let $n$,$m$, and $f$ denot the number of vertices, edges, and faces of $G$: $n - m + f = 1$
+
+\section{Lemma}
+
+If G is a connected planar graph with $n \leq 3$ vertices and $m$ edges then $m \leq 3n-6$
+Proof:
+Every face of $G$ must have at least three sides and each edge is on at most two faces. 
+	$3f \leq 2m$
+Euler's Formula:
+	$n - m + f = 2
+	3n - 3m + 3f = 6
+	6 \leq 3n - 3m + 2m
+	m \leq 3n - 6$
+If G is a connected planar graph with $n \geq 3$ vertices and $m$ edges and no triangles then $m \leq 2n - 4$
+Proof:
+Euler's Formula:
+	$n - m + f =2 
+	4n - 4m + 4f = 8
+	8 \leq 4n - 4m + 2m 
+	2m \leq 4n - 8 
+	m \leq 2n - 4$
+
+\section{Kuratowski's Theorm (1930)}
+
+A graph is planar if and only if it contains no subgraph homeomorphic to $K_5$ or $K_(3,3)$.
+Two graphs are homeomorphic (identical within vertices of degree two) if they both can be obtained from the same graph by inserting new vertices of degree two into the edges of G.
+
+\section{Wagner's Theorm(1937)}
+
+A graph is planar iff its minors include neither $K_5$ nor $K_(3,3)$
+
+A graph is planar iff it contains no subgraph contractible to $K_5$ or $K_(3,3)$
+
+\section{Minors}
+
+$H$ is called a minor of a graph $G$ if $H$ can be created from $G$ by deleting edges, vertices, and contracting edges. 
+

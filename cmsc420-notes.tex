@@ -10,6 +10,7 @@
 \usepackage[ruled]{algorithm2e}
 \usepackage{caption}
 \usepackage{float}
+\usepackage{makeidx}
 \newcommand{\N}{\mathbb{N}}
 \renewcommand{\qedsymbol}{$\blacksquare$}
 \renewcommand\LettrineFontHook{\Typocapsfamily}
@@ -23,6 +24,7 @@
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
+\makeindex
 
 \title{The little book of graph notes}
 \author{Graph theory students}
@@ -42,5 +44,7 @@ This compilation of notes exists as a project for students in the CMSC 420 Graph
 \input{Chapter3/graphs3.tex}
 \input{ChapterNP/np_comp.tex}
 \input{Chapter5/colors.tex}
-
+\input{ChapterGrinandBergIt/GrinandBergIt.tex}
+\input{ChapterPlaneandSimple/plane.tex}
+\printindex
 \end{document}
