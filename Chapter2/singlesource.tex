@@ -1,0 +1,125 @@
+\chapter{Single Source Shortest Path}
+
+Weights are a great way to convey additional data in a graph. Whether it is representing the distance between two cities, or the cost in seconds to transfer data via a certain path, connected and weighted graphs are a huge help.
+However, a new problem arises with the addition of weights: The Single Source Shortest Path Problem.
+
+%Perhaps an example here of a weighted graph, how to easily find the path from node A to F? etc.
+\begin{definition}
+A \emph{Single Source Shortest Path} is the shortest path from a starting node to any other node in the connected graph.
+\end{definition}
+
+A fairly straightforward concept, but one that comes with its own troubles in trying to actually find such a path between any two nodes algorithmically. Below are two solutions to such a problem: Dijkstra's Algorithm and the Bellman-Ford Algorithm.
+
+\section{Dijkstra}
+Dijkstra's algorithm starts at some decided source node, and then follows each edge from the source path out to the adjacent nodes. Each node is then given a "cost", which is the sum of all the edges' weights on the path from the source node to that node. 
+
+After finding the cost for each node adjacent to the source node, the algorithm repeats, taking each node adjacent to the source node, and finding the costs of thier adjacent nodes, until all nodes have a cost assigned to them. For example, the cost of a node that is two edges away from the source node would be the sum of the weights of those two edges.
+
+The algorithm does not end there, however. In a connected graph, there is a very real possibility of a cycle existing, which means there is more than one potential path from the source node to all other nodes. In this instance, the algorithm could work its way around a cycle, adding up the costs for each node, and then come across a node that was already reached by another path. 
+
+In that case, a simple comparison is made between the two costs, and the node keeps the "cheapest" or smallest of the two costs. This guarantees that the shortest path between the source node and any other node is preserved.
+
+Below follows an example of how Dijkstra's Algorithm works through a connected graph.
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra1.pdf}
+\end{center}
+We start with a graph, where the Start vertex's cost is 0, and all other vertices have a cost of infinity.
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra2.pdf}
+\end{center}
+After checking and updating all of the adjacent vertices to Start, we move to the center node(in red) because it has the shortest edge.
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra3.pdf}
+\end{center}
+All adjacent vertices are updated, and the algorithm then moves along the lowest weighted edge to the far right vertex.
+
+
+%NEED TO UPDATE!!!
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra4.pdf}
+\end{center}
+From the blue vertex, we check and see about updating its three adjacent vertices. The path from the blue vertex to the red is the shortest path from Start, so the algorithm moves to that node next. All vertices with their shortest path are now colored green. 
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra5.pdf}
+\end{center}
+From the blue vertex, the cost to travel to its adjacent vertices will not be less than their current weights, so their weights are not updated. We then move back to the previous node (far right) and follow to the final adjacent node at the top.
+
+%UPDATE AS WELL
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra6.pdf}
+\end{center}
+We continue on to the top node, and see that all of its paths lead to vertices that have their smallest weight. No more weights are updated.
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/dijkstra7.pdf}
+\end{center}
+Now, all nodes have their final weight, and the shortest path is established between the start vertex and any other vertex.
+
+In the end, this algorithm has a run time of $O(E log V)$, or the number of edges $E$ multiplied by the natural log of the vertices $V$
+
+It is important to note that this algorithm will \emph{not} work with negative weights on the edges. The negative weight will be continually added to the cost of a node, and skew the node's actual weight.
+
+
+\section{Bellman-Ford}
+
+Bellman-Ford follows an overall similar process as Dijkstra's Algorithm, with one key change: Instead of running through the adjacent nodes, the algorithm loops through the list of edges V times (V being the number of vertices). 
+
+In this algorithm, each node starts off with a weight of $\inf$. While looping through the list of edges, it updates the costs of the nodes adjacent to each edge, adding the weight both ways. In other words, it takes two nodes, and adds one node's cost to the edge's weight, and compares that sum to the cost of the other node. If the sum is less than the current cost, then the cost for the second node is updated. Doing this both ways between the two nodes ensures that the shortest path is maintained.
+
+Below is an example of how one iteration of this algorithm would work thorugh the same graph. For the purpose of this example, the order of edges is $BE, AB, AC, AD, DE, DF, EF$, with the alphabetical labels assigned to the nodes in the following fashion.
+
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellfmap.pdf}
+\end{center}
+
+To start:
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf1.pdf}
+\end{center}
+We start with edge $BE$, adding the weight to each of the adjacent node's cost. As the new calculated cost will not be less than their current one, neither node is updated.
+
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf2.pdf}
+\end{center}
+We continue to the next edge in the list. Here, the weight of 7 is added both ways, to account for how a path could move either way between the two nodes. The value for $b$ changes, as $0 + 7 < inf.$. However, $inf. + 7 \nless0$, so the Start node's cost is not updated (and never will be!).
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf3.pdf}
+\end{center}
+Moving to edge $AC$, node $C$'s cost is updated as $0 + 3 < inf.$. This is the shortest possible value for that node's cost, so we will color it green, along with all other nodes with their shortest path for illustrative purposes, as the algorithm could only guarantee a shortest path after $V =7 $ iterations.
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf4.pdf}
+\end{center}
+For edge $AD$, $D$'s weight is updated, while Start's stays the same.
+
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf5.pdf}
+\end{center}
+Node $E$'s cost can now be adjusted, as $1 + 2 < inf.$. 
+
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf6.pdf}
+\end{center}
+We then check the edge $DF$, updating $F$'s cost to 5.
+
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Chapter2/bellf7.pdf}
+\end{center}
+The final edge, $EF$, is checked. The algorithm calculates that $4 + 5 \nless 3$, and $3 + 5 \nless 4$, so neither node's cost is updated.
+
+
+
+After this one iteration, it is clear to see that while some nodes had their final shortest weight (like $C$, nodes like $B$ will need at least one more iteration before having its true final cost.
+
+
+Unlike Dijkstra's algorithm, the Bellman-Ford algorithm does work with negative weights, with a slight caveat. In order for the negative weights to not artificially skew the cost of a vertex, the weight cannot be a part of a cycle. If it is, however, the algorithm can catch the existence of this negative weight at the end. That is because of the algorithm running $V$ times. If there is not a negative cycle, it will take at most $V-1$ times for the algorithm to compute the correct cost for each vertex. After the $V$ iterations, if there is still a chance to update a vertex's cost, then there must be a negative cycle.
