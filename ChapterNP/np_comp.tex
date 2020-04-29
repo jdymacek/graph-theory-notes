@@ -3,27 +3,27 @@
 
 \section{Definitions}
 \begin{description}
-    \item[Deterministic:] An algorithm is \textbf{deterministic} if it follows a single path from input to outcome.
-    \item[Nondeterministic:]  An algorithm is \textbf{nondeterministic} if it can follow a branching path that can go from one input to multiple outcomes. All of these paths are potentially traversed simultaneously.
-    \item[Polynomial Time:] An algorithm is said to be a \textbf{polynomial time} algorithm if its execution time scales by a polynomial. An example of this is a linear search algorithm, which can be run in O($n$) time. \textbf{Polynomial time} algorithms could also be bounded above by a polynomial, meaning that an algorithm which runs in O($\log(n)$) time is also a polynomial time algorithm, as it is better than O($n$). Examples of non-polynomial times include O($2^n$), O($n!$), or O($n^n$).
-    \item[P:] A problem is classified as \textbf{P} if it can be solved by a deterministic turing machine in polynomial time.
-    \item[NP:] A problem is classified as \textbf{NP} if a potential solution can be verified by a deterministic turing machine in polynomial time. As each solution is verifiable in polynomial time, if we were to build a non-deterministic turing machine we could try every possible solution at the same time, verifying each of them. This is what it means to say that \textbf{NP} problems are decidable in non-deterministic polynomial time. The set of problems \textbf{NP} contains the set of problems \textbf{P}. There is also a very famous question to whether or not the entirety of \textbf{NP} lies in \textbf{P}.
-    \item[NP-Hard:] A problem is classified as \textbf{NP-Hard} if it can be reduced to any other \textbf{NP-Hard} problem in polynomial time.
+    \item[Deterministic:] \index{Deterministic}An algorithm is \textbf{deterministic} if it follows a single path from input to outcome.
+    \item[Nondeterministic:]  \index{Nondeterministic}An algorithm is \textbf{nondeterministic} if it can follow a branching path that can go from one input to multiple outcomes. All of these paths are potentially traversed simultaneously.
+    \item[Polynomial Time:] \index{Polynomial Time}An algorithm is said to be a \textbf{polynomial time} algorithm if its execution time scales by a polynomial. An example of this is a linear search algorithm, which can be run in O($n$) time. \textbf{Polynomial time} algorithms could also be bounded above by a polynomial, meaning that an algorithm which runs in O($\log(n)$) time is also a polynomial time algorithm, as it is better than O($n$). Examples of non-polynomial times include O($2^n$), O($n!$), or O($n^n$).
+    \item[P:] \index{P}A problem is classified as \textbf{P} if it can be solved by a deterministic turing machine in polynomial time.
+    \item[NP:] \index{NP}A problem is classified as \textbf{NP} if a potential solution can be verified by a deterministic turing machine in polynomial time. As each solution is verifiable in polynomial time, if we were to build a non-deterministic turing machine we could try every possible solution at the same time, verifying each of them. This is what it means to say that \textbf{NP} problems are decidable in non-deterministic polynomial time. The set of problems \textbf{NP} contains the set of problems \textbf{P}. There is also a very famous question to whether or not the entirety of \textbf{NP} lies in \textbf{P}.
+    \item[NP-Hard:] \index{NP-Hard}A problem is classified as \textbf{NP-Hard} if it can be reduced to any other \textbf{NP-Hard} problem in polynomial time.
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.4\textwidth,valign=t]{ChapterNP/complexity.pdf}
         \includegraphics[width=0.4\textwidth,valign=t]{ChapterNP/complexity2.pdf}
     \end{figure}
-    \item[NP-Complete:] A problem is classified as \textbf{NP-Complete} if it is both \textbf{NP-Hard} and \textbf{NP}.
-    \item[Reduction:] A \textbf{reduction} is a method for using problems of known difficulty to show that another problem is at least as difficult. If one can perform a reduction in polynomial time from a known NP-Complete problem to some new problem, this new problem must be at least as complex as that NP-Complete problem.
-    \item[Gadget:] A \textbf{gadget} is a mapping from the input of one problem to the input of another problem. \textbf{Gadgets} are used in construction reductions.
+    \item[NP-Complete:] \index{NP-Complete}A problem is classified as \textbf{NP-Complete} if it is both \textbf{NP-Hard} and \textbf{NP}.
+    \item[Reduction:] A \textbf{reduction} \index{Reduction}is a method for using problems of known difficulty to show that another problem is at least as difficult. If one can perform a reduction in polynomial time from a known NP-Complete problem to some new problem, this new problem must be at least as complex as that NP-Complete problem.
+    \item[Gadget:] A \textbf{gadget} \index{Gadget}is a mapping from the input of one problem to the input of another problem. \textbf{Gadgets} are used in construction reductions.
 \end{description}
 
 \section{Founding Papers}
 \subsection{Cook-Levin Theorem (1971)}
-    The first problem that was known to be NP-Complete is called the Boolean Satisfiability problem, or SAT. The theorem that declares SAT as NP-Complete is called the Cook-Levin Theorem, named after Steven Cook and Leonid Levin. The two worked in parallel writing their own papers, with Cook in the United States and Levin in the Soviet Union. 
+    \index{Cook-Levin Theorem}The first problem that was known to be NP-Complete is called the Boolean Satisfiability problem, or SAT. The theorem that declares SAT as NP-Complete is called the Cook-Levin Theorem, named after Steven Cook and Leonid Levin. The two worked in parallel writing their own papers, with Cook in the United States and Levin in the Soviet Union. 
 \subsection{Karp's 21 Problems (1972)}
-    In 1972, Richard Karp used the Cook-Levin theorem that SAT is NP-Complete to put together a list of 21 other problems that are also NP-Complete. He showed these problems as NP-Complete by performing polynomial time reductions from SAT to each of the 21 problems. Karp's 21 problems are as follows, with nesting indicating which reductions he used.
+    \index{Karp's 21 Problems}In 1972, Richard Karp used the Cook-Levin theorem that SAT is NP-Complete to put together a list of 21 other problems that are also NP-Complete. He showed these problems as NP-Complete by performing polynomial time reductions from SAT to each of the 21 problems. Karp's 21 problems are as follows, with nesting indicating which reductions he used.
 
 
     %\newlist{longitemize}{itemize}{9}
@@ -83,13 +83,13 @@
 
 \section{Problems}
 \subsection{Boolean Satisfiability}
-    The \textbf{Boolean Satisfiability} decision problem (\textbf{SAT}) is to determine if there is a set of values for which a given boolean formula evaluates to true. These formulae can contain the operations \textbf{and} ($x_1 \land x_2$), \textbf{or} ($x_1 \lor x_2$), or \textbf{not} ($\overline{x_1}$). An example of one such formula can be seen below. We will take the Cook-Levin theorem as our proof that \textbf{SAT} is \textbf{NP-Complete}. 
+    The \textbf{Boolean Satisfiability}\index{Boolean Satisfiability} decision problem (\textbf{SAT}) is to determine if there is a set of values for which a given boolean formula evaluates to true. These formulae can contain the operations \textbf{and} ($x_1 \land x_2$), \textbf{or} ($x_1 \lor x_2$), or \textbf{not} ($\overline{x_1}$). An example of one such formula can be seen below. We will take the Cook-Levin theorem as our proof that \textbf{SAT} is \textbf{NP-Complete}. 
     \begin{align*}
         (x_1 \lor x_2) \land (\overline{x_1}) \land (\overline{x_2} \lor x_3 \lor x_1)
     \end{align*}
 
 \subsection{3-Satisfiability}
-    The \textbf{3-Satisfiability} decision problem (\textbf{3-SAT}) is similar to the \textbf{SAT} problem, but with the added restriction that the boolean formula must be in the form 3-conjunctive normal form (\textbf{3-CNF}). \textbf{CNF} states that clauses are sets of \textbf{or} operations separated by \textbf{and} operations. There is no limit on the number of clauses which the \textbf{and} operations operate on. \textbf{3-CNF} requires that each clause has two \textbf{or} operations performed on three variables. An example of a formula in \textbf{3-CNF} can be seen below.
+    The \textbf{3-Satisfiability} \index{3-Satisfiability}decision problem (\textbf{3-SAT}) is similar to the \textbf{SAT} problem, but with the added restriction that the boolean formula must be in the form 3-conjunctive normal form (\textbf{3-CNF}). \textbf{CNF} states that clauses are sets of \textbf{or} operations separated by \textbf{and} operations. There is no limit on the number of clauses which the \textbf{and} operations operate on. \textbf{3-CNF} requires that each clause has two \textbf{or} operations performed on three variables. An example of a formula in \textbf{3-CNF} can be seen below.
     \begin{align*}
         (x_1 \lor x_2 \lor x_3) \land (\overline{x_1} \lor x_2 \lor \overline{x_3}) \land (x_1 \lor \overline{x_2} \lor x_3)
     \end{align*}
@@ -109,7 +109,7 @@
         This conversion to \textbf{3-CNF} can be done in polynomial time, meaning \textbf{SAT} is reducible to \textbf{3-SAT} in polynomial time. This means that \textbf{3-SAT} is in \textbf{NP-Hard}.
 
 \subsection{Directed Hamiltonian Cycle}
-    The \textbf{Directed Hamiltonian Cycle} decision problem is to determine if there is a Hamiltonian cycle in a given directed graph. That is to say, does there exist a cycle that passes through every vertex of the graph exactly once. We will now prove that the \textbf{Directed Hamiltonian Cycle} problem is an \textbf{NP-Complete} problem. To do this, we will first show that it is in \textbf{NP}. Then we will show that the problem is in \textbf{NP-Hard}.
+    The \textbf{Directed Hamiltonian Cycle} \index{Directed Hamiltonian Cycle}decision problem is to determine if there is a Hamiltonian cycle in a given directed graph. That is to say, does there exist a cycle that passes through every vertex of the graph exactly once. We will now prove that the \textbf{Directed Hamiltonian Cycle} problem is an \textbf{NP-Complete} problem. To do this, we will first show that it is in \textbf{NP}. Then we will show that the problem is in \textbf{NP-Hard}.
     \subsubsection{Is it in NP?}
         To show that the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP}, we must show that if given a potential solution to the problem we can verify the solution in polynomial time. We will represent the solution with a list of vertices, representing the vertices of the cycle in the order that they occur. We first check that each vertex of the graph is in the list exactly once. Then we will ensure that each pair of vertices adjacent in the list are also adjacent in the graph. Both of these operations can be done in polynomial time. As we can verify a solution in polynomial time, the \textbf{Directed Hamiltonian Cycle} problem is in \textbf{NP}.
     \subsubsection{Is it in NP-Hard?}
@@ -131,7 +131,7 @@
         \end{center}
 
 \subsection{Clique}
-    The \textbf{Clique} decision problem is to determine if there exists in a graph $G$ a complete subgraph of size $k$.
+    The \textbf{Clique}\index{Clique} decision problem is to determine if there exists in a graph $G$ a complete subgraph of size $k$.
     \subsubsection{Is it in NP?}
         If given a subgraph of $G$, first determine if there are $k$ vertices. If there are $k$ vertices, then determine if they all share edges. This can be done in $O(k^2)$ time, which means this problem is polynomial verifiable.
     \subsubsection{Is it in NP-Hard?}
@@ -145,7 +145,7 @@
         \end{center}
     
 \subsection{Vertex Cover}
-    The \textbf{Vertex Cover} decision problem is to determine if there exists in a graph $G$ a vertex cover of size $\leq k$. A vertex cover of an undirected graph is a subset of vertices $S$ such that every edge in $G$ is adjacent to at least one vertex in $S$.
+    The \textbf{Vertex Cover} \index{Vertex Cover}decision problem is to determine if there exists in a graph $G$ a vertex cover of size $\leq k$. A vertex cover of an undirected graph is a subset of vertices $S$ such that every edge in $G$ is adjacent to at least one vertex in $S$.
     \subsubsection{Is it in NP?}
         If given a graph $G$, a max size $k$, and a potential vertex cover $S$, we can first check that $|S| \leq k$. This is likely a constant time operation. Next we can use the following algorithm: 
         \begin{itemize}[noitemsep]

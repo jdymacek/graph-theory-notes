@@ -1,13 +1,13 @@
 \chapter{Eulerian and Hamiltonian}
 \section{7 Bridges o of K\"{o}nigsberg}
-The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the foundation to graph theory asks if it is possible to walk across all 7 bridges in the city exactly once. First to prove that it was impossible to do was Leonhard Euler in 1736, who proposed an abstract look at the city in terms of vertices and edges. Each landmass of the city was turned into a vertex and the bridges were edges. This would be known as a graph.\cite{7Bridges}
+\index{7 Bridges of K\"{o}nigsberg}The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the foundation to graph theory asks if it is possible to walk across all 7 bridges in the city exactly once. First to prove that it was impossible to do was Leonhard Euler in 1736, who proposed an abstract look at the city in terms of vertices and edges. Each landmass of the city was turned into a vertex and the bridges were edges. This would be known as a graph.\cite{7Bridges}
   \begin{center}
 %  	\includegraphics[width=0.6\textwidth]{Chapter3/7Bridges.pdf}
   \end{center}
 
     \section{Eulerian}
-  After Euler proved the 7 Bridges problem impossible he would consider a graph to have an Eulerian Trail (or Eulerian Circuit) if it is connected and the graph has a trail that includes every edge once. If the graph has an Eulerian Trail then the graph is Eulerian if the trail is closed. The graph is Semi-Eulerian (or Eulerian Path) if the trail is not closed. In other words if the graph has 0 vertices of odd degree the graph is Eulerian. If the graph has 2 vertices of odd degree the graph is Semi-Eulerian. Any other combination the graph is not Eulerian. This leads us to Euler's Theorem: A connected graph $G$ is Eulerian if and only if every vertex has an even degree.
-  \subsection{Hierholzer's Algorithm}
+  After Euler proved the 7 Bridges problem impossible he would consider a graph to have an Eulerian Trail\index{Eulerian} (or Eulerian Circuit) if it is connected and the graph has a trail that includes every edge once. If the graph has an Eulerian Trail then the graph is Eulerian if the trail is closed. The graph is Semi-Eulerian (or Eulerian Path) if the trail is not closed. In other words if the graph has 0 vertices of odd degree the graph is Eulerian. If the graph has 2 vertices of odd degree the graph is Semi-Eulerian. Any other combination the graph is not Eulerian. This leads us to Euler's Theorem: A connected graph $G$ is Eulerian if and only if every vertex has an even degree.
+  \subsection{Hierholzer's Algorithm}\index{Hierholzer}
   Given a connected graph $G$ with every vertex with an even degree 
 
   Start at vertex $v$
@@ -26,7 +26,7 @@ The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the found
 
   Has run time of $O(E)$\cite{EulerianAlgos}
   \subsection{Fleury's Algorithm}
-  Given a graph $G$ with 0 or  2 vertices of odd degree
+  \index{Fleury}Given a graph $G$ with 0 or  2 vertices of odd degree
 
   If $G$ has 0 vertices of odd degree start at any vertex
 
@@ -47,7 +47,7 @@ The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the found
 
   
   \section{Hamiltonian}
-  A Hamiltonian Circuit in a graph $G$ is a circuit of length $n$. If $G$ has a Hamiltonian Circuit then $G$ is Hamiltonian. A Hamiltonian Path is a path of length $n-1$. If $G$ has a Hamiltonian Path then $G$ is Semi-Hamiltonian. If it is possible to visit every vertex once and end at the same vertex you started then $G$ has a Hamiltonian Circuit. If the starting and ending vertex are different but the path still visits every vertex once, then $G$ is Semi-Hamiltonian.
+  A Hamiltonian Circuit \index{Hamiltonian}in a graph $G$ is a circuit of length $n$. If $G$ has a Hamiltonian Circuit then $G$ is Hamiltonian. A Hamiltonian Path is a path of length $n-1$. If $G$ has a Hamiltonian Path then $G$ is Semi-Hamiltonian. If it is possible to visit every vertex once and end at the same vertex you started then $G$ has a Hamiltonian Circuit. If the starting and ending vertex are different but the path still visits every vertex once, then $G$ is Semi-Hamiltonian.
 
   \subsection{Examples}
   \begin{figure}
@@ -76,7 +76,7 @@ The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the found
     \section{Theorems}
   The theorems below present a hypothesis and prove if the graph satisfies the hypothesis then the graph is Hamiltonian. To prove the converse (so if a graph is Hamiltonian, then it has 'x' property) and produce and if and only if proof is a million dollar question. Finding if a graph is Hamiltonian is challenging, we will discuss next chapter how time consuming it can be for computers to solve the problem. 
     \subsection{Ore's Theorem (1960)}
-  If $G$ is a graph with $n \geq 3$ vertices such that for all distinct non-adjacent vertices $u$ and $v$, $deg(u) + deg(v) \geq n$, then $G$ is Hamiltonian.
+ \index{Ore} If $G$ is a graph with $n \geq 3$ vertices such that for all distinct non-adjacent vertices $u$ and $v$, $deg(u) + deg(v) \geq n$, then $G$ is Hamiltonian.
     \begin{proof}
 	    Suppose that there is a graph that is not Hamiltonian but satisfies the hypothesis of the theorem. Let $T = \{n \in \mathbb{N} $ : n is the number of vertices in the graph\}. Since $T$ is a non-empty set of positive integers, then $T$ has an element called $n_{0}$. Let $G$ be a graph with $n_{0}$ vertices and as many edges as possible, but not Hamiltonian and satisfies the hypothesis. Now $G$ is not complete since all complete graphs of more than 2 vertices are Hamiltonian. Let $u$ and $v$ be non-adjacent vertices in $G$. Note: $deg(u) + deg(v) \geq n$ and $G + uv$ is Hamiltonian. 
   \begin{center}
@@ -87,18 +87,18 @@ The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the found
     If $uv_{i} \in E$, then $u_{i-1}v \notin E$. So, $deg(v) \leq (n-1) - deg(u)$. Therefore, $deg(v) + deg(u) \leq n - 1$, which is a contradiction to the hypothesis.\cite{Ore'sTheorem}
     \end{proof}
   \subsection{Las Vergnas (1971)}
-  A graph $G$ with $n \geq 3$ vertices is Hamiltonian if the vertices of $G$ can be labelled, $v_{1}, .... ,v_{n}$ such that $j < k$, $j + k \geq n$, where $v_{j}, v_{k} \in E$ and $deg(v_{j}) \leq j, deg(v_{k}) \leq k - 1$ Note: this implies that $deg(v_{j}) + deg(v_{k}) \geq n$
+  \index{Las Vergnas}A graph $G$ with $n \geq 3$ vertices is Hamiltonian if the vertices of $G$ can be labelled, $v_{1}, .... ,v_{n}$ such that $j < k$, $j + k \geq n$, where $v_{j}, v_{k} \in E$ and $deg(v_{j}) \leq j, deg(v_{k}) \leq k - 1$ Note: this implies that $deg(v_{j}) + deg(v_{k}) \geq n$
     \subsection{Chv\'{a}tal(1970)}
-  Let $G$ be a graph with $n \geq 3$ vertices and the degrees satisfy $d_{1} \leq d_{2} \leq .... \leq d_{n}$. If $d_{j} \leq j \leq \frac{n}{2}$ implies $d_{n-j} \geq n - j$ then $G$ is Hamiltonian.
+ \index{Chv\'{a}tal} Let $G$ be a graph with $n \geq 3$ vertices and the degrees satisfy $d_{1} \leq d_{2} \leq .... \leq d_{n}$. If $d_{j} \leq j \leq \frac{n}{2}$ implies $d_{n-j} \geq n - j$ then $G$ is Hamiltonian.
     
     \subsection{Bandy(1969)}
-  Let $G$ be a graph with $n \leq 3$ vertices and the degrees satisfy $d_{1} \leq d_{2} \leq .... \leq d_{n}$. If $d_{j} \leq j, d_{k} \leq k$ implies $d_{j} + d_{k} \geq n$ then $G$ is Hamiltonian.
+ \index{Bandy} Let $G$ be a graph with $n \leq 3$ vertices and the degrees satisfy $d_{1} \leq d_{2} \leq .... \leq d_{n}$. If $d_{j} \leq j, d_{k} \leq k$ implies $d_{j} + d_{k} \geq n$ then $G$ is Hamiltonian.
     
     \subsection{P\u{o}sa (1962)}
-  Let $G$ be a graph with $n \geq n$ vertices such that for each $j$, $1 \leq j \leq \frac{n}{2}$ the number of vertices of degree no longer than $j$ is less than $j$, then $G$ is Hamiltonian.
+  \index{P\u{o}sa} Let $G$ be a graph with $n \geq n$ vertices such that for each $j$, $1 \leq j \leq \frac{n}{2}$ the number of vertices of degree no longer than $j$ is less than $j$, then $G$ is Hamiltonian.
     
     \subsection{Dirac (1962)}
-  If $G$ is a graph with $n \geq 3$ vertices such that $deg(v) \geq \frac{n}{2}$ for every vertex of $G$, then $G$ is Hamiltonian.
+  \index{Dirac} If $G$ is a graph with $n \geq 3$ vertices such that $deg(v) \geq \frac{n}{2}$ for every vertex of $G$, then $G$ is Hamiltonian.
     
     \subsection{Bandy and Chv\'{a}tal(1976)}
   First a definition: The closure of a graph $G$ with $n$ vertices, denoted $C(G)$ is the graph obtained from $G$ by recursively joining pairs of non-adjacent vertices whose degree sum is at least $n$ until no such pair remain.\\

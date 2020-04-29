@@ -1,40 +1,61 @@
 \begin{theindex}
 
+  \item 3-Satisfiability, 34
+  \item 7 Bridges of K\"{o}nigsberg, 23
+
+  \indexspace
+
   \item Adjacency Matrix, 10
   \item Adjacent, 7
 
   \indexspace
 
+  \item Bandy, 26
   \item Bipartite Graph, 9
+  \item Boolean Satisfiability, 33
   \item Bor\r{u}vka's Algorithm, 19
   \item Bridge, 20
 
   \indexspace
 
+  \item Chv\'{a}tal, 26
+  \item Clique, 38
   \item Complement, 12
   \item Complete Graph, 9
   \item Component, 12
   \item Connected, 11
+  \item Cook-Levin Theorem, 32
   \item Cycle, 12, 15
 
   \indexspace
 
   \item Degree, 7
+  \item Deterministic, 31
   \item Digraph, 6
+  \item Dirac, 27
+  \item Directed Hamiltonian Cycle, 34
   \item Disconnected, 11
 
   \indexspace
 
   \item Edges, 5
+  \item Eulerian, 23
 
   \indexspace
 
+  \item Fleury, 24
   \item Forest, 15
 
   \indexspace
 
+  \item Gadget, 32
   \item Graph Bridge Theorem, 20
   \item Graphs, 5
+
+  \indexspace
+
+  \item Hamiltonian, 24
+  \item Hierholzer, 23
 
   \indexspace
 
@@ -49,10 +70,12 @@
 
   \indexspace
 
+  \item Karp's 21 Problems, 33
   \item Kruskal's Algorithm, 18
 
   \indexspace
 
+  \item Las Vergnas, 26
   \item Lines, 5
   \item Links, 5
 
@@ -64,17 +87,29 @@
   \indexspace
 
   \item Nodes, 5
+  \item Nondeterministic, 31
+  \item NP, 31
+  \item NP-Complete, 32
+  \item NP-Hard, 32
   \item Null Graph, 9
 
   \indexspace
 
+  \item Ore, 26
+
+  \indexspace
+
+  \item P, 31
+  \item P\u{o}sa, 26
   \item Path, 14
   \item Pendant, 7
   \item Points, 5
+  \item Polynomial Time, 31
   \item Prim's Algorithm, 17
 
   \indexspace
 
+  \item Reduction, 32
   \item Reflexive, 8
   \item Regular Graph, 9
 
@@ -99,6 +134,7 @@
 
   \indexspace
 
+  \item Vertex Cover, 39
   \item Vertices, 5
 
   \indexspace
