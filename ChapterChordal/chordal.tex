@@ -26,8 +26,11 @@ form powerful and competent register allocation patterns. \cite{pereira_palsberg
 
 \section{What else should you know about chordal graphs?}
 Chordal graphs are a subset of \textbf{perfect} graphs.\\
-Chordal graphs are interestingly a subclass of both \textbf{Even-Hole-Free} graphs and \textbf{Odd-Hole-Free} graphs.
-Which are graphs that have no induced subgraphs of even size and graphs that have no induced subgraphs of odd size respectively.
+Chordal graphs are interestingly all members of both \textbf{Even-Hole-Free} graphs and \textbf{Odd-Hole-Free} graphs.
+Which are graphs that have no \textbf{holes} of even size and graphs that have no \textbf{holes} of odd size respectively.\\
+We know that this is true based on definition.\\
+A \textbf{hole} is an induced path of size 4 or greater that has no chords.\\
+Since Chordal graphs interrupt every cycle of 4 or more with a chord at least once we know that they must not have any holes. So they certainly can't have holes of even or odd degree.
 
 \url{http://digbib.ubka.uni-karlsruhe.de/volltexte/documents/6532}\\
 \url{http://webdocs.cs.ualberta.ca/~hayward/theses/sean.pdf}\\
