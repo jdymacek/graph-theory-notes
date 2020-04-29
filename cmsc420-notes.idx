@@ -1,89 +1,89 @@
-\indexentry{Graphs}{5}
-\indexentry{Vertices}{5}
-\indexentry{Nodes}{5}
-\indexentry{Points}{5}
-\indexentry{Edges}{5}
-\indexentry{Links}{5}
-\indexentry{Lines}{5}
-\indexentry{Multigraph}{6}
-\indexentry{Digraph}{6}
-\indexentry{Join}{7}
-\indexentry{Adjacent}{7}
-\indexentry{Incident}{7}
-\indexentry{Degree}{7}
-\indexentry{Isolated}{7}
-\indexentry{Pendant}{7}
-\indexentry{Isomorphic}{7}
-\indexentry{Reflexive}{8}
-\indexentry{Symmetric}{8}
-\indexentry{Transitive}{8}
-\indexentry{The Handshaking Lemma}{8}
-\indexentry{Null Graph}{9}
-\indexentry{Regular Graph}{9}
-\indexentry{Complete Graph}{9}
-\indexentry{Bipartite Graph}{9}
-\indexentry{Subgraph}{9}
-\indexentry{Adjacency Matrix}{10}
-\indexentry{Incidence Matrix}{10}
-\indexentry{Tree}{11}
-\indexentry{Union}{11}
-\indexentry{Disconnected}{11}
-\indexentry{Connected}{11}
-\indexentry{Component}{12}
-\indexentry{Subtraction}{12}
-\indexentry{Cycle}{12}
-\indexentry{Complement}{12}
-\indexentry{Self-Complementary}{13}
-\indexentry{Walk}{13}
-\indexentry{Trail}{14}
-\indexentry{Path}{14}
-\indexentry{Cycle}{15}
-\indexentry{Forest}{15}
-\indexentry{Spanning Tree}{16}
-\indexentry{Minimum Spanning Trees(MST)}{17}
-\indexentry{Weight}{17}
-\indexentry{Prim's Algorithm}{17}
-\indexentry{Kruskal's Algorithm}{18}
-\indexentry{Bor\r{u}vka's Algorithm}{19}
-\indexentry{Bridge}{20}
-\indexentry{Graph Bridge Theorem}{20}
-\indexentry{7 Bridges of K\"{o}nigsberg}{33}
-\indexentry{Eulerian}{33}
-\indexentry{Hierholzer}{33}
-\indexentry{Fleury}{34}
-\indexentry{Hamiltonian}{34}
-\indexentry{Ore}{36}
-\indexentry{Las Vergnas}{36}
-\indexentry{Chv\'{a}tal}{36}
-\indexentry{Bandy}{36}
-\indexentry{P\u{o}sa}{36}
-\indexentry{Dirac}{37}
-\indexentry{Deterministic}{41}
-\indexentry{Nondeterministic}{41}
-\indexentry{Polynomial Time}{41}
-\indexentry{P}{41}
-\indexentry{NP}{41}
-\indexentry{NP-Hard}{42}
-\indexentry{NP-Complete}{42}
-\indexentry{Reduction}{42}
-\indexentry{Gadget}{42}
-\indexentry{Cook-Levin Theorem}{42}
-\indexentry{Karp's 21 Problems}{43}
-\indexentry{Boolean Satisfiability}{43}
-\indexentry{3-Satisfiability}{44}
-\indexentry{Directed Hamiltonian Cycle}{44}
-\indexentry{Clique}{48}
-\indexentry{Vertex Cover}{49}
-\indexentry{Graph Coloring}{51}
-\indexentry{K-Colorable}{51}
-\indexentry{K-Edge-Colorable}{52}
-\indexentry{K-Chromatic}{52}
-\indexentry{K-Edge-Chromatic}{52}
-\indexentry{6-Colorable}{53}
-\indexentry{Grinberg's Theorm}{55}
-\indexentry{Diagonals}{55}
-\indexentry{Herschel Graph}{56}
-\indexentry{Euler's Formula}{57}
-\indexentry{Kuratowski's Theorm}{57}
-\indexentry{Wagner's Theorm}{57}
-\indexentry{Minors}{58}
+\indexentry{Graphs|hyperpage}{5}
+\indexentry{Vertices|hyperpage}{5}
+\indexentry{Nodes|hyperpage}{5}
+\indexentry{Points|hyperpage}{5}
+\indexentry{Edges|hyperpage}{5}
+\indexentry{Links|hyperpage}{5}
+\indexentry{Lines|hyperpage}{5}
+\indexentry{Multigraph|hyperpage}{6}
+\indexentry{Digraph|hyperpage}{6}
+\indexentry{Join|hyperpage}{7}
+\indexentry{Adjacent|hyperpage}{7}
+\indexentry{Incident|hyperpage}{7}
+\indexentry{Degree|hyperpage}{7}
+\indexentry{Isolated|hyperpage}{7}
+\indexentry{Pendant|hyperpage}{7}
+\indexentry{Isomorphic|hyperpage}{7}
+\indexentry{Reflexive|hyperpage}{8}
+\indexentry{Symmetric|hyperpage}{8}
+\indexentry{Transitive|hyperpage}{8}
+\indexentry{The Handshaking Lemma|hyperpage}{8}
+\indexentry{Null Graph|hyperpage}{9}
+\indexentry{Regular Graph|hyperpage}{9}
+\indexentry{Complete Graph|hyperpage}{9}
+\indexentry{Bipartite Graph|hyperpage}{9}
+\indexentry{Subgraph|hyperpage}{9}
+\indexentry{Adjacency Matrix|hyperpage}{10}
+\indexentry{Incidence Matrix|hyperpage}{10}
+\indexentry{Tree|hyperpage}{11}
+\indexentry{Union|hyperpage}{11}
+\indexentry{Disconnected|hyperpage}{11}
+\indexentry{Connected|hyperpage}{11}
+\indexentry{Component|hyperpage}{12}
+\indexentry{Subtraction|hyperpage}{12}
+\indexentry{Cycle|hyperpage}{12}
+\indexentry{Complement|hyperpage}{12}
+\indexentry{Self-Complementary|hyperpage}{13}
+\indexentry{Walk|hyperpage}{13}
+\indexentry{Trail|hyperpage}{14}
+\indexentry{Path|hyperpage}{14}
+\indexentry{Cycle|hyperpage}{15}
+\indexentry{Forest|hyperpage}{15}
+\indexentry{Spanning Tree|hyperpage}{16}
+\indexentry{Minimum Spanning Trees(MST)|hyperpage}{17}
+\indexentry{Weight|hyperpage}{17}
+\indexentry{Prim's Algorithm|hyperpage}{17}
+\indexentry{Kruskal's Algorithm|hyperpage}{18}
+\indexentry{Bor\r{u}vka's Algorithm|hyperpage}{19}
+\indexentry{Bridge|hyperpage}{20}
+\indexentry{Graph Bridge Theorem|hyperpage}{20}
+\indexentry{7 Bridges of K\"{o}nigsberg|hyperpage}{33}
+\indexentry{Eulerian|hyperpage}{33}
+\indexentry{Hierholzer|hyperpage}{33}
+\indexentry{Fleury|hyperpage}{34}
+\indexentry{Hamiltonian|hyperpage}{34}
+\indexentry{Ore|hyperpage}{36}
+\indexentry{Las Vergnas|hyperpage}{36}
+\indexentry{Chv\'{a}tal|hyperpage}{36}
+\indexentry{Bandy|hyperpage}{36}
+\indexentry{P\u{o}sa|hyperpage}{36}
+\indexentry{Dirac|hyperpage}{37}
+\indexentry{Deterministic|hyperpage}{41}
+\indexentry{Nondeterministic|hyperpage}{41}
+\indexentry{Polynomial Time|hyperpage}{41}
+\indexentry{P|hyperpage}{41}
+\indexentry{NP|hyperpage}{41}
+\indexentry{NP-Hard|hyperpage}{42}
+\indexentry{NP-Complete|hyperpage}{42}
+\indexentry{Reduction|hyperpage}{42}
+\indexentry{Gadget|hyperpage}{42}
+\indexentry{Cook-Levin Theorem|hyperpage}{42}
+\indexentry{Karp's 21 Problems|hyperpage}{43}
+\indexentry{Boolean Satisfiability|hyperpage}{43}
+\indexentry{3-Satisfiability|hyperpage}{44}
+\indexentry{Directed Hamiltonian Cycle|hyperpage}{44}
+\indexentry{Clique|hyperpage}{48}
+\indexentry{Vertex Cover|hyperpage}{49}
+\indexentry{Graph Coloring|hyperpage}{51}
+\indexentry{K-Colorable|hyperpage}{51}
+\indexentry{K-Edge-Colorable|hyperpage}{52}
+\indexentry{K-Chromatic|hyperpage}{52}
+\indexentry{K-Edge-Chromatic|hyperpage}{52}
+\indexentry{6-Colorable|hyperpage}{53}
+\indexentry{Grinberg's Theorm|hyperpage}{55}
+\indexentry{Diagonals|hyperpage}{55}
+\indexentry{Herschel Graph|hyperpage}{56}
+\indexentry{Euler's Formula|hyperpage}{57}
+\indexentry{Kuratowski's Theorm|hyperpage}{57}
+\indexentry{Wagner's Theorm|hyperpage}{57}
+\indexentry{Minors|hyperpage}{58}

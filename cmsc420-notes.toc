@@ -1,70 +1,70 @@
-\contentsline {chapter}{\numberline {1}On Graphs}{5}% 
-\contentsline {section}{\numberline {1.1}What is a Graph?}{5}% 
-\contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}% 
-\contentsline {section}{\numberline {1.3}On Different Types of Graphs}{6}% 
-\contentsline {subsection}{\numberline {1.3.1}Multigraphs}{6}% 
-\contentsline {subsection}{\numberline {1.3.2}Digraphs}{6}% 
-\contentsline {section}{\numberline {1.4}On Vertices and Edges}{7}% 
-\contentsline {section}{\numberline {1.5}On Isomorphisms}{7}% 
-\contentsline {subsection}{\numberline {1.5.1}The Handshaking Lemma}{8}% 
-\contentsline {section}{\numberline {1.6}On Special Kinds of Graphs}{9}% 
-\contentsline {section}{\numberline {1.7}On the Storage of Graphs}{9}% 
-\contentsline {chapter}{\numberline {2}Forest for the Trees}{11}% 
-\contentsline {section}{\numberline {2.1}Definitions}{11}% 
-\contentsline {section}{\numberline {2.2}Trailblazing}{13}% 
-\contentsline {section}{\numberline {2.3}The Lorax}{15}% 
-\contentsline {section}{\numberline {2.4}(Minimum) Spanning Trees}{16}% 
-\contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{17}% 
-\contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{18}% 
-\contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{19}% 
-\contentsline {section}{\numberline {2.5}Many Branching Theorems}{20}% 
-\contentsline {chapter}{\numberline {3}Single Source Shortest Path}{23}% 
-\contentsline {section}{\numberline {3.1}Dijkstra}{23}% 
-\contentsline {section}{\numberline {3.2}Bellman-Ford}{27}% 
-\contentsline {chapter}{\numberline {4}Eulerian and Hamiltonian}{33}% 
-\contentsline {section}{\numberline {4.1}7 Bridges o of K\"{o}nigsberg}{33}% 
-\contentsline {section}{\numberline {4.2}Eulerian}{33}% 
-\contentsline {subsection}{\numberline {4.2.1}Hierholzer's Algorithm}{33}% 
-\contentsline {subsection}{\numberline {4.2.2}Fleury's Algorithm}{34}% 
-\contentsline {section}{\numberline {4.3}Hamiltonian}{34}% 
-\contentsline {subsection}{\numberline {4.3.1}Examples}{34}% 
-\contentsline {section}{\numberline {4.4}Theorems}{36}% 
-\contentsline {subsection}{\numberline {4.4.1}Ore's Theorem (1960)}{36}% 
-\contentsline {subsection}{\numberline {4.4.2}Las Vergnas (1971)}{36}% 
-\contentsline {subsection}{\numberline {4.4.3}Chv\'{a}tal(1970)}{36}% 
-\contentsline {subsection}{\numberline {4.4.4}Bandy(1969)}{36}% 
-\contentsline {subsection}{\numberline {4.4.5}P\u {o}sa (1962)}{36}% 
-\contentsline {subsection}{\numberline {4.4.6}Dirac (1962)}{37}% 
-\contentsline {subsection}{\numberline {4.4.7}Bandy and Chv\'{a}tal(1976)}{37}% 
-\contentsline {chapter}{\numberline {5}NP-Completeness}{41}% 
-\contentsline {section}{\numberline {5.1}Definitions}{41}% 
-\contentsline {section}{\numberline {5.2}Founding Papers}{42}% 
-\contentsline {subsection}{\numberline {5.2.1}Cook-Levin Theorem (1971)}{42}% 
-\contentsline {subsection}{\numberline {5.2.2}Karp's 21 Problems (1972)}{43}% 
-\contentsline {section}{\numberline {5.3}Problems}{43}% 
-\contentsline {subsection}{\numberline {5.3.1}Boolean Satisfiability}{43}% 
-\contentsline {subsection}{\numberline {5.3.2}3-Satisfiability}{44}% 
-\contentsline {subsubsection}{Is it in NP?}{44}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{44}% 
-\contentsline {subsection}{\numberline {5.3.3}Directed Hamiltonian Cycle}{44}% 
-\contentsline {subsubsection}{Is it in NP?}{45}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{45}% 
-\contentsline {subsection}{\numberline {5.3.4}Clique}{48}% 
-\contentsline {subsubsection}{Is it in NP?}{48}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{48}% 
-\contentsline {subsection}{\numberline {5.3.5}Vertex Cover}{49}% 
-\contentsline {subsubsection}{Is it in NP?}{49}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{49}% 
-\contentsline {chapter}{\numberline {6}Pigment of your Imagination}{51}% 
-\contentsline {section}{\numberline {6.1}Coloring your Graphs}{51}% 
-\contentsline {section}{\numberline {6.2}On the Rules of Coloring}{51}% 
-\contentsline {chapter}{\numberline {7}Grin and Berg it}{55}% 
-\contentsline {section}{\numberline {7.1}Grinberg's Theorm(1976)}{55}% 
-\contentsline {section}{\numberline {7.2}Diagonals}{55}% 
-\contentsline {section}{\numberline {7.3}Herschel Graph}{56}% 
-\contentsline {chapter}{\numberline {8}Plane and Simple}{57}% 
-\contentsline {section}{\numberline {8.1}Euler's Formula (1750)}{57}% 
-\contentsline {section}{\numberline {8.2}Lemma}{57}% 
-\contentsline {section}{\numberline {8.3}Kuratowski's Theorm (1930)}{57}% 
-\contentsline {section}{\numberline {8.4}Wagner's Theorm(1937)}{57}% 
-\contentsline {section}{\numberline {8.5}Minors}{58}% 
+\contentsline {chapter}{\numberline {1}On Graphs}{5}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}What is a Graph?}{5}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Why do we care about Graphs?}{5}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}On Different Types of Graphs}{6}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Multigraphs}{6}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Digraphs}{6}{subsection.1.3.2}% 
+\contentsline {section}{\numberline {1.4}On Vertices and Edges}{7}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}On Isomorphisms}{7}{section.1.5}% 
+\contentsline {subsection}{\numberline {1.5.1}The Handshaking Lemma}{8}{subsection.1.5.1}% 
+\contentsline {section}{\numberline {1.6}On Special Kinds of Graphs}{9}{section.1.6}% 
+\contentsline {section}{\numberline {1.7}On the Storage of Graphs}{9}{section.1.7}% 
+\contentsline {chapter}{\numberline {2}Forest for the Trees}{11}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Definitions}{11}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Trailblazing}{13}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}The Lorax}{15}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}(Minimum) Spanning Trees}{16}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Prim's Algorithm}{17}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Kruskal's Algorithm}{18}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Bor\r {u}vka's Algorithm}{19}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}Many Branching Theorems}{20}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Single Source Shortest Path}{23}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Dijkstra}{23}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Bellman-Ford}{27}{section.3.2}% 
+\contentsline {chapter}{\numberline {4}Eulerian and Hamiltonian}{33}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}7 Bridges o of K\"{o}nigsberg}{33}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Eulerian}{33}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Hierholzer's Algorithm}{33}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Fleury's Algorithm}{34}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}Hamiltonian}{34}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Examples}{34}{subsection.4.3.1}% 
+\contentsline {section}{\numberline {4.4}Theorems}{36}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Ore's Theorem (1960)}{36}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Las Vergnas (1971)}{36}{subsection.4.4.2}% 
+\contentsline {subsection}{\numberline {4.4.3}Chv\'{a}tal(1970)}{36}{subsection.4.4.3}% 
+\contentsline {subsection}{\numberline {4.4.4}Bandy(1969)}{36}{subsection.4.4.4}% 
+\contentsline {subsection}{\numberline {4.4.5}P\u {o}sa (1962)}{36}{subsection.4.4.5}% 
+\contentsline {subsection}{\numberline {4.4.6}Dirac (1962)}{37}{subsection.4.4.6}% 
+\contentsline {subsection}{\numberline {4.4.7}Bandy and Chv\'{a}tal(1976)}{37}{subsection.4.4.7}% 
+\contentsline {chapter}{\numberline {5}NP-Completeness}{41}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Definitions}{41}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Founding Papers}{42}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Cook-Levin Theorem (1971)}{42}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Karp's 21 Problems (1972)}{43}{subsection.5.2.2}% 
+\contentsline {section}{\numberline {5.3}Problems}{43}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Boolean Satisfiability}{43}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}3-Satisfiability}{44}{subsection.5.3.2}% 
+\contentsline {subsubsection}{Is it in NP?}{44}{section*.13}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{44}{section*.14}% 
+\contentsline {subsection}{\numberline {5.3.3}Directed Hamiltonian Cycle}{44}{subsection.5.3.3}% 
+\contentsline {subsubsection}{Is it in NP?}{45}{section*.15}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{45}{section*.16}% 
+\contentsline {subsection}{\numberline {5.3.4}Clique}{48}{subsection.5.3.4}% 
+\contentsline {subsubsection}{Is it in NP?}{48}{section*.17}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{48}{section*.18}% 
+\contentsline {subsection}{\numberline {5.3.5}Vertex Cover}{49}{subsection.5.3.5}% 
+\contentsline {subsubsection}{Is it in NP?}{49}{section*.19}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{49}{section*.20}% 
+\contentsline {chapter}{\numberline {6}Pigment of your Imagination}{51}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Coloring your Graphs}{51}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}On the Rules of Coloring}{51}{section.6.2}% 
+\contentsline {chapter}{\numberline {7}Grin and Berg it}{55}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Grinberg's Theorm(1976)}{55}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Diagonals}{55}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}Herschel Graph}{56}{section.7.3}% 
+\contentsline {chapter}{\numberline {8}Plane and Simple}{57}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Euler's Formula (1750)}{57}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}Lemma}{57}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}Kuratowski's Theorm (1930)}{57}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Wagner's Theorm(1937)}{57}{section.8.4}% 
+\contentsline {section}{\numberline {8.5}Minors}{58}{section.8.5}% 
