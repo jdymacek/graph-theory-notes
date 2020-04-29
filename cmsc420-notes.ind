@@ -1,6 +1,7 @@
 \begin{theindex}
 
   \item 3-Satisfiability, 44
+  \item 6-Colorable, 53
   \item 7 Bridges of K\"{o}nigsberg, 33
 
   \indexspace
@@ -31,6 +32,7 @@
 
   \item Degree, 7
   \item Deterministic, 41
+  \item Diagonals, 55
   \item Digraph, 6
   \item Dirac, 37
   \item Directed Hamiltonian Cycle, 44
@@ -39,6 +41,7 @@
   \indexspace
 
   \item Edges, 5
+  \item Euler's Formula, 57
   \item Eulerian, 33
 
   \indexspace
@@ -50,11 +53,14 @@
 
   \item Gadget, 42
   \item Graph Bridge Theorem, 20
+  \item Graph Coloring, 51
   \item Graphs, 5
+  \item Grinberg's Theorm, 55
 
   \indexspace
 
   \item Hamiltonian, 34
+  \item Herschel Graph, 56
   \item Hierholzer, 33
 
   \indexspace
@@ -70,8 +76,13 @@
 
   \indexspace
 
+  \item K-Chromatic, 52
+  \item K-Colorable, 51
+  \item K-Edge-Chromatic, 52
+  \item K-Edge-Colorable, 52
   \item Karp's 21 Problems, 43
   \item Kruskal's Algorithm, 18
+  \item Kuratowski's Theorm, 57
 
   \indexspace
 
@@ -82,6 +93,7 @@
   \indexspace
 
   \item Minimum Spanning Trees(MST), 17
+  \item Minors, 58
   \item Multigraph, 6
 
   \indexspace
@@ -139,6 +151,7 @@
 
   \indexspace
 
+  \item Wagner's Theorm, 57
   \item Walk, 13
   \item Weight, 17
 

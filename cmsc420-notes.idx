@@ -74,3 +74,16 @@
 \indexentry{Directed Hamiltonian Cycle}{44}
 \indexentry{Clique}{48}
 \indexentry{Vertex Cover}{49}
+\indexentry{Graph Coloring}{51}
+\indexentry{K-Colorable}{51}
+\indexentry{K-Edge-Colorable}{52}
+\indexentry{K-Chromatic}{52}
+\indexentry{K-Edge-Chromatic}{52}
+\indexentry{6-Colorable}{53}
+\indexentry{Grinberg's Theorm}{55}
+\indexentry{Diagonals}{55}
+\indexentry{Herschel Graph}{56}
+\indexentry{Euler's Formula}{57}
+\indexentry{Kuratowski's Theorm}{57}
+\indexentry{Wagner's Theorm}{57}
+\indexentry{Minors}{58}
