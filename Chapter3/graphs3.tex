@@ -1,12 +1,15 @@
 \chapter{Eulerian and Hamiltonian}
-\section{7 Bridges o of K\"{o}nigsberg}
+\section{7 Bridges of K\"{o}nigsberg}
 The 7 Bridges of K\"{o}nigsberg is a problem that would eventually lay the foundation to graph theory asks if it is possible to walk across all 7 bridges in the city exactly once. First to prove that it was impossible to do was Leonhard Euler in 1736, who proposed an abstract look at the city in terms of vertices and edges. Each landmass of the city was turned into a vertex and the bridges were edges. This would be known as a graph.\cite{7Bridges}
-  \begin{center}
-%  	\includegraphics[width=0.6\textwidth]{Chapter3/7Bridges.pdf}
-  \end{center}
+  \begin{figure}[!h]
+	\centering
+  	\includegraphics[width=0.6\textwidth]{Chapter3/sevenBridges.pdf}
+	\caption{A graph representation of the original 7 bridges of K\"{o}nigsberg}
+  \end{figure}
 
     \section{Eulerian}
-  After Euler proved the 7 Bridges problem impossible he would consider a graph to have an Eulerian Trail (or Eulerian Circuit) if it is connected and the graph has a trail that includes every edge once. If the graph has an Eulerian Trail then the graph is Eulerian if the trail is closed. The graph is Semi-Eulerian (or Eulerian Path) if the trail is not closed. In other words if the graph has 0 vertices of odd degree the graph is Eulerian. If the graph has 2 vertices of odd degree the graph is Semi-Eulerian. Any other combination the graph is not Eulerian. This leads us to Euler's Theorem: A connected graph $G$ is Eulerian if and only if every vertex has an even degree.
+  After Euler proved the 7 Bridges problem impossible he would consider a graph to have an Eulerian Trail (or Eulerian Circuit) if it is connected and the graph has a trail that includes every edge once. If the graph has an Eulerian Trail then the graph is Eulerian if the trail is closed. The graph is Semi-Eulerian (or Eulerian Path) if the trail is not closed. In other words if the graph has 0 vertices of odd degree the graph is Eulerian. If the graph has 2 vertices of odd degree the graph is Semi-Eulerian. Any other combination the graph is not Eulerian. This leads us to Euler's Theorem: A connected graph $G$ is Eulerian if and only if every vertex has an even degree. There are several use cases for Eulerian Trails, such as reconstructind DNA segements from fragments for scientific use.\cite{EulerianAlgos} 
+
   \subsection{Hierholzer's Algorithm}
   Given a connected graph $G$ with every vertex with an even degree 
 

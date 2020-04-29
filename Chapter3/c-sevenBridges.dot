@@ -1,0 +1,9 @@
+graph G {
+    A -- B;
+    A -- B;
+    A -- D;
+    B -- C;
+    B -- C;
+    B -- D;
+    C -- D;
+}
