@@ -53,7 +53,7 @@
 \contentsline {section}{\numberline {5.1}Coloring your Graphs}{41}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}On the Rules of Coloring}{41}{section.5.2}% 
 \contentsline {chapter}{\numberline {6}Chordal Graphs}{45}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}What Do Chordal Graphs Be?}{45}{section.6.1}% 
+\contentsline {section}{\numberline {6.1}What makes a graph Chordal?}{45}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}What Do Chordal Graphs Look Like?}{45}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}How Do They Be Used Doe?}{45}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}Power Chords}{46}{section.6.4}% 
+\contentsline {section}{\numberline {6.3}How are they Used?}{46}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}What problems do chordal graphs help with?}{46}{section.6.4}% 
