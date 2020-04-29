@@ -18,7 +18,7 @@ This is no different than how we've defined them before. Here are some examples 
 
 \begin{center}
     \begin{tabular}{c c}
-        \includegraphics[width=0.3\textwidth]{Project3/Bipartite/bip.pdf} & \includegraphics[width=0.3\textwidth]{Project3/Bipartite/forest.pdf} \\
+        \includegraphics[width=0.3\textwidth]{SectionBipartite/bip.pdf} & \includegraphics[width=0.3\textwidth]{SectionBipartite/forest.pdf} \\
         Connected Bipartite Graph & Disconnected Bipartite Graph
     \end{tabular}
 \end{center}
@@ -34,14 +34,14 @@ Complete bipartite graphs are an important subset of bipartite graphs. Here is t
 An example of a complete bipartite graph is $K_{3,3}$, known as the Utility Graph, shown below:
 
 \begin{center}
-    \includegraphics[width=0.4\textwidth]{Project3/Bipartite/k33.pdf}
+    \includegraphics[width=0.4\textwidth]{SectionBipartite/k33.pdf}
 \end{center}
 
 \subsection{When Can We Use These?}
 As you might imagine, bipartite graphs might be useful when we want to take information in two distinct categories, and match them. For example, suppose we want to consider the relationships between professors and courses they teach. In our graph, we can separate these into two categories, "professors" and "courses", and create an edge any time a particular professor teaches a course. By construction, we have that there would not be any edges between two professors (as a professor is not a course), nor would there be any edges between two courses (as a course cannot teach another course). Thus, we have a bipartite relationship by construction.
 
 \begin{center}
-    \includegraphics[width=\textwidth]{Project3/Bipartite/boxed.pdf}
+    \includegraphics[width=\textwidth]{SectionBipartite/boxed.pdf}
 \end{center}
 
 A classical example of this problem is something we've covered before - the Knight's Tour. On a chessboard, the movement pattern of a knight allows us to separate the spaces on a chessboard into sets of light and dark spaces. When the knight moves, the space it lands on alternates color. Drawing edges between a particular space and all other spaces to which the knight can move, we construct a bipartite graph!

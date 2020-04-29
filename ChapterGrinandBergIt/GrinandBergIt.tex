@@ -1,0 +1,24 @@
+\chapter{Grin and Berg it}
+
+\section{Grinberg's Theorm(1976)}\index{Grinberg's Theorm}
+Let $G$ be a plane graph with $n$ vertices and a hamiltonian cycle $C$. let $a_i$ be the number of faces of $G$ in the interior of $C$ whose boundary contains exactly $i$ edges. Let $b_i$ be the number of faces of $G$ in the exterior of $C$ whose boundary contains $i$ edges. Then\\[.25in] $\sum_{i=3}(i-2)(a_i-b_i)=0.$\\[.25in]
+
+\section{Diagonals}\index{Diagonals}
+A diagonal of a cycle is an edge of the graph joining to non-adjacent vertices of the cycle.\\[.25in]
+{Proof:}\\[.25in]
+Let $d$ denote the number of diagonals of $G$ in the interior of $C$. The removal of any diagonal results in one less interior region. The removal of $d$ diagonals results in one region and so there are $d-1$ interior faces. Hence:\newline 
+$d+1 = (\sum_{i=3}a_i)-1$\newline
+The sum of the number of edges bounding each region will count each diagonal twice.\\[.25in]
+$\sum_{i=3}ia_i = 2d+n.$\newline
+$\sum_{i=3}ia_i = 2(\sum_{i=3}a_i)-2+n$\newline
+$\sum_{i=3}ia_i = (\sum_{i=3}2a_i)-2+n$\newline
+$\sum_{i=3}ia_i - \sum_{i=3}2a_i = n-2$\newline
+$\sum_{i=3}(i-2)a_i = n - 2 = \sum_{i=3}(i-2)b_i$\newline
+$\sum_{i=3}(i-2)a_i - \sum_{i=3}(i-2)b_i=0$\newline
+$\sum_{i=3}(i-2)(a_i-b_i)=0$
+
+\section{Herschel Graph}\index{Herschel Graph}
+
+Planar,Connected,not Regular, and not Eulerian
+
+

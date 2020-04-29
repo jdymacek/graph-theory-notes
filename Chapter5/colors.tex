@@ -3,14 +3,14 @@
 
 \section{Coloring your Graphs}
 
-The notion of \textit{graph coloring} is, fundamentally, no different than what we described back in Chapter 1 - it's a labeling of the vertices of our graphs. Instead of using numbers, variables, or text, we ascribe to the vertex set a color set. But assigning colors to vertices allows us to observe and study graphs under an altogether different lense than what we have used previously. And \textit{that} is why we would bother coloring our graphs.
+The notion of \textit{graph coloring}\index{Graph Coloring} is, fundamentally, no different than what we described back in Chapter 1 - it's a labeling of the vertices of our graphs. Instead of using numbers, variables, or text, we ascribe to the vertex set a color set. But assigning colors to vertices allows us to observe and study graphs under an altogether different lense than what we have used previously. And \textit{that} is why we would bother coloring our graphs.
 
 Before diving into any rigorous terms, definitions, and theorems, we will first lay the ground rules for graph coloring. There is only one ground rule: no two vertices can share the same color.
 
 \section{On the Rules of Coloring}
 We will now begin a deep dive into graph coloring. First, we will define the formal definition of a graph being colorable.
 
-\begin{definition}[K-Colorable]
+\begin{definition}[K-Colorable] \index{K-Colorable}
     Given a graph $G$, we say that $G$ is \textit{k-colorable} if each vertex of $G$ can be assigned one of $k$ colors such that no two adjacent vertices receive the same color.
 \end{definition}
 
@@ -20,7 +20,7 @@ Below, we see two graphs which have their vertices colored. One is two-colorable
 
 We also introduce the idea of coloring edges, under a similar restriction:
 
-\begin{definition}[K-Edge-Colorable]
+\begin{definition}[K-Edge-Colorable] \index{K-Edge-Colorable}
     Given a graph $G$, we say that $G$ is \textit{k-edge-colorable} if each edge of $G$ can be assigned one of $k$ colors such that no two adjacent edges receive the same color.
 \end{definition}
 
@@ -30,12 +30,12 @@ Like before, we see two graphs which have their edges colored. One is two-edge-c
 
 Take some time to devise some graphs and color them with your favorite colors. You might quickly see that it's no easy task if you have a complicated graph with many vertices and edges. For now, it won't help us to know if a graph is \textit{not} colorable from some $k$. This leads us to think, ``What is the smallest $k$ for which my favorite graph $G$ is colorable?'' We now introduce two new properties of graphs:
 
-\begin{definition}[K-Chromatic]
+\begin{definition}[K-Chromatic]\index{K-Chromatic}
     Given a graph $G$, we say that $G$ is \textit{k-chromatic} if $G$ is \textit{k-colorable}, but not \textit{(k-1)-colorable}. We say that $k$ is the \textit{chromatic number} of $G$, and is denoted:
     \[\chi(G) = k\]
 \end{definition}
 
-\begin{definition}[K-Edge-Chromatic]
+\begin{definition}[K-Edge-Chromatic]\index{K-Edge-Chromatic}
     Given a graph $G$, we say that $G$ is \textit{k-edge-chromatic} if $G$ is \textit{k-edge-colorable}, but not \textit{(k-1)-edge-colorable}. We say that $k$ is the \textit{edge-chromatic number} of $G$, and is denoted:
     \[ \chi\prime(G) = k \]
 \end{definition}
@@ -70,6 +70,6 @@ Recall the definitions of the maximal degree $\Delta(G)$ and the minimal degree 
 
 Now, we've seen planar graphs before. We have some interesting coloring theorems which apply to planar graphs, so let's visit some of them. We've seen that every planar graph contains a vertex whose degree is at most 5.
 
-\begin{theorem}
+\begin{theorem}\index{6-Colorable}
     Every planar graph is 6-colorable
 \end{theorem}

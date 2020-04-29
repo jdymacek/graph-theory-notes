@@ -1,0 +1,17 @@
+graph g{
+    node [shape=circle width="0.4!" fixedsize=true label=""]
+    
+    x1 [pos="0,0!"]
+    x2 [pos="1,0!"]
+    x3 [pos="0,1!"]
+    x4 [pos="1,1!"]
+    x5 [pos="2,0.5!" color=red]
+    x6 [pos="-1,0.5!" color=red]
+
+    x1 -- {x5,x6}
+    x2 -- {x6}
+    x3 -- {x5}
+    x4 -- {x6}
+
+
+}
