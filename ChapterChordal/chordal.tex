@@ -1,12 +1,12 @@
 \chapter{Chordal Graphs}
-\section{What Do Chordal Graphs Be?}
-A \textbf{Chord} is an edge in a graph that connects two non-adjacent vertices that are apart of the same cycle.\\
-A graph G is \textbf{Chordal} if every cycle above size four has at least one chord.\\
+\section{What makes a graph Chordal?}
+A \textbf{Chord} is an edge in a graph that connects two non-adjacent vertices that are apart of the same cycle. (note: cycles of size three cannot have chords in undirected graphs)\\
+A graph G is \textbf{Chordal} if every cycle above size greater than four has at least one chord.\\
 
 \section{What Do Chordal Graphs Look Like?}
 \includegraphics[width=0.25\textwidth]{./ChapterChordal/chordalGraph.pdf}
 
-\section{How Do They Be Used Doe?}
+\section{How are they Used?}
 The cyclical and proximity-based nature of chordal graphs allows them to be used in a variety of ways. They are often used to organize
 tasks efficiently, or to highlight relations inside data clusters. A common place chordal graphs are seen is in the implementation of algorithms to build
 massive graphs representing the phylogenetic trees of evolutionary species. This has been a topic of study in computational biology; generated chordal
@@ -19,9 +19,11 @@ static single assignment to lump declarations together, allowing for a more opti
 can be colored to produce similar efficiency-based algorithms. There have been studies into how these two components of graph theory can work together to
 form powerful and competent register allocation patterns. (ucla)\\
 
+\section{What problems do chordal graphs help with?}
+
+
+
 \url{http://digbib.ubka.uni-karlsruhe.de/volltexte/documents/6532}\\
 \url{http://webdocs.cs.ualberta.ca/~hayward/theses/sean.pdf}\\
 \url{https://www.ncbi.nlm.nih.gov/CBBresearch/Przytycka/download/talks/IWBRA_May_2006.pdf}\\
-\url{http://web.cs.ucla.edu/~palsberg/paper/aplas05.pdf}\\
-
-\section{Power Chords}
+\url{http://web.cs.ucla.edu/~palsberg/paper/aplas05.pdf}
