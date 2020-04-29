@@ -1,0 +1,15 @@
+graph g{
+    node[shape=circle, label="", width=0.5]
+
+    x1 [pos="-2,3!"]
+    x2 [pos="-2,1!"]
+    x3 [pos="-2,-1!"]
+    x4 [pos="-2,-3!"]
+
+    y1 [pos="2,2!"]
+    y2 [pos="2,0!"]
+    y3 [pos="2,-2!"]
+
+    x2 -- {y1,y2}
+    x4 -- {y3}
+}

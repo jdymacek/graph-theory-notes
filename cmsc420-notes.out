@@ -60,3 +60,8 @@
 \BOOKMARK [1][-]{section.8.3}{Kuratowski's Theorm \(1930\)}{chapter.8}% 60
 \BOOKMARK [1][-]{section.8.4}{Wagner's Theorm\(1937\)}{chapter.8}% 61
 \BOOKMARK [1][-]{section.8.5}{Minors}{chapter.8}% 62
+\BOOKMARK [0][-]{chapter.9}{Graph Classes}{}% 63
+\BOOKMARK [1][-]{section.9.1}{Bipartite Graphs}{chapter.9}% 64
+\BOOKMARK [2][-]{subsection.9.1.1}{Definitions}{section.9.1}% 65
+\BOOKMARK [2][-]{subsection.9.1.2}{When Can We Use These?}{section.9.1}% 66
+\BOOKMARK [2][-]{subsection.9.1.3}{How Does This Help Us?}{section.9.1}% 67

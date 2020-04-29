@@ -1,158 +1,158 @@
 \begin{theindex}
 
-  \item 3-Satisfiability, \hyperpage{44}
-  \item 6-Colorable, \hyperpage{53}
-  \item 7 Bridges of K\"{o}nigsberg, \hyperpage{33}
+  \item 3-Satisfiability, \hyperpage{46}
+  \item 6-Colorable, \hyperpage{55}
+  \item 7 Bridges of K\"{o}nigsberg, \hyperpage{35}
 
   \indexspace
 
-  \item Adjacency Matrix, \hyperpage{10}
-  \item Adjacent, \hyperpage{7}
+  \item Adjacency Matrix, \hyperpage{12}
+  \item Adjacent, \hyperpage{9}
 
   \indexspace
 
-  \item Bandy, \hyperpage{36}
-  \item Bipartite Graph, \hyperpage{9}
-  \item Boolean Satisfiability, \hyperpage{43}
-  \item Bor\r{u}vka's Algorithm, \hyperpage{19}
-  \item Bridge, \hyperpage{20}
+  \item Bandy, \hyperpage{38}
+  \item Bipartite Graph, \hyperpage{11}
+  \item Boolean Satisfiability, \hyperpage{45}
+  \item Bor\r{u}vka's Algorithm, \hyperpage{21}
+  \item Bridge, \hyperpage{22}
 
   \indexspace
 
-  \item Chv\'{a}tal, \hyperpage{36}
-  \item Clique, \hyperpage{48}
-  \item Complement, \hyperpage{12}
-  \item Complete Graph, \hyperpage{9}
-  \item Component, \hyperpage{12}
-  \item Connected, \hyperpage{11}
-  \item Cook-Levin Theorem, \hyperpage{42}
-  \item Cycle, \hyperpage{12}, \hyperpage{15}
+  \item Chv\'{a}tal, \hyperpage{38}
+  \item Clique, \hyperpage{50}
+  \item Complement, \hyperpage{14}
+  \item Complete Graph, \hyperpage{11}
+  \item Component, \hyperpage{14}
+  \item Connected, \hyperpage{13}
+  \item Cook-Levin Theorem, \hyperpage{44}
+  \item Cycle, \hyperpage{14}, \hyperpage{17}
 
   \indexspace
 
-  \item Degree, \hyperpage{7}
-  \item Deterministic, \hyperpage{41}
-  \item Diagonals, \hyperpage{55}
-  \item Digraph, \hyperpage{6}
-  \item Dirac, \hyperpage{37}
-  \item Directed Hamiltonian Cycle, \hyperpage{44}
-  \item Disconnected, \hyperpage{11}
+  \item Degree, \hyperpage{9}
+  \item Deterministic, \hyperpage{43}
+  \item Diagonals, \hyperpage{57}
+  \item Digraph, \hyperpage{8}
+  \item Dirac, \hyperpage{39}
+  \item Directed Hamiltonian Cycle, \hyperpage{46}
+  \item Disconnected, \hyperpage{13}
 
   \indexspace
 
-  \item Edges, \hyperpage{5}
-  \item Euler's Formula, \hyperpage{57}
-  \item Eulerian, \hyperpage{33}
+  \item Edges, \hyperpage{7}
+  \item Euler's Formula, \hyperpage{59}
+  \item Eulerian, \hyperpage{35}
 
   \indexspace
 
-  \item Fleury, \hyperpage{34}
-  \item Forest, \hyperpage{15}
+  \item Fleury, \hyperpage{36}
+  \item Forest, \hyperpage{17}
 
   \indexspace
 
-  \item Gadget, \hyperpage{42}
-  \item Graph Bridge Theorem, \hyperpage{20}
-  \item Graph Coloring, \hyperpage{51}
-  \item Graphs, \hyperpage{5}
-  \item Grinberg's Theorm, \hyperpage{55}
+  \item Gadget, \hyperpage{44}
+  \item Graph Bridge Theorem, \hyperpage{22}
+  \item Graph Coloring, \hyperpage{53}
+  \item Graphs, \hyperpage{7}
+  \item Grinberg's Theorm, \hyperpage{57}
 
   \indexspace
 
-  \item Hamiltonian, \hyperpage{34}
-  \item Herschel Graph, \hyperpage{56}
-  \item Hierholzer, \hyperpage{33}
+  \item Hamiltonian, \hyperpage{36}
+  \item Herschel Graph, \hyperpage{58}
+  \item Hierholzer, \hyperpage{35}
 
   \indexspace
 
-  \item Incidence Matrix, \hyperpage{10}
-  \item Incident, \hyperpage{7}
-  \item Isolated, \hyperpage{7}
-  \item Isomorphic, \hyperpage{7}
+  \item Incidence Matrix, \hyperpage{12}
+  \item Incident, \hyperpage{9}
+  \item Isolated, \hyperpage{9}
+  \item Isomorphic, \hyperpage{9}
 
   \indexspace
 
-  \item Join, \hyperpage{7}
+  \item Join, \hyperpage{9}
 
   \indexspace
 
-  \item K-Chromatic, \hyperpage{52}
-  \item K-Colorable, \hyperpage{51}
-  \item K-Edge-Chromatic, \hyperpage{52}
-  \item K-Edge-Colorable, \hyperpage{52}
-  \item Karp's 21 Problems, \hyperpage{43}
-  \item Kruskal's Algorithm, \hyperpage{18}
-  \item Kuratowski's Theorm, \hyperpage{57}
+  \item K-Chromatic, \hyperpage{54}
+  \item K-Colorable, \hyperpage{53}
+  \item K-Edge-Chromatic, \hyperpage{54}
+  \item K-Edge-Colorable, \hyperpage{54}
+  \item Karp's 21 Problems, \hyperpage{45}
+  \item Kruskal's Algorithm, \hyperpage{20}
+  \item Kuratowski's Theorm, \hyperpage{59}
 
   \indexspace
 
-  \item Las Vergnas, \hyperpage{36}
-  \item Lines, \hyperpage{5}
-  \item Links, \hyperpage{5}
+  \item Las Vergnas, \hyperpage{38}
+  \item Lines, \hyperpage{7}
+  \item Links, \hyperpage{7}
 
   \indexspace
 
-  \item Minimum Spanning Trees(MST), \hyperpage{17}
-  \item Minors, \hyperpage{58}
-  \item Multigraph, \hyperpage{6}
+  \item Minimum Spanning Trees(MST), \hyperpage{19}
+  \item Minors, \hyperpage{60}
+  \item Multigraph, \hyperpage{8}
 
   \indexspace
 
-  \item Nodes, \hyperpage{5}
-  \item Nondeterministic, \hyperpage{41}
-  \item NP, \hyperpage{41}
-  \item NP-Complete, \hyperpage{42}
-  \item NP-Hard, \hyperpage{42}
-  \item Null Graph, \hyperpage{9}
+  \item Nodes, \hyperpage{7}
+  \item Nondeterministic, \hyperpage{43}
+  \item NP, \hyperpage{43}
+  \item NP-Complete, \hyperpage{44}
+  \item NP-Hard, \hyperpage{44}
+  \item Null Graph, \hyperpage{11}
 
   \indexspace
 
-  \item Ore, \hyperpage{36}
+  \item Ore, \hyperpage{38}
 
   \indexspace
 
-  \item P, \hyperpage{41}
-  \item P\u{o}sa, \hyperpage{36}
-  \item Path, \hyperpage{14}
-  \item Pendant, \hyperpage{7}
-  \item Points, \hyperpage{5}
-  \item Polynomial Time, \hyperpage{41}
-  \item Prim's Algorithm, \hyperpage{17}
+  \item P, \hyperpage{43}
+  \item P\u{o}sa, \hyperpage{38}
+  \item Path, \hyperpage{16}
+  \item Pendant, \hyperpage{9}
+  \item Points, \hyperpage{7}
+  \item Polynomial Time, \hyperpage{43}
+  \item Prim's Algorithm, \hyperpage{19}
 
   \indexspace
 
-  \item Reduction, \hyperpage{42}
-  \item Reflexive, \hyperpage{8}
-  \item Regular Graph, \hyperpage{9}
+  \item Reduction, \hyperpage{44}
+  \item Reflexive, \hyperpage{10}
+  \item Regular Graph, \hyperpage{11}
 
   \indexspace
 
-  \item Self-Complementary, \hyperpage{13}
-  \item Spanning Tree, \hyperpage{16}
-  \item Subgraph, \hyperpage{9}
-  \item Subtraction, \hyperpage{12}
-  \item Symmetric, \hyperpage{8}
+  \item Self-Complementary, \hyperpage{15}
+  \item Spanning Tree, \hyperpage{18}
+  \item Subgraph, \hyperpage{11}
+  \item Subtraction, \hyperpage{14}
+  \item Symmetric, \hyperpage{10}
 
   \indexspace
 
-  \item The Handshaking Lemma, \hyperpage{8}
-  \item Trail, \hyperpage{14}
-  \item Transitive, \hyperpage{8}
-  \item Tree, \hyperpage{11}
+  \item The Handshaking Lemma, \hyperpage{10}
+  \item Trail, \hyperpage{16}
+  \item Transitive, \hyperpage{10}
+  \item Tree, \hyperpage{13}
 
   \indexspace
 
-  \item Union, \hyperpage{11}
+  \item Union, \hyperpage{13}
 
   \indexspace
 
-  \item Vertex Cover, \hyperpage{49}
-  \item Vertices, \hyperpage{5}
+  \item Vertex Cover, \hyperpage{51}
+  \item Vertices, \hyperpage{7}
 
   \indexspace
 
-  \item Wagner's Theorm, \hyperpage{57}
-  \item Walk, \hyperpage{13}
-  \item Weight, \hyperpage{17}
+  \item Wagner's Theorm, \hyperpage{59}
+  \item Walk, \hyperpage{15}
+  \item Weight, \hyperpage{19}
 
 \end{theindex}
