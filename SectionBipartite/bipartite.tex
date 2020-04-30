@@ -1,10 +1,10 @@
-\section{Bipartite Graphs}
+\section{Bipartite Graphs}\index{Bipartite Graph}
 We've mentioned bipartite graphs several times in different chapters of this book. However, we've only explored this class of graph at a surface level. In this section, we'll take a deeper look into bipartite graph - what are the conditions for being bipartite, how do bipartite graphs allow us to more easily answer certain questions, and how are they relevant in our own real scenarios?
 
 \subsection{Definitions}
 Let's give a formal definition for what it means for a graph to be bipartite. First, let's define what an independent vertex set is:
 
-\begin{definition}[Independent Vertex Set]
+\begin{definition}[Independent Vertex Set]\index{Independent Vertex Set}
     An \textit{independent vertex set} is a set of vertices in a graph $G$, none of which are adjacent.
 \end{definition}
 
@@ -27,12 +27,12 @@ Having defined bipartite, we can derive several other related classes of graphs,
 
 Complete bipartite graphs are an important subset of bipartite graphs. Here is the formal definition for complete bipartite:
 
-\begin{definition}[Complete Bipartite Graph]
+\begin{definition}[Complete Bipartite Graph]\index{Complete Bipartite}
     A \textit{complete bipartite} graph $G$ is a graph whose vertex set can be partitioned into two independent sets $U$ and $V$ such that for any $u \in U$ and $v \in V$, $(u, v)$ is an edge. Such a graph is denoted as \[ K_{m,n} \] where $m, n$ are the sizes of each independent set.
 \end{definition}
 
 An example of a complete bipartite graph is $K_{3,3}$, known as the Utility Graph, shown below:
-
+\index{Utility Graph}
 \begin{center}
     \includegraphics[width=0.4\textwidth]{SectionBipartite/k33.pdf}
 \end{center}

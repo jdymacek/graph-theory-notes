@@ -11,8 +11,9 @@
 
   \indexspace
 
-  \item Bandy, \hyperpage{38}
-  \item Bipartite Graph, \hyperpage{11}
+  \item Bandy, \hyperpage{39}
+  \item Bellman-Ford, \hyperpage{29}
+  \item Bipartite Graph, \hyperpage{11}, \hyperpage{61}
   \item Boolean Satisfiability, \hyperpage{45}
   \item Bor\r{u}vka's Algorithm, \hyperpage{21}
   \item Bridge, \hyperpage{22}
@@ -22,6 +23,7 @@
   \item Chv\'{a}tal, \hyperpage{38}
   \item Clique, \hyperpage{50}
   \item Complement, \hyperpage{14}
+  \item Complete Bipartite, \hyperpage{62}
   \item Complete Graph, \hyperpage{11}
   \item Component, \hyperpage{14}
   \item Connected, \hyperpage{13}
@@ -34,6 +36,7 @@
   \item Deterministic, \hyperpage{43}
   \item Diagonals, \hyperpage{57}
   \item Digraph, \hyperpage{8}
+  \item Dijkstra's Algorithm, \hyperpage{25}
   \item Dirac, \hyperpage{39}
   \item Directed Hamiltonian Cycle, \hyperpage{46}
   \item Disconnected, \hyperpage{13}
@@ -42,7 +45,7 @@
 
   \item Edges, \hyperpage{7}
   \item Euler's Formula, \hyperpage{59}
-  \item Eulerian, \hyperpage{35}
+  \item Eulerian, \hyperpage{36}
 
   \indexspace
 
@@ -61,12 +64,12 @@
 
   \item Hamiltonian, \hyperpage{36}
   \item Herschel Graph, \hyperpage{58}
-  \item Hierholzer, \hyperpage{35}
 
   \indexspace
 
   \item Incidence Matrix, \hyperpage{12}
   \item Incident, \hyperpage{9}
+  \item Independent Vertex Set, \hyperpage{61}
   \item Isolated, \hyperpage{9}
   \item Isomorphic, \hyperpage{9}
 
@@ -112,7 +115,7 @@
   \indexspace
 
   \item P, \hyperpage{43}
-  \item P\u{o}sa, \hyperpage{38}
+  \item P\u{o}sa, \hyperpage{39}
   \item Path, \hyperpage{16}
   \item Pendant, \hyperpage{9}
   \item Points, \hyperpage{7}
@@ -128,6 +131,7 @@
   \indexspace
 
   \item Self-Complementary, \hyperpage{15}
+  \item Single Source Shortest Path, \hyperpage{25}
   \item Spanning Tree, \hyperpage{18}
   \item Subgraph, \hyperpage{11}
   \item Subtraction, \hyperpage{14}
@@ -143,6 +147,7 @@
   \indexspace
 
   \item Union, \hyperpage{13}
+  \item Utility Graph, \hyperpage{62}
 
   \indexspace
 

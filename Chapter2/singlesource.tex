@@ -4,13 +4,13 @@ Weights are a great way to convey additional data in a graph. Whether it is repr
 However, a new problem arises with the addition of weights: The Single Source Shortest Path Problem.
 
 %Perhaps an example here of a weighted graph, how to easily find the path from node A to F? etc.
-\begin{definition}
+\begin{definition}\index{Single Source Shortest Path}
 A \emph{Single Source Shortest Path} is the shortest path from a starting node to any other node in the connected graph.
 \end{definition}
 
 A fairly straightforward concept, but one that comes with its own troubles in trying to actually find such a path between any two nodes algorithmically. Below are two solutions to such a problem: Dijkstra's Algorithm and the Bellman-Ford Algorithm.
 
-\section{Dijkstra}
+\section{Dijkstra}\index{Dijkstra's Algorithm}
 Dijkstra's algorithm starts at some decided source node, and then follows each edge from the source path out to the adjacent nodes. Each node is then given a "cost", which is the sum of all the edges' weights on the path from the source node to that node. 
 
 After finding the cost for each node adjacent to the source node, the algorithm repeats, taking each node adjacent to the source node, and finding the costs of thier adjacent nodes, until all nodes have a cost assigned to them. For example, the cost of a node that is two edges away from the source node would be the sum of the weights of those two edges.
@@ -64,7 +64,7 @@ In the end, this algorithm has a run time of $O(E log V)$, or the number of edge
 It is important to note that this algorithm will \emph{not} work with negative weights on the edges. The negative weight will be continually added to the cost of a node, and skew the node's actual weight.
 
 
-\section{Bellman-Ford}
+\section{Bellman-Ford}\index{Bellman-Ford}
 
 Bellman-Ford follows an overall similar process as Dijkstra's Algorithm, with one key change: Instead of running through the adjacent nodes, the algorithm loops through the list of edges V times (V being the number of vertices). 
 

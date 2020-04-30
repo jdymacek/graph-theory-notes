@@ -47,16 +47,18 @@
 \indexentry{Bor\r{u}vka's Algorithm|hyperpage}{21}
 \indexentry{Bridge|hyperpage}{22}
 \indexentry{Graph Bridge Theorem|hyperpage}{22}
+\indexentry{Single Source Shortest Path|hyperpage}{25}
+\indexentry{Dijkstra's Algorithm|hyperpage}{25}
+\indexentry{Bellman-Ford|hyperpage}{29}
 \indexentry{7 Bridges of K\"{o}nigsberg|hyperpage}{35}
-\indexentry{Eulerian|hyperpage}{35}
-\indexentry{Hierholzer|hyperpage}{35}
+\indexentry{Eulerian|hyperpage}{36}
 \indexentry{Fleury|hyperpage}{36}
 \indexentry{Hamiltonian|hyperpage}{36}
 \indexentry{Ore|hyperpage}{38}
 \indexentry{Las Vergnas|hyperpage}{38}
 \indexentry{Chv\'{a}tal|hyperpage}{38}
-\indexentry{Bandy|hyperpage}{38}
-\indexentry{P\u{o}sa|hyperpage}{38}
+\indexentry{Bandy|hyperpage}{39}
+\indexentry{P\u{o}sa|hyperpage}{39}
 \indexentry{Dirac|hyperpage}{39}
 \indexentry{Deterministic|hyperpage}{43}
 \indexentry{Nondeterministic|hyperpage}{43}
@@ -87,3 +89,7 @@
 \indexentry{Kuratowski's Theorm|hyperpage}{59}
 \indexentry{Wagner's Theorm|hyperpage}{59}
 \indexentry{Minors|hyperpage}{60}
+\indexentry{Bipartite Graph|hyperpage}{61}
+\indexentry{Independent Vertex Set|hyperpage}{61}
+\indexentry{Complete Bipartite|hyperpage}{62}
+\indexentry{Utility Graph|hyperpage}{62}

@@ -22,18 +22,18 @@
 \contentsline {section}{\numberline {3.1}Dijkstra}{25}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Bellman-Ford}{29}{section.3.2}% 
 \contentsline {chapter}{\numberline {4}Eulerian and Hamiltonian}{35}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}7 Bridges o of K\"{o}nigsberg}{35}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Eulerian}{35}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Hierholzer's Algorithm}{35}{subsection.4.2.1}% 
+\contentsline {section}{\numberline {4.1}7 Bridges of K\"{o}nigsberg}{35}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Eulerian}{36}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Hierholzer's Algorithm}{36}{subsection.4.2.1}% 
 \contentsline {subsection}{\numberline {4.2.2}Fleury's Algorithm}{36}{subsection.4.2.2}% 
 \contentsline {section}{\numberline {4.3}Hamiltonian}{36}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Examples}{36}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.1}Examples}{37}{subsection.4.3.1}% 
 \contentsline {section}{\numberline {4.4}Theorems}{38}{section.4.4}% 
 \contentsline {subsection}{\numberline {4.4.1}Ore's Theorem (1960)}{38}{subsection.4.4.1}% 
 \contentsline {subsection}{\numberline {4.4.2}Las Vergnas (1971)}{38}{subsection.4.4.2}% 
 \contentsline {subsection}{\numberline {4.4.3}Chv\'{a}tal(1970)}{38}{subsection.4.4.3}% 
-\contentsline {subsection}{\numberline {4.4.4}Bandy(1969)}{38}{subsection.4.4.4}% 
-\contentsline {subsection}{\numberline {4.4.5}P\u {o}sa (1962)}{38}{subsection.4.4.5}% 
+\contentsline {subsection}{\numberline {4.4.4}Bandy(1969)}{39}{subsection.4.4.4}% 
+\contentsline {subsection}{\numberline {4.4.5}P\u {o}sa (1962)}{39}{subsection.4.4.5}% 
 \contentsline {subsection}{\numberline {4.4.6}Dirac (1962)}{39}{subsection.4.4.6}% 
 \contentsline {subsection}{\numberline {4.4.7}Bandy and Chv\'{a}tal(1976)}{39}{subsection.4.4.7}% 
 \contentsline {chapter}{\numberline {5}NP-Completeness}{43}{chapter.5}% 
@@ -44,17 +44,17 @@
 \contentsline {section}{\numberline {5.3}Problems}{45}{section.5.3}% 
 \contentsline {subsection}{\numberline {5.3.1}Boolean Satisfiability}{45}{subsection.5.3.1}% 
 \contentsline {subsection}{\numberline {5.3.2}3-Satisfiability}{46}{subsection.5.3.2}% 
-\contentsline {subsubsection}{Is it in NP?}{46}{section*.13}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{46}{section*.14}% 
+\contentsline {subsubsection}{Is it in NP?}{46}{section*.14}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{46}{section*.15}% 
 \contentsline {subsection}{\numberline {5.3.3}Directed Hamiltonian Cycle}{46}{subsection.5.3.3}% 
-\contentsline {subsubsection}{Is it in NP?}{47}{section*.15}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{47}{section*.16}% 
+\contentsline {subsubsection}{Is it in NP?}{47}{section*.16}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{47}{section*.17}% 
 \contentsline {subsection}{\numberline {5.3.4}Clique}{50}{subsection.5.3.4}% 
-\contentsline {subsubsection}{Is it in NP?}{50}{section*.17}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{50}{section*.18}% 
+\contentsline {subsubsection}{Is it in NP?}{50}{section*.18}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{50}{section*.19}% 
 \contentsline {subsection}{\numberline {5.3.5}Vertex Cover}{51}{subsection.5.3.5}% 
-\contentsline {subsubsection}{Is it in NP?}{51}{section*.19}% 
-\contentsline {subsubsection}{Is it in NP-Hard?}{51}{section*.20}% 
+\contentsline {subsubsection}{Is it in NP?}{51}{section*.20}% 
+\contentsline {subsubsection}{Is it in NP-Hard?}{51}{section*.21}% 
 \contentsline {chapter}{\numberline {6}Pigment of your Imagination}{53}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Coloring your Graphs}{53}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}On the Rules of Coloring}{53}{section.6.2}% 
